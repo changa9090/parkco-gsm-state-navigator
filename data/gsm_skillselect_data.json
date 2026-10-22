@@ -1,0 +1,808 @@
+{
+  "status": "verified_ok",
+  "http_status": 200,
+  "bytes": 1345896,
+  "sha256": "9b31b13cb490736d2bf4f62f2cafba99ec7f2ca7e8743786697e088585864126",
+  "sha256_prefix": "9b31b13cb490736d",
+  "latest_round_date": "4 June 2026",
+  "round_summary": [
+    {
+      "subclass": "Skilled Independent visa (subclass 189)",
+      "total_invited": "10,000",
+      "tie_break_date": "24/04/2026"
+    }
+  ],
+  "occupation_count": 139,
+  "occupation_cutoffs": [
+    {
+      "occupation": "Actuary",
+      "min_score_189": 90,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Agricultural Consultant",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Agricultural Scientist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Airconditioning and Mechanical Services Plumber",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Airconditioning and Refrigeration Mechanic",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Architect",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Arts Administrator or Manager",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Audiologist",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Automotive Electrician",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Barrister",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Biotechnologist",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Boat Builder and Repairer",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Bricklayer",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Cabinetmaker",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Cardiologist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Carpenter",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Carpenter and Joiner",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Cartographer",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Chemist",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Child Care Centre Manager",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Chiropractor",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Clinical Psychologist",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Construction Project Manager",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Dancer or Choreographer",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Dermatologist",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Diagnostic and Interventional Radiologist",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Drainer",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Economist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Electrical Engineering Draftsperson",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Electrical Engineering Technician",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Electrician (General)",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Electrician (Special Class)",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Electronic Equipment Trades Worker",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Electronic Instrument Trades Worker (General)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Electronic Instrument Trades Worker (Special Class)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Electronics Engineer",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Emergency Medicine Specialist",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Endocrinologist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Engineering Manager",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Environmental Consultant",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Environmental Manager",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Environmental Research Scientist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Environmental Scientists nec",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Fibrous Plasterer",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Fitter (General)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Fitter and Turner",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Food Technologist",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Footballer",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Forester",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Gasfitter",
+      "min_score_189": 70,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Gastroenterologist",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "General Practitioner",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Geophysicist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Glazier",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Hydrogeologist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Intensive Care Specialist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Joiner",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Land Economist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Landscape Architect",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Life Scientist (General)",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Life Scientists nec",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Lift mechanic",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Management Consultant",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Marine Biologist",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Medical Diagnostic Radiographer",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Medical Laboratory Scientist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Medical Practitioners nec",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Medical Radiation Therapist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Metal Fabricator",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Metal Machinist (First Class)",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Metallurgist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Meteorologist",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Microbiologist",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Midwife",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Mining Engineer (excluding Petroleum)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Multimedia Specialist",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Music Director",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Musician (Instrumental)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Natural and Physical Science Professionals nec",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Nuclear Medicine Technologist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Nurse Practitioner",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Obstetrician and Gynaecologist",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Ophthalmologist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Optometrist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Organisational Psychologist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Orthopaedic Surgeon",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Orthotist or Prosthetist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Osteopath",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Other Spatial Scientist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Paediatrician",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Panelbeater",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Petroleum Engineer",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Physicist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Physiotherapist",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Plumber (General)",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Podiatrist",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Primary Health Organisation Manager",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Psychiatrist",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Psychologists nec",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Aged Care)",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Child and Family Health)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Community Health)",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Critical Care and Emergency)",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Developmental Disability)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Disability and Rehabilitation)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Medical Practice)",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Medical)",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Mental Health)",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Paediatrics)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Perioperative)",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurse (Surgical)",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Registered Nurses nec",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Roof Plumber",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Secondary School Teacher",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Sheetmetal Trades Worker",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Shipwright",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Social Worker",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Solicitor",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Solid Plasterer",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Sonographer",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Special Education Teachers nec",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Special Needs Teacher",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Specialist Physician (General Medicine)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Specialist Physicians nec",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Speech Pathologist",
+      "min_score_189": 75,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Statistician",
+      "min_score_189": 90,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Stonemason",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Surgeon (General)",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Surveyor",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Telecommunications Engineer",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Telecommunications Network Engineer",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Tennis Coach",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Thoracic Medicine Specialist",
+      "min_score_189": 95,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Urologist",
+      "min_score_189": 100,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Valuer",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Veterinarian",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Wall and Floor Tiler",
+      "min_score_189": 65,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Welder (First Class)",
+      "min_score_189": 80,
+      "min_score_491_fs": "N/A"
+    },
+    {
+      "occupation": "Welfare Centre Manager",
+      "min_score_189": 85,
+      "min_score_491_fs": "N/A"
+    }
+  ],
+  "national_state_quota": {
+    "total_190": 12850,
+    "total_491": 7500,
+    "combined_total": 20350
+  },
+  "state_allocations": [
+    {
+      "state": "NSW",
+      "quota_190": 2100,
+      "quota_491": 1500,
+      "total_quota": 3600,
+      "ytd_190": "11",
+      "ytd_491": "0",
+      "round_model": "EOI Target Sectors (190/491 Path 2) + Direct Application (491 Path 1 & 3)",
+      "min_cutoff_note_ko": "190: 건설·의료·디지털 75~95점 / 491 Path 1·3: 65점+ 직접 신청",
+      "min_cutoff_note_en": "190: Priority sectors 75–95 pts / 491 Path 1 & 3: Direct apply from 65 pts"
+    },
+    {
+      "state": "VIC",
+      "quota_190": 2700,
+      "quota_491": 700,
+      "total_quota": 3400,
+      "ytd_190": "0",
+      "ytd_491": "0",
+      "round_model": "Live in Melbourne ROI (Ranked by Onshore Skilled Earnings & Priority Sectors)",
+      "min_cutoff_note_ko": "190 온쇼어: 연봉($90k~$120k+) + 의료·교육·건설 우선 / 491: 지방 VIC 재직 필수",
+      "min_cutoff_note_en": "190 Onshore: Ranked by skilled earnings ($90k+) & Healthcare/Teaching/Construction"
+    },
+    {
+      "state": "WA",
+      "quota_190": 2000,
+      "quota_491": 1400,
+      "total_quota": 3400,
+      "ytd_190": "17",
+      "ytd_491": "120",
+      "round_model": "Monthly Direct EOI Invitation (WA Residents Ranked #1, $0 Fee)",
+      "min_cutoff_note_ko": "건설·기능직 65~75점 / 의료·교육 75~85점 / WA 졸업생 75~90점 (신청비 $0)",
+      "min_cutoff_note_en": "Building & Construction 65–75 pts / Healthcare & Teaching 75–85 pts / WA Grads 75–90 pts"
+    },
+    {
+      "state": "QLD",
+      "quota_190": 1850,
+      "quota_491": 650,
+      "total_quota": 2500,
+      "ytd_190": "6",
+      "ytd_491": "<5",
+      "round_model": "Migration Queensland ROI (Monthly Targeted Invitations)",
+      "min_cutoff_note_ko": "건설·에너지 65~75점(경력 완화) / 일반 온쇼어(190 9개월·491 6개월) 80~95점",
+      "min_cutoff_note_en": "Construction/Energy 65–75 pts / General Onshore (9m/6m work) 80–95 pts"
+    },
+    {
+      "state": "SA",
+      "quota_190": 1350,
+      "quota_491": 900,
+      "total_quota": 2250,
+      "ytd_190": "0",
+      "ytd_491": "0",
+      "round_model": "SA Onshore ROI + Monthly Offshore EOI Rounds (464 Occupations)",
+      "min_cutoff_note_ko": "온쇼어 SA 취업·졸업생 65~80점 / 오프쇼어 EOI 최소 65~85점 (직군별 상이)",
+      "min_cutoff_note_en": "Onshore SA Employment & Graduates 65–80 pts / Offshore EOI min 65–85 pts"
+    },
+    {
+      "state": "TAS",
+      "quota_190": 1100,
+      "quota_491": 750,
+      "total_quota": 1850,
+      "ytd_190": "206",
+      "ytd_491": "55",
+      "round_model": "Migration Tasmania Gateway (Gold / Green / Orange-Plus / Orange Pass)",
+      "min_cutoff_note_ko": "Gold Pass 즉시 초청 / Green Pass 8주 내 초청 / Orange-Plus 우선속성 갯수 순",
+      "min_cutoff_note_en": "Gold Pass immediate / Green Pass within 8 wks / Orange-Plus ranked by attributes"
+    },
+    {
+      "state": "NT",
+      "quota_190": 950,
+      "quota_491": 800,
+      "total_quota": 1750,
+      "ytd_190": "91",
+      "ytd_491": "25",
+      "round_model": "Direct Application via MigrationNT Portal (Criteria-Based, Non-Points Ranked)",
+      "min_cutoff_note_ko": "Schedule 6D 65점 충족 + NT 6개월 풀타임 재직(또는 NT 2년 졸업생) 시 직접 승인",
+      "min_cutoff_note_en": "Schedule 6D 65 pts + 6m full-time NT work (or 2yr NT Graduate) via direct portal"
+    },
+    {
+      "state": "ACT",
+      "quota_190": 800,
+      "quota_491": 800,
+      "total_quota": 1600,
+      "ytd_190": "<5",
+      "ytd_491": "<5",
+      "round_model": "ACT Canberra Matrix Ranking + ACT PhD Streamlined ($0 Fee, Auto-Invite)",
+      "min_cutoff_note_ko": "Canberra Matrix 자체 점수(직군별 65~115 Matrix pts) / ACT 박사(PhD) 무점수 즉시 초청",
+      "min_cutoff_note_en": "Canberra Matrix occupation cut-offs (65–115 Matrix pts) / ACT PhD streamlined"
+    }
+  ]
+}
