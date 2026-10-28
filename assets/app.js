@@ -1151,21 +1151,31 @@
       `• Current Location & Work: ${loc} | Residence ${resM}m | Skilled Work ${workM}m (${hrs}h+/wk)`,
       `• Graduate Stream Status: ${grad}`,
       `• Target Visa: Subclass ${sub} (${sub === "189" ? "Federal Independent Direct PR — No State Nomination" : (sub === "191" ? "491/494 → 191 Regional PR Transition — No State Re-nomination" : `State Nomination Jurisdiction: ${loc}`)})`,
-      `• Official Legal Inquiry: Park & Co Lawyers (cpark@parkcolawyers.com)`
+      `• Official Legal Inquiry: Park & Co Lawyers (https://parklawyers.com.au/links/)`
     ].join("\n") : [
       "=== [PNC Legal Pty Ltd t/a Park & Co Lawyers | 호주 기술이민(189·190·491) & 주정부 진단서] ===",
       `• Schedule 6D 산출 점수: 189 (${STATE.pts189}점) | 190 (${STATE.pts190}점) | 491 (${STATE.pts491}점)`,
       `• 현재 거주지 및 근무: ${loc} | 거주 ${resM}개월 | 숙련근무 ${workM}개월 (주 ${hrs}시간+)`,
       `• 학력/졸업생 특례 여부: ${grad}`,
       `• 희망 신청 비자: Subclass ${sub} (${sub === "189" ? "연방 독립기술 Direct PR — 주정부 노미네이션/191 전환 해당 없음" : (sub === "191" ? "491/494 소지자 3년 후 191 영주권 전환 — 주정부 재노미네이션 불요" : `노미네이션 검토 주: ${loc}${sub === "190" ? " · Direct PR (191 전환 해당 없음)" : " · 3년 후 191 영주권 전환 대상"}`)})`,
-      `• 공식 법률 자문 문의: Park & Co Lawyers (cpark@parkcolawyers.com)`
+      `• 공식 법률 자문 문의: Park & Co Lawyers (https://parklawyers.com.au/links/?lang=ko)`
     ].join("\n");
 
     previewEl.textContent = text;
     if (emailBtn) {
-      const subject = encodeURIComponent(`[Park & Co GSM/State Inquiry] ${loc} Subclass ${sub} (190 ${STATE.pts190}pts / 491 ${STATE.pts491}pts)`);
-      const body = encodeURIComponent(text + "\n\n[Additional Details]\n- Nominated Occupation (ANZSCO) & Skills Assessment: \n- Current Visa Expiry Date: \n");
-      emailBtn.href = `mailto:cpark@parkcolawyers.com?subject=${subject}&body=${body}`;
+      emailBtn.href = en ? "https://parklawyers.com.au/links/" : "https://parklawyers.com.au/links/?lang=ko";
+      emailBtn.target = "_blank";
+      emailBtn.rel = "noopener";
+      emailBtn.dataset.briefText = text;
+      if (!emailBtn.dataset.copyBound) {
+        emailBtn.dataset.copyBound = "1";
+        emailBtn.addEventListener("click", () => {
+          const t = emailBtn.dataset.briefText || "";
+          if (t && navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(t).catch(() => {});
+          }
+        });
+      }
     }
   }
 
@@ -1389,7 +1399,8 @@
     "가족법·재산분할": "Family Law & Property",
     "위기·ART": "Visa Crisis & ART",
     "← 전체 네비게이터 허브": "← All Navigators Hub",
-    "박창민 대표변호사 (Chang Min Park)": "Chang Min Park (Principal Solicitor)",
+    "💬 온라인 상담신청": "💬 Enquire Online",
+    "박창민 대표변호사 (Chang Min Park)": "Chang Min Park (Legal Practitioner Director)",
     "\"삶에 집중하세요, 법률은 저희가 맡겠습니다.\"": "\"You focus on life, we'll handle the law.\"",
     "법무법인 박앤코 (PNC Legal Pty Ltd t/a Park & Co Lawyers)": "PNC Legal Pty Ltd t/a Park & Co Lawyers",
     "법령 및 주정부 심사 근거": "Statutory & State Nomination Authority",
@@ -1515,12 +1526,12 @@
     "준수 완료 — 지정 지방(Designated Regional Area) 내 거주·근무·학업 유지": "Compliant — Resided, worked & studied exclusively in Designated Regional Areas",
     "주의 필요 — 대도시(시드니·멜버른·브리즈번) 장기 체류 또는 주소 변경 미신고(8578)": "Caution — Extended metro stay (Sydney/Melbourne/Brisbane) or unnotified address (8578)",
     "FY2026–27 총비용 & Subclass 191 영주권 전환 판정": "FY2026–27 Total Statutory Cost & Subclass 191 PR Assessment",
-    "내 기술이민 점수(Schedule 6D) & 주정부 노미네이션 진단서 복사 · 인쇄(PDF) & 상담 메일 발송": "Copy, Print (PDF) & Email Your GSM Points & State Nomination Brief",
-    "위 모듈에서 계산된 189·190·491 점수, 거주 주 노미네이션 적격 판정, 총비용 요약문을 즉시 복사하거나 상담 메일에 첨부할 수 있어요.": "Copy or email your calculated 189/190/491 points, state nomination eligibility, and fee breakdown directly to Park & Co.",
+    "내 기술이민 점수(Schedule 6D) & 주정부 노미네이션 진단서 복사 · 인쇄(PDF) & 온라인 상담 신청": "Copy, Print (PDF) & Enquire Online with Your GSM Points & State Nomination Brief",
+    "위 모듈에서 계산된 189·190·491 점수, 거주 주 노미네이션 적격 판정, 총비용 요약문을 즉시 복사하여 공식 온라인 상담 신청 시 붙여넣을 수 있어요.": "Copy your calculated 189/190/491 points, state nomination eligibility, and fee breakdown to attach directly to your Park & Co online consultation request.",
     "📋 진단 요약 클립보드 복사": "📋 Copy Diagnostic Summary",
     "📋 긴급 진단서 클립보드 복사": "📋 Copy Urgent Diagnostic Brief",
     "🖨️ PDF / 브리프 인쇄": "🖨️ Print / Save PDF",
-    "✉️ 진단 결과 담아 박앤코에 이메일 문의 →": "✉️ Email Diagnostic Brief to Park & Co →",
+    "💬 진단 요약 복사 & 박앤코 온라인 상담 →": "💬 Copy Brief & Enquire Online →",
     "🚨 진단 결과 담아 박앤코 긴급 자문 요청 →": "🚨 Email Urgent Brief to Park & Co →",
     "구분": "Category",
     "공식 법령 · 주정부 이민 포털 및 링크": "Official Legislation / State Portal & Link",
@@ -1558,6 +1569,9 @@
     document.querySelectorAll(".parkco-svc-link").forEach(function (lnk) {
       var h = isEn ? lnk.getAttribute("data-en-href") : lnk.getAttribute("data-ko-href");
       if (h) lnk.setAttribute("href", h);
+    });
+    document.querySelectorAll("a.cta-enquiry").forEach(function (a) {
+      a.setAttribute("href", isEn ? "https://parklawyers.com.au/links/" : "https://parklawyers.com.au/links/?lang=ko");
     });
     var walk = function (el) {
       if (!el || el.tagName === "SCRIPT" || el.tagName === "STYLE" || el.tagName === "PRE") return;
