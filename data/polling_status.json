@@ -28,10 +28,42 @@
     "pass_mark": "65 Points (LIN 19/210)",
     "work_exp_cap": "Max 20 Pts (6D51)",
     "skillselect_occupations": "160 Occupations (15 October 2026)",
-    "state_nomination_quota": "20,350 Places (190: 12,850 / 491: 7,500)",
-    "vac_189_190_491": "$6,135 / $6,140",
+    "state_nomination_quota": "FY25–26 Fed Ref: 20,350 Places (190: 12,850 / 491: 7,500) · Live FY26–27 State Status",
+    "vac_189_190_491": "$6,135 / $6,140 (18+ $3,070, <18 $1,535)",
     "vac_191_pr": "$630 ($0 Min Income)",
     "qld_2026_27_min_hours": "20 Paid Hrs/Wk (ROIs Open 6 Nov 2026)"
+  },
+  "vac_schedule": {
+    "effective_date": "2026-07-01",
+    "authority": "Migration Regulations 1994 Compilation 289 (F2026C01017) Sch 1 items 1137/1138/1139/1241 & Home Affairs GetPriceList API",
+    "superseded_fy25_26_note_ko": "직전 FY2025–26 기준($4,910 / 성인 $2,455 / 자녀 $1,230)은 2026년 7월 1일 연례 인상으로 대체됨",
+    "superseded_fy25_26_note_en": "Prior FY2025–26 VACs ($4,910 / adult $2,455 / child $1,230) were superseded on 1 July 2026",
+    "subclasses": {
+      "189": {
+        "item": "1137",
+        "base": 6135,
+        "adult": 3070,
+        "child": 1535
+      },
+      "190": {
+        "item": "1138",
+        "base": 6140,
+        "adult": 3070,
+        "child": 1535
+      },
+      "491": {
+        "item": "1241",
+        "base": 6140,
+        "adult": 3070,
+        "child": 1535
+      },
+      "191": {
+        "item": "1139",
+        "base": 630,
+        "adult": 315,
+        "child": 160
+      }
+    }
   },
   "sources": [
     {

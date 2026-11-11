@@ -5,7 +5,52 @@
   const DEFAULT_SOURCES = [{"id": "migration_regs_sch6d", "category": "Federal Legislation", "name_ko": "Migration Regulations 1994 · Schedule 6D (General Points Test 189/190/491) & LIN 19/210", "name_en": "Migration Regulations 1994 · Schedule 6D (General Points Test) & Pool/Pass Mark 65 (LIN 19/210)", "authority": "Federal Register of Legislation", "url": "https://www.legislation.gov.au/F1996B03551/latest/text", "method": "FRL Compilation Store (meta.json + clauses.jsonl)", "cadence": "Monthly", "tracks": "Part 6D.1–6D.13 points items, 6D51 20-pt combined employment cap, 190 (+5 pts) & 491 (+15 pts)", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "a964fbdacae4f71a", "content_length": 3580174, "live_method": "frl-legis-store-c289-F2026C01017", "compilation": "289", "register_id": "F2026C01017", "effective_start": "2026-10-02", "clause_count": 2599}, {"id": "dha_189_190_491_vac", "category": "DHA Pricing API", "name_ko": "이민성 기술이민 비자 신청비 (GetPriceList · 189 $6,135 · 190/491 $6,140 · 191 $630)", "name_en": "Home Affairs Live Visa Pricing API (GetPriceList · 189 $6,135 · 190/491 $6,140 · 191 $630)", "authority": "Department of Home Affairs", "url": "https://immi.homeaffairs.gov.au/_layouts/15/api/data.aspx/GetPriceList", "method": "JSON POST API", "cadence": "Monthly (1 July Indexation)", "tracks": "189 Base $6,135; 190/491 Base $6,140 (18+ $3,070, <18 $1,535); 191 PR Base $630 (18+ $315, <18 $160)", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "0ab169e8525c9030", "content_length": 247792, "live_method": "dha-json-api-post"}, {"id": "dha_subclass_191_pr", "category": "Federal PR Pathway", "name_ko": "Subclass 191 (Permanent Residence · Skilled Regional) 영주권 전환 요건 (cl 191.212 / 191.214)", "name_en": "Subclass 191 (Permanent Residence · Skilled Regional) Criteria (cl 191.212 / 191.214)", "authority": "Department of Home Affairs", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191", "method": "SharePoint PageSchemaHiddenField JSON", "cadence": "Monthly", "tracks": "3 yrs on 491/494, 3 ATO NOAs, $0 minimum taxable income requirement (no $53,900 threshold), Condition 8579 compliance", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "89c65d3c3519b88b", "content_length": 1296914, "live_method": "https-direct-live"}, {"id": "dha_skillselect_rounds", "category": "SkillSelect Rounds", "name_ko": "SkillSelect 초청 라운드 직군별 컷오프(139개 직군) 및 주정부 노미네이션 연간 쿼터(20,350석)", "name_en": "SkillSelect Invitation Round Cut-Offs (139 Occupations) & State Nomination Allocations (20,350 Places)", "authority": "Department of Home Affairs", "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/invitation-rounds", "method": "PageSchemaHiddenField HTML Table Parser", "cadence": "Weekly", "tracks": "139 occupation minimum scores invited, tie-break dates, and 8-state 190/491 YTD nominations vs 20,350 quota", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "357e1f0dc7bcc09f", "content_length": 1356742, "live_method": "https-direct-live"}, {"id": "qld_migration", "category": "QLD State Nomination", "name_ko": "퀸즐랜드 주정부 노미네이션 (Migration Queensland · 2026–27 SNMP · 주 20h+ · 190 9개월/491 6개월 · 졸업생·건설우대)", "name_en": "Migration Queensland (2026–27 SNMP · 190/491 ≥20h/wk, Graduates, Construction & SBO Rules)", "authority": "Migration Queensland", "url": "https://www.migration.qld.gov.au/visa-options/skilled-visas", "method": "State Portal HTML Parser", "cadence": "Weekly", "tracks": "2026-27 SNMP published 30 Oct 2026 (ROIs open 6 Nov 2026), ≥20 paid hrs/wk, 2025-26 ATO NOA required onshore, Fee $630.30/$573, QSOL 209 onshore / 97 offshore", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "1a3e942983b97416", "content_length": 36213, "live_method": "https-direct-live"}, {"id": "nsw_migration", "category": "NSW State Nomination", "name_ko": "뉴사우스웨일스 주정부 노미네이션 (Investment NSW · 190 및 491 Pathway 1·2·3)", "name_en": "Investment NSW (Subclass 190 & Subclass 491 Pathways 1, 2 & 3 Regional Graduate)", "authority": "Investment NSW", "url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas", "method": "State Portal HTML Parser", "cadence": "Weekly", "tracks": "Fee $346.50/$315, 190 6m residency, 491 Path 1 (6m regional work @ TSMIT/CSIT), Path 2 (EOI invite 3m), Path 3 (Regional NSW Graduate 0m work)", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "ebe865a062ac4d57", "content_length": 161657, "live_method": "https-direct-live"}, {"id": "vic_migration", "category": "VIC State Nomination", "name_ko": "빅토리아 주정부 노미네이션 (Live in Melbourne · ROI · 빅토리아 숙련 연봉 평가 · 지방 491)", "name_en": "Live in Melbourne (VIC 190/491 ROI, Victorian Points Test & Onshore Skilled Earnings)", "authority": "Live in Melbourne (Victorian Government)", "url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas", "method": "State Portal HTML Parser", "cadence": "Weekly", "tracks": "ROI ($66) + Nomination ($198), Victorian skilled earnings assessment (ANZSCO 1-3), Onshore 491 requires Regional VIC residence & skilled work", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "0767e054fbb38f66", "content_length": 107945, "live_method": "https-direct-live"}, {"id": "wa_migration", "category": "WA State Nomination", "name_ko": "서호주 주정부 노미네이션 (Migration WA · 신청비 $0 · 졸업생 무경력 · 491 고용계약 면제)", "name_en": "Migration WA (WASMOL Sch 1/2 & Graduate Stream · $0 Fee, Contract Waivers)", "authority": "Migration WA", "url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program", "method": "State Portal HTML Parser", "cadence": "Weekly", "tracks": "$0 fee, No ROI, WA residents prioritized, 190 6m contract (waived for Construction & WA Graduates), 491 requires NO employment contract", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "c5e9e174c5285cff", "content_length": 330082, "live_method": "https-direct-live"}, {"id": "sa_migration", "category": "SA State Nomination", "name_ko": "남호주 주정부 노미네이션 (Move to South Australia · SA 취업 · SA 졸업생 · 외곽지방 · 해외)", "name_en": "Skilled & Business Migration SA (Onshore ROI, SA Graduates, Outer Regional SA & Offshore)", "authority": "Department of State Development SA", "url": "https://www.migration.sa.gov.au/visa-options/skilled-visas", "method": "State Portal HTML Parser", "cadence": "Weekly", "tracks": "Fee $394, Onshore ROI ($0), 190 (6-12m @ 30h/wk), 491 (6m @ 20h/wk), SA Graduates (75% SA study), Outer Regional SA (9m/6m)", "status": "cached_last_good", "freshness": "cached_snapshot", "http_status": 503, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-10-22T12:30:54+10:00", "sha256_prefix": "97f213445293cdc6", "content_length": 219763, "live_method": "cached-last-good"}, {"id": "tas_migration", "category": "TAS State Nomination", "name_ko": "태즈메이니아 주정부 노미네이션 (Migration Tasmania Gateway · Gold/Green/Orange Pass 6대 경로)", "name_en": "Migration Tasmania Gateway (Gold/Green/Orange-Plus/Orange Pass & 6 Pathways)", "authority": "Migration Tasmania", "url": "https://www.migration.tas.gov.au/skilled_migration", "method": "State Portal HTML Parser", "cadence": "Weekly", "tracks": "Fee $425.70, TSE (190: 6/9/15m @ 20h/wk; 491: 6m), TSG Graduate (190: 2yr study; 491: 1yr study, 0m work required), TER (3yr/2yr)", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "9b99e19295d157ef", "content_length": 25392, "live_method": "https-direct-live"}, {"id": "act_migration", "category": "ACT Territory Nomination", "name_ko": "호주 수도준주 노미네이션 (Canberra Matrix · 190 6개월/26주 · 491 3개월/13주 · 박사/482/SBO 특례)", "name_en": "ACT Canberra Matrix (Resident 190 26/30 wks · 491 3m/13 wks · PhD, SBO & 482 Streams)", "authority": "ACT Government Migration", "url": "https://www.act.gov.au/migration/skilled-migrants", "method": "Territory Portal HTML Parser", "cadence": "Weekly", "tracks": "Matrix Fee $27.50 + Nom Fee $357.50, 190 (6m res + 30h/wk 26/30w + Proficient Eng unless SL3-5/Chef), 491 (3m res + 15h/wk 13/15w), ACT PhD $0 fee", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "a5c5e2a8b1b273a9", "content_length": 40345, "live_method": "https-direct-live"}, {"id": "nt_migration", "category": "NT Territory Nomination", "name_ko": "노던준주 노미네이션 (MigrationNT · 직접 신청 $300 · NT 졸업생 · 6개월 거주/풀타임 · 해외 491)", "name_en": "MigrationNT (Direct Application $300 · NT Graduates, 6m Full-Time Resident & Offshore 491)", "authority": "MigrationNT", "url": "https://theterritory.com.au/migrate/migrate-to-work/northern-territory-government-visa-nomination", "method": "Territory Portal HTML Parser", "cadence": "Weekly", "tracks": "Fee $300, No ROI pool (direct application), Onshore non-grad 6m res + 6m full-time (35h/wk) + 12m offer, Offshore 491 (Priority/Family/Job Offer)", "status": "verified_ok", "freshness": "live_verified", "http_status": 200, "last_checked": "2026-11-09T07:45:08+10:00", "last_verified_ok": "2026-11-09T07:45:08+10:00", "sha256_prefix": "e93049a4a07271d9", "content_length": 36238, "live_method": "insane-search-waf-bypass"}];
   const DEFAULT_SKILLSELECT_DATA = {"status": "verified_ok", "http_status": 200, "bytes": 1356742, "sha256": "357e1f0dc7bcc09fdcbbb7829ca27fc804f34f7644421a79f2f7a7857cb19e07", "sha256_prefix": "357e1f0dc7bcc09f", "latest_round_date": "15 October 2026", "round_summary": [], "occupation_count": 160, "occupation_cutoffs": [{"occupation": "Actuary", "min_score_189": 85, "min_score_491_fs": "03/09/2026"}, {"occupation": "Agricultural Consultant", "min_score_189": 80, "min_score_491_fs": "03/09/2026"}, {"occupation": "Agricultural Scientist", "min_score_189": 80, "min_score_491_fs": "04/09/2026"}, {"occupation": "Airconditioning and Mechanical Services Plumber", "min_score_189": 65, "min_score_491_fs": "19/09/2026"}, {"occupation": "Airconditioning and Refrigeration Mechanic", "min_score_189": 65, "min_score_491_fs": "08/10/2026"}, {"occupation": "Architect", "min_score_189": 85, "min_score_491_fs": "06/08/2026"}, {"occupation": "Arts Administrator or Manager", "min_score_189": 65, "min_score_491_fs": "01/10/2026"}, {"occupation": "Audiologist", "min_score_189": 70, "min_score_491_fs": "29/10/2025"}, {"occupation": "Automotive Electrician", "min_score_189": 65, "min_score_491_fs": "10/10/2026"}, {"occupation": "Barrister", "min_score_189": 70, "min_score_491_fs": "27/03/2026"}, {"occupation": "Biotechnologist", "min_score_189": 90, "min_score_491_fs": "09/02/2026"}, {"occupation": "Boat Builder and Repairer", "min_score_189": 65, "min_score_491_fs": "13/08/2026"}, {"occupation": "Bricklayer", "min_score_189": 65, "min_score_491_fs": "17/09/2026"}, {"occupation": "Cabinetmaker", "min_score_189": 65, "min_score_491_fs": "14/10/2026"}, {"occupation": "Cardiologist", "min_score_189": 75, "min_score_491_fs": "14/10/2026"}, {"occupation": "Carpenter", "min_score_189": 65, "min_score_491_fs": "21/09/2026"}, {"occupation": "Carpenter and Joiner", "min_score_189": 65, "min_score_491_fs": "15/09/2026"}, {"occupation": "Cartographer", "min_score_189": 85, "min_score_491_fs": "25/03/2026"}, {"occupation": "Chemical Engineer", "min_score_189": 85, "min_score_491_fs": "10/07/2026"}, {"occupation": "Chemist", "min_score_189": 80, "min_score_491_fs": "01/01/2026"}, {"occupation": "Child Care Centre Manager", "min_score_189": 85, "min_score_491_fs": "14/10/2026"}, {"occupation": "Chiropractor", "min_score_189": 80, "min_score_491_fs": "04/09/2026"}, {"occupation": "Clinical Psychologist", "min_score_189": 90, "min_score_491_fs": "28/09/2026"}, {"occupation": "Conservator", "min_score_189": 90, "min_score_491_fs": "16/09/2026"}, {"occupation": "Construction Project Manager", "min_score_189": 80, "min_score_491_fs": "04/09/2026"}, {"occupation": "Dancer or Choreographer", "min_score_189": 65, "min_score_491_fs": "07/07/2026"}, {"occupation": "Dermatologist", "min_score_189": 85, "min_score_491_fs": "03/04/2026"}, {"occupation": "Diagnostic and Interventional Radiologist", "min_score_189": 75, "min_score_491_fs": "27/09/2026"}, {"occupation": "Drainer", "min_score_189": 65, "min_score_491_fs": "15/07/2026"}, {"occupation": "Early Childhood (Pre-primary School) Teacher", "min_score_189": 90, "min_score_491_fs": "22/07/2026"}, {"occupation": "Economist", "min_score_189": 65, "min_score_491_fs": "15/10/2026"}, {"occupation": "Educational Psychologist", "min_score_189": 65, "min_score_491_fs": "15/10/2026"}, {"occupation": "Electrical Engineering Draftsperson", "min_score_189": 65, "min_score_491_fs": "15/10/2026"}, {"occupation": "Electrical Engineering Technician", "min_score_189": 65, "min_score_491_fs": "29/09/2026"}, {"occupation": "Electrician (General)", "min_score_189": 65, "min_score_491_fs": "18/09/2026"}, {"occupation": "Electrician (Special Class)", "min_score_189": 65, "min_score_491_fs": "19/02/2026"}, {"occupation": "Electronic Equipment Trades Worker", "min_score_189": 65, "min_score_491_fs": "13/10/2026"}, {"occupation": "Electronic Instrument Trades Worker (General)", "min_score_189": 65, "min_score_491_fs": "12/10/2026"}, {"occupation": "Electronic Instrument Trades Worker (Special Class)", "min_score_189": 65, "min_score_491_fs": "29/08/2026"}, {"occupation": "Electronics Engineer", "min_score_189": 95, "min_score_491_fs": "21/11/2025"}, {"occupation": "Emergency Medicine Specialist", "min_score_189": 70, "min_score_491_fs": "19/07/2025"}, {"occupation": "Endocrinologist", "min_score_189": 80, "min_score_491_fs": "06/03/2026"}, {"occupation": "Engineering Manager", "min_score_189": 80, "min_score_491_fs": "04/08/2026"}, {"occupation": "Environmental Consultant", "min_score_189": 65, "min_score_491_fs": "01/10/2026"}, {"occupation": "Environmental Manager", "min_score_189": 65, "min_score_491_fs": "13/10/206"}, {"occupation": "Environmental Research Scientist", "min_score_189": 65, "min_score_491_fs": "06/10/2026"}, {"occupation": "Environmental Scientists nec", "min_score_189": 65, "min_score_491_fs": "13/10/2026"}, {"occupation": "Fibrous Plasterer", "min_score_189": 65, "min_score_491_fs": "04/08/2026"}, {"occupation": "Fitter (General)", "min_score_189": 80, "min_score_491_fs": "12/08/2026"}, {"occupation": "Fitter-Welder", "min_score_189": 80, "min_score_491_fs": "13/08/2026"}, {"occupation": "Food Technologist", "min_score_189": 80, "min_score_491_fs": "20/12/2025"}, {"occupation": "Footballer", "min_score_189": 70, "min_score_491_fs": "28/05/2026"}, {"occupation": "Forester", "min_score_189": 80, "min_score_491_fs": "01/07/206"}, {"occupation": "Gasfitter", "min_score_189": 70, "min_score_491_fs": "29/09/2026"}, {"occupation": "Gastroenterologist", "min_score_189": 75, "min_score_491_fs": "16/04/2026"}, {"occupation": "General Practitioner", "min_score_189": 70, "min_score_491_fs": "18/11/2025"}, {"occupation": "Geophysicist", "min_score_189": 80, "min_score_491_fs": "28/08/2026"}, {"occupation": "Glazier", "min_score_189": 65, "min_score_491_fs": "10/09/2026"}, {"occupation": "Horse Trainer", "min_score_189": 65, "min_score_491_fs": "28/09/2026"}, {"occupation": "Hydrogeologist", "min_score_189": 80, "min_score_491_fs": "16/08/2026"}, {"occupation": "ICT Security Specialist", "min_score_189": 100, "min_score_491_fs": "08/11/2024"}, {"occupation": "Intensive Care Specialist", "min_score_189": 75, "min_score_491_fs": "23/12/2025"}, {"occupation": "Joiner", "min_score_189": 65, "min_score_491_fs": "21/08/2026"}, {"occupation": "Land Economist", "min_score_189": 65, "min_score_491_fs": "12/09/2026"}, {"occupation": "Landscape Architect", "min_score_189": 85, "min_score_491_fs": "28/07/2026"}, {"occupation": "Life Scientist (General)", "min_score_189": 90, "min_score_491_fs": "22/01/2026"}, {"occupation": "Life Scientists nec", "min_score_189": 90, "min_score_491_fs": "03/02/2026"}, {"occupation": "Lift mechanic", "min_score_189": 80, "min_score_491_fs": "12/11/2025"}, {"occupation": "Locksmith", "min_score_189": 65, "min_score_491_fs": "09/10/2026"}, {"occupation": "Management Consultant", "min_score_189": 80, "min_score_491_fs": "07/09/2026"}, {"occupation": "Marine Biologist", "min_score_189": 95, "min_score_491_fs": "16/09/2026"}, {"occupation": "Materials Engineer", "min_score_189": 85, "min_score_491_fs": "16/05/2026"}, {"occupation": "Medical Diagnostic Radiographer", "min_score_189": 70, "min_score_491_fs": "20/11/2025"}, {"occupation": "Medical Laboratory Scientist", "min_score_189": 80, "min_score_491_fs": "31/08/2026"}, {"occupation": "Medical Diagnostic Radiographer", "min_score_189": 70, "min_score_491_fs": "20/11/2025"}, {"occupation": "Medical Laboratory Scientist", "min_score_189": 80, "min_score_491_fs": "31/08/2026"}, {"occupation": "Medical Oncologist", "min_score_189": 70, "min_score_491_fs": "26/08/2025"}, {"occupation": "Medical Practitioners nec", "min_score_189": 70, "min_score_491_fs": "20/11/2025"}, {"occupation": "Medical Radiation Therapist", "min_score_189": 75, "min_score_491_fs": "27/05/2026"}, {"occupation": "Metal Fabricator", "min_score_189": 80, "min_score_491_fs": "28/08/2026"}, {"occupation": "Metal Machinist (First Class)", "min_score_189": 80, "min_score_491_fs": "10/08/2026"}, {"occupation": "Metallurgist", "min_score_189": 80, "min_score_491_fs": "25/08/2026"}, {"occupation": "Meteorologist", "min_score_189": 85, "min_score_491_fs": "11/03/2026"}, {"occupation": "Microbiologist", "min_score_189": 90, "min_score_491_fs": "04/01/2026"}, {"occupation": "Midwife", "min_score_189": 70, "min_score_491_fs": "18/10/2025"}, {"occupation": "Mining Engineer (excluding Petroleum)", "min_score_189": 80, "min_score_491_fs": "25/08/2026"}, {"occupation": "Multimedia Specialist", "min_score_189": 90, "min_score_491_fs": "01/06/2026"}, {"occupation": "Music Director", "min_score_189": 70, "min_score_491_fs": "15/09/2026"}, {"occupation": "Musician (Instrumental)", "min_score_189": 65, "min_score_491_fs": "29/09/2026"}, {"occupation": "Natural and Physical Science Professionals nec", "min_score_189": 85, "min_score_491_fs": "06/09/2026"}, {"occupation": "Neurologist", "min_score_189": 75, "min_score_491_fs": "29/05/2026"}, {"occupation": "Neurosurgeon", "min_score_189": 85, "min_score_491_fs": "05/08/2026"}, {"occupation": "Nuclear Medicine Technologist", "min_score_189": 70, "min_score_491_fs": "15/02/2026"}, {"occupation": "Nurse Practitioner", "min_score_189": 70, "min_score_491_fs": "18/08/2025"}, {"occupation": "Nursing Clinical Director", "min_score_189": 75, "min_score_491_fs": "17/11/2025"}, {"occupation": "Obstetrician and Gynaecologist", "min_score_189": 70, "min_score_491_fs": "20/10/2025"}, {"occupation": "Ophthalmologist", "min_score_189": 80, "min_score_491_fs": "16/09/2026"}, {"occupation": "Optometrist", "min_score_189": 80, "min_score_491_fs": "24/08/2026"}, {"occupation": "Orthopaedic Surgeon", "min_score_189": 80, "min_score_491_fs": "10/08/2026"}, {"occupation": "Orthotist or Prosthetist", "min_score_189": 80, "min_score_491_fs": "07/04/2026"}, {"occupation": "Osteopath", "min_score_189": 80, "min_score_491_fs": "02/09/2026"}, {"occupation": "Other Spatial Scientist", "min_score_189": 80, "min_score_491_fs": "28/08/2026"}, {"occupation": "Paediatrician", "min_score_189": 70, "min_score_491_fs": "23/06/2026"}, {"occupation": "Painting Trades Worker", "min_score_189": 70, "min_score_491_fs": "01/07/2026"}, {"occupation": "Panelbeater", "min_score_189": 65, "min_score_491_fs": "13/10/2026"}, {"occupation": "Pathologist", "min_score_189": 70, "min_score_491_fs": "18/10/2026"}, {"occupation": "Petroleum Engineer", "min_score_189": 80, "min_score_491_fs": "17/08/2026"}, {"occupation": "Physicist", "min_score_189": 80, "min_score_491_fs": "28/08/2026"}, {"occupation": "Physiotherapist", "min_score_189": 70, "min_score_491_fs": "20/11/2025"}, {"occupation": "Plumber (General)", "min_score_189": 65, "min_score_491_fs": "11/06/2026"}, {"occupation": "Podiatrist", "min_score_189": 70, "min_score_491_fs": "15/03/2025"}, {"occupation": "Primary Health Organisation Manager", "min_score_189": 65, "min_score_491_fs": "14/10/2026"}, {"occupation": "Psychiatrist", "min_score_189": 70, "min_score_491_fs": "22/07/2025"}, {"occupation": "Psychologists nec", "min_score_189": 80, "min_score_491_fs": "15/08/2026"}, {"occupation": "Radiocommunications Technician", "min_score_189": 85, "min_score_491_fs": "31/01/2025"}, {"occupation": "Registered Nurse (Aged Care)", "min_score_189": 70, "min_score_491_fs": "20/11/2025"}, {"occupation": "Registered Nurse (Child and Family Health)", "min_score_189": 70, "min_score_491_fs": "21/08/2025"}, {"occupation": "Registered Nurse (Community Health)", "min_score_189": 70, "min_score_491_fs": "11/11/2025"}, {"occupation": "Registered Nurse (Critical Care and Emergency)", "min_score_189": 70, "min_score_491_fs": "18/11/2025"}, {"occupation": "Registered Nurse (Developmental Disability)", "min_score_189": 70, "min_score_491_fs": "10/04/2025"}, {"occupation": "Registered Nurse (Disability and Rehabilitation)", "min_score_189": 70, "min_score_491_fs": "26/08/2025"}, {"occupation": "Registered Nurse (Medical Practice)", "min_score_189": 70, "min_score_491_fs": "10/11/2025"}, {"occupation": "Registered Nurse (Medical)", "min_score_189": 70, "min_score_491_fs": "19/11/2025"}, {"occupation": "Registered Nurse (Mental Health)", "min_score_189": 70, "min_score_491_fs": "10/10/2025"}, {"occupation": "Registered Nurse (Paediatrics)", "min_score_189": 70, "min_score_491_fs": "19/11/2025"}, {"occupation": "Registered Nurse (Perioperative)", "min_score_189": 70, "min_score_491_fs": "19/11/2025"}, {"occupation": "Registered Nurse (Surgical)", "min_score_189": 70, "min_score_491_fs": "15/11/2025"}, {"occupation": "Registered Nurses nec", "min_score_189": 70, "min_score_491_fs": "19/11/2025"}, {"occupation": "Roof Plumber", "min_score_189": 65, "min_score_491_fs": "20/09/2026"}, {"occupation": "Secondary School Teacher", "min_score_189": 80, "min_score_491_fs": "04/09/2026"}, {"occupation": "Sheetmetal Trades Worker", "min_score_189": 65, "min_score_491_fs": "12/08/2026"}, {"occupation": "Shipwright", "min_score_189": 65, "min_score_491_fs": "16/09/2025"}, {"occupation": "Social Worker", "min_score_189": 80, "min_score_491_fs": "03/09/2026"}, {"occupation": "Solicitor", "min_score_189": 65, "min_score_491_fs": "15/10/2026"}, {"occupation": "Solid Plasterer", "min_score_189": 65, "min_score_491_fs": "18/09/2026"}, {"occupation": "Sonographer", "min_score_189": 75, "min_score_491_fs": "29/09/2026"}, {"occupation": "Special Education Teachers nec", "min_score_189": 80, "min_score_491_fs": "21/07/2026"}, {"occupation": "Special Needs Teacher", "min_score_189": 80, "min_score_491_fs": "22/08/2026"}, {"occupation": "Specialist Physician (General Medicine)", "min_score_189": 75, "min_score_491_fs": "21/09/2026"}, {"occupation": "Specialist Physicians nec", "min_score_189": 85, "min_score_491_fs": "19/09/2026"}, {"occupation": "Speech Pathologist", "min_score_189": 70, "min_score_491_fs": "29/10/2025"}, {"occupation": "Statistician", "min_score_189": 85, "min_score_491_fs": "02/09/2026"}, {"occupation": "Stonemason", "min_score_189": 65, "min_score_491_fs": "15/09/2026"}, {"occupation": "Surgeon (General)", "min_score_189": 90, "min_score_491_fs": "12/09/2026"}, {"occupation": "Surveyor", "min_score_189": 80, "min_score_491_fs": "15/09/2025"}, {"occupation": "Technical Cable Jointer", "min_score_189": 70, "min_score_491_fs": "19/08/2026"}, {"occupation": "Telecommunications Engineer", "min_score_189": 85, "min_score_491_fs": "14/10/2026"}, {"occupation": "Telecommunications Field Engineer", "min_score_189": 85, "min_score_491_fs": "11/10/2026"}, {"occupation": "Telecommunications Network Engineer", "min_score_189": 85, "min_score_491_fs": "06/10/2026"}, {"occupation": "Telecommunications Network Planner", "min_score_189": 85, "min_score_491_fs": "11/10/2026"}, {"occupation": "Telecommunications Technical Officer or Technologist", "min_score_189": 85, "min_score_491_fs": "14/10/2026"}, {"occupation": "Tennis Coach", "min_score_189": 65, "min_score_491_fs": "01/12/2025"}, {"occupation": "University Lecturer", "min_score_189": 90, "min_score_491_fs": "14/07/2026"}, {"occupation": "Urologist", "min_score_189": 100, "min_score_491_fs": "04/06/2026"}, {"occupation": "Valuer", "min_score_189": 65, "min_score_491_fs": "10/10/2026"}, {"occupation": "Veterinarian", "min_score_189": 80, "min_score_491_fs": "02/09/2026"}, {"occupation": "Wall and Floor Tiler", "min_score_189": 65, "min_score_491_fs": "19/09/2026"}, {"occupation": "Welder (First Class)", "min_score_189": 80, "min_score_491_fs": "01/09/2026"}, {"occupation": "Welfare Centre Manager", "min_score_189": 65, "min_score_491_fs": "28/09/2026"}, {"occupation": "Zoologist", "min_score_189": 95, "min_score_491_fs": "23/07/2026"}], "national_state_quota": {"total_190": 12850, "total_491": 7500, "combined_total": 20350}, "state_allocations": [{"state": "NSW", "quota_190": 2100, "quota_491": 1500, "total_quota": 3600, "ytd_190": "11", "ytd_491": "0", "round_model": "EOI Target Sectors (190/491 Path 2) + Direct Application (491 Path 1 & 3)", "min_cutoff_note_ko": "190: 건설·의료·디지털 75~95점 / 491 Path 1·3: 65점+ 직접 신청", "min_cutoff_note_en": "190: Priority sectors 75–95 pts / 491 Path 1 & 3: Direct apply from 65 pts"}, {"state": "VIC", "quota_190": 2700, "quota_491": 700, "total_quota": 3400, "ytd_190": "0", "ytd_491": "0", "round_model": "Live in Melbourne ROI (Ranked by Onshore Skilled Earnings & Priority Sectors)", "min_cutoff_note_ko": "190 온쇼어: 연봉($90k~$120k+) + 의료·교육·건설 우선 / 491: 지방 VIC 재직 필수", "min_cutoff_note_en": "190 Onshore: Ranked by skilled earnings ($90k+) & Healthcare/Teaching/Construction"}, {"state": "WA", "quota_190": 2000, "quota_491": 1400, "total_quota": 3400, "ytd_190": "17", "ytd_491": "120", "round_model": "Monthly Direct EOI Invitation (WA Residents Ranked #1, $0 Fee)", "min_cutoff_note_ko": "건설·기능직 65~75점 / 의료·교육 75~85점 / WA 졸업생 75~90점 (신청비 $0)", "min_cutoff_note_en": "Building & Construction 65–75 pts / Healthcare & Teaching 75–85 pts / WA Grads 75–90 pts"}, {"state": "QLD", "quota_190": 1850, "quota_491": 650, "total_quota": 2500, "ytd_190": "7", "ytd_491": "<5", "round_model": "Migration Queensland ROI (2026–27 ROIs Open 6 Nov 2026 · ≥20h/wk)", "min_cutoff_note_ko": "건설 3개월(65~75점) / 일반·졸업생 온쇼어(190 9개월·491 6개월, 주 20시간+ · 2025–26 NOA 필수)", "min_cutoff_note_en": "Construction 3m (65–75 pts) / Onshore Skilled & Grad (9m/6m ≥20h/wk, 2025–26 NOA required)"}, {"state": "SA", "quota_190": 1350, "quota_491": 900, "total_quota": 2250, "ytd_190": "0", "ytd_491": "0", "round_model": "SA Onshore ROI + Monthly Offshore EOI Rounds (464 Occupations)", "min_cutoff_note_ko": "온쇼어 SA 취업·졸업생 65~80점 / 오프쇼어 EOI 최소 65~85점 (직군별 상이)", "min_cutoff_note_en": "Onshore SA Employment & Graduates 65–80 pts / Offshore EOI min 65–85 pts"}, {"state": "TAS", "quota_190": 1100, "quota_491": 750, "total_quota": 1850, "ytd_190": "271", "ytd_491": "96", "round_model": "Migration Tasmania Gateway (Gold / Green / Orange-Plus / Orange Pass)", "min_cutoff_note_ko": "Gold Pass 즉시 초청 / Green Pass 8주 내 초청 / Orange-Plus 우선속성 갯수 순", "min_cutoff_note_en": "Gold Pass immediate / Green Pass within 8 wks / Orange-Plus ranked by attributes"}, {"state": "NT", "quota_190": 950, "quota_491": 800, "total_quota": 1750, "ytd_190": "188", "ytd_491": "208", "round_model": "Direct Application via MigrationNT Portal (Criteria-Based, Non-Points Ranked)", "min_cutoff_note_ko": "Schedule 6D 65점 충족 + NT 6개월 풀타임 재직(또는 NT 2년 졸업생) 시 직접 승인", "min_cutoff_note_en": "Schedule 6D 65 pts + 6m full-time NT work (or 2yr NT Graduate) via direct portal"}, {"state": "ACT", "quota_190": 800, "quota_491": 800, "total_quota": 1600, "ytd_190": "<5", "ytd_491": "<5", "round_model": "ACT Canberra Matrix Ranking + ACT PhD Streamlined ($0 Fee, Auto-Invite)", "min_cutoff_note_ko": "Canberra Matrix 자체 점수(직군별 65~115 Matrix pts) / ACT 박사(PhD) 무점수 즉시 초청", "min_cutoff_note_en": "Canberra Matrix occupation cut-offs (65–115 Matrix pts) / ACT PhD streamlined"}]};
 
-  const DEFAULT_PROGRAM_STATUS = {"schema_version": "2026-10-28.1", "generated_at": "2026-11-09T07:45:08+10:00", "as_at_date": "2026-11-09", "dama_navigator_url": "https://changa9090.github.io/parkco-dama-navigator/", "dama_link_ko": "DAMA 일정·직종·완화 기준은 DAMA 네비게이터에서 확인하세요.", "dama_link_en": "For DAMA deadlines, occupations, and concessions, see the DAMA Navigator.", "records": [{"id": "nsw_190", "source_id": "nsw_190", "jurisdiction": "NSW", "subclass": "190", "program_year": null, "program_year_source": "unsaid", "badge": "unsaid", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "이 조회에서 2026–27 개방·마감 문장은 없음. 직접 신청 불가(초청 전용 · 초청 유효 14일, 연장 불가).", "summary_en": "No 2026–27 open/closed banner on page. Direct application is not permitted (invitation-only; 14-day non-extendable window).", "quote": "You cannot directly apply for NSW nomination.", "secondary_quote": "Your invitation to apply will be valid for 14 days only. When you apply, you need to provide valid documents to substantiate every claim made in your EOI. This 14-day window will not be extended.", "source_url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-nominated-visa-subclass-190", "source_title": "NSW Skilled Nominated visa (subclass 190)", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "421ee825ff0629d4e96bcd5daef7ef5c62f929ac4f276046281c80083df6f0f1", "gaps_ko": ["2026–27 배정 자리 수 미기재", "접수 개시·마감 문장 없음", "주 정부 수수료 미기재"], "history": [], "consecutive_failures": 0}, {"id": "nsw_491", "source_id": "nsw_491", "jurisdiction": "NSW", "subclass": "491", "program_year": null, "program_year_source": "unsaid", "badge": "closed", "places": null, "places_quote": "", "places_claim_state": "absent", "pathway_1_status": "Currently Closed", "summary_ko": "현재 프로그램 연도(연도 숫자 미표기) 신청 마감 · 배정 자리 전량 소진. Pathway 1 상태: Currently Closed.", "summary_en": "Applications closed for the current program year (year number unstated; places fully allocated). Pathway 1: Currently Closed.", "quote": "applications are now closed for the current program year, as all available nomination places have been fully allocated.", "secondary_quote": "Apply For Nomination: Currently Closed.", "source_url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-work-regional-visa-subclass-491", "source_title": "NSW Skilled Work Regional visa (subclass 491)", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "35811af475050094f24ac59dd09f4f059a9274904a254e625abe93fbb14e2878", "gaps_ko": ["프로그램 연도 숫자 미표기(current program year)", "배정 자리 수 미기재", "수수료 미기재"], "history": [], "consecutive_failures": 0}, {"id": "vic_190", "source_id": "vic_prog", "jurisdiction": "VIC", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "open", "places": 900, "places_quote": "For 2026–27, Victoria has been provided with 900 nomination places for the Skilled Nominated visa (subclass 190).", "places_claim_state": "current", "summary_ko": "2026–27 ROI 접수 중. 주 페이지 발표 자리 900석 (ROI $60/GST 포함 $66, 노미 $180/$198).", "summary_en": "2026–27 ROIs open for subclass 190. State-published places: 900.", "quote": "For 2026–27, Victoria has been provided with 900 nomination places for the Skilled Nominated visa (subclass 190).", "secondary_quote": "Victoria’s 2026–27 skilled visa nomination program is now open for Registrations of Interest for the Skilled Nominated visa (subclass 190).", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program", "source_title": "2026-27 Skilled visa nomination program", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577", "gaps_ko": [], "history": [], "consecutive_failures": 0}, {"id": "vic_491", "source_id": "vic_prog", "jurisdiction": "VIC", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "closed", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "2026–27 491 배정 자리 미확정 · 현재 491 ROI 접수 중단.", "summary_en": "2026–27 subclass 491 places not yet finalised; 491 ROIs are not currently being accepted.", "quote": "Victoria’s 2026–27 nomination places for the Skilled Work Regional (Provisional) visa (subclass 491) have not yet been finalised.", "secondary_quote": "Registrations of Interest for subclass 491 nomination are not currently being accepted.", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program", "source_title": "2026-27 Skilled visa nomination program", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577", "gaps_ko": ["2026–27 491 배정 자리 수 미확정", "491 재개 일정 미기재"], "history": [], "consecutive_failures": 0}, {"id": "qld_190", "source_id": "qld_home", "jurisdiction": "QLD", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "next_program_year_opening": "unsaid", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "2026–27 SNMP 발표 완료(2026-10-30) · 신규 ROI 접수 2026-11-06 개시 예정. 온쇼어 지원자는 ROI 제출 전 2025–26 소득세 신고 및 ATO NOA 수령 필수(단일 서브클래스 택1 · 전 스트림 주 20시간+ 유급근무).", "summary_en": "2026–27 SNMP is now published (30 Oct 2026); ROIs open on 6 November 2026. Onshore applicants must hold their 2025–26 ATO Notice of Assessment (NOA) before submitting an ROI.", "quote": "Queensland's State Nominated Migration Program (SNMP) for 2026-27 is now published.", "secondary_quote": "Registrations of Interest (ROIs) will open on 6 November 2026. Onshore applicants must have lodged their 2025–26 tax return and received their ATO Notice of Assessment (NOA) before submitting an ROI.", "source_url": "https://www.migration.qld.gov.au/", "source_title": "Migration Queensland · Home", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134", "gaps_ko": ["홈페이지에 2026–27 배정 자리 수 미기재", "수수료($630.30/$573) 및 주 20시간+ 요건은 개별 세부 페이지에 기재"], "history": [{"field": "quote", "quote": "Queensland's Registrations of Interest (ROIs) for the 2025-26 State Nominated Migration Program (SNMP) are now closed.", "badge": "closed", "retrieved_on": "2026-10-28", "archived_at": "2026-11-02"}], "consecutive_failures": 0, "mentioned_date": "2026-11-06"}, {"id": "qld_491", "source_id": "qld_home", "jurisdiction": "QLD", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "next_program_year_opening": "unsaid", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "2026–27 SNMP 발표 완료(2026-10-30) · 신규 ROI 접수 2026-11-06 개시 예정. 온쇼어 지원자는 ROI 제출 전 2025–26 소득세 신고 및 ATO NOA 수령 필수(단일 서브클래스 택1 · SBO는 2024.06.01~2025.09.19 창업분만 2027.04.30 전 ROI 가능).", "summary_en": "2026–27 SNMP is now published (30 Oct 2026); ROIs open on 6 November 2026. Onshore applicants must hold their 2025–26 ATO Notice of Assessment (NOA) before submitting an ROI.", "quote": "Queensland's State Nominated Migration Program (SNMP) for 2026-27 is now published.", "secondary_quote": "Registrations of Interest (ROIs) will open on 6 November 2026. Onshore applicants must have lodged their 2025–26 tax return and received their ATO Notice of Assessment (NOA) before submitting an ROI.", "source_url": "https://www.migration.qld.gov.au/", "source_title": "Migration Queensland · Home", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134", "gaps_ko": ["홈페이지에 2026–27 배정 자리 수 미기재", "수수료($630.30/$573) 및 주 20시간+ 요건은 개별 세부 페이지에 기재"], "history": [{"field": "quote", "quote": "Queensland's Registrations of Interest (ROIs) for the 2025-26 State Nominated Migration Program (SNMP) are now closed.", "badge": "closed", "retrieved_on": "2026-10-28", "archived_at": "2026-11-02"}], "consecutive_failures": 0, "mentioned_date": "2026-11-06"}, {"id": "wa_190", "source_id": "wa_snmp", "jurisdiction": "WA", "subclass": "190", "program_year": null, "program_year_source": "unsaid", "badge": "unsaid", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "이 조회에서 2026–27 개방·마감 문장은 없음(앵커·뉴스는 2025–26). 스트림: General(WASMOL Sch 1·2), Defence(Sch 3), Graduate(WA 2년 학업). 각주: WA 건설업 직종 초청자는 고용계약 면제.", "summary_en": "No 2026–27 open/closed statement on page (anchors/news reference 2025–26). Footnote: WA building & construction sector invitees do not need an employment contract.", "quote": "Applicants invited through a WA building and construction industry sector occupation (as per the WA State nomination occupation lists) do not need to have a contract of employment.", "secondary_quote": "for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA.", "source_url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program", "source_title": "Migration WA · State Nominated Migration Program", "retrieved_on": "2026-11-09", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387", "gaps_ko": ["2026–27 개시·마감 문장 없음", "배정 자리 수 미기재", "수수료 문구 미확인", "요건 표 체크 표시 텍스트 미추출"], "history": [], "consecutive_failures": 0}, {"id": "wa_491", "source_id": "wa_snmp", "jurisdiction": "WA", "subclass": "491", "program_year": null, "program_year_source": "unsaid", "badge": "unsaid", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "이 조회에서 2026–27 개방·마감 문장은 없음(앵커·뉴스는 2025–26). 스트림: General(WASMOL Sch 1·2), Defence(Sch 3), Graduate(WA 2년 학업). 각주: WA 건설업 직종 초청자는 고용계약 면제.", "summary_en": "No 2026–27 open/closed statement on page (anchors/news reference 2025–26). Footnote: WA building & construction sector invitees do not need an employment contract.", "quote": "Applicants invited through a WA building and construction industry sector occupation (as per the WA State nomination occupation lists) do not need to have a contract of employment.", "secondary_quote": "for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA.", "source_url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program", "source_title": "Migration WA · State Nominated Migration Program", "retrieved_on": "2026-11-09", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387", "gaps_ko": ["2026–27 개시·마감 문장 없음", "배정 자리 수 미기재", "수수료 문구 미확인", "요건 표 체크 표시 텍스트 미추출"], "history": [], "consecutive_failures": 0}, {"id": "sa_190", "source_id": "sa_news", "jurisdiction": "SA", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "mentioned_date": "2027-01-31", "summary_ko": "2026-10-22 공지: SA 거주·취업자 중 현 비자가 2027-01-31까지 만료되는 대상에 한해 온쇼어 ROI 개방. 해외 지원자는 ROI 없이 SkillSelect EOI로 선발(뉴스 우선 분야: building & construction, defence, education, engineering, health, manufacturing).", "summary_en": "22 Oct 2026 update: Onshore ROI open for SA residents working in SA with visas expiring by 31 Jan 2027; offshore selected directly via SkillSelect EOI.", "quote": "South Australia is now open for Registrations of Interest (ROI) for individuals living and working in South Australia whose current visas are due to expire by 31 January 2027.", "secondary_quote": "with a focus on candidates working in priority sectors, including building and construction, defence, education, engineering, health and manufacturing.", "source_url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update", "source_title": "South Australia’s General Skilled Migration Program Update (22 Oct 2026)", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949", "gaps_ko": ["2026–27 배정 자리 수 미기재", "수수료 전용 표 미확인($394 단순 링크 문구는 수수료 레코드로 단정 안 함)"], "history": [], "consecutive_failures": 0}, {"id": "sa_491", "source_id": "sa_news", "jurisdiction": "SA", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "mentioned_date": "2027-01-31", "summary_ko": "2026-10-22 공지: SA 거주·취업자 중 현 비자가 2027-01-31까지 만료되는 대상에 한해 온쇼어 ROI 개방. 해외 지원자는 ROI 없이 SkillSelect EOI로 선발(뉴스 우선 분야: building & construction, defence, education, engineering, health, manufacturing).", "summary_en": "22 Oct 2026 update: Onshore ROI open for SA residents working in SA with visas expiring by 31 Jan 2027; offshore selected directly via SkillSelect EOI.", "quote": "South Australia is now open for Registrations of Interest (ROI) for individuals living and working in South Australia whose current visas are due to expire by 31 January 2027.", "secondary_quote": "with a focus on candidates working in priority sectors, including building and construction, defence, education, engineering, health and manufacturing.", "source_url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update", "source_title": "South Australia’s General Skilled Migration Program Update (22 Oct 2026)", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949", "gaps_ko": ["2026–27 배정 자리 수 미기재", "수수료 전용 표 미확인($394 단순 링크 문구는 수수료 레코드로 단정 안 함)"], "history": [], "consecutive_failures": 0}, {"id": "tas_190", "source_id": "tas_news", "jurisdiction": "TAS", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "open", "places": 1250, "total_state_places": 2050, "places_quote": "1,250 nomination places for subclass 190", "places_claim_state": "current", "mentioned_date": "2026-08-17", "summary_ko": "2026-08-17 개시 공지(갱신 2026-08-05, 이후 마감 공지 없음): 주 전체 2,050석 중 190 배정 1,250석. 8월 20일부터 주 단위 초청 · ROI 무료, 노미 수수료 $387(GST 포함 $425.70) · TSE Gold 단일 직장 주 30시간 · PIL $57,000/년 유지.", "summary_en": "2026–27 opening notice: 1,250 places for subclass 190 (of 2,050 total). Weekly invitations; ROI free, nomination fee $387 ($425.70 incl. GST).", "quote": "Tasmania has now received a total 2,050 nomination allocations for the 2026-27 program year.", "secondary_quote": "The service fee to apply for nomination has increased to $387 ($425.70 including GST). There remains no charge to submit a Registration of Interest.", "source_url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois", "source_title": "Migration Tasmania · 2026-27 Program Opening Notice", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685", "gaps_ko": [], "history": [], "consecutive_failures": 0}, {"id": "tas_491", "source_id": "tas_news", "jurisdiction": "TAS", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "open", "places": 800, "total_state_places": 2050, "places_quote": "800 nomination places for subclass 491.", "places_claim_state": "current", "osop_closed": true, "mentioned_date": "2026-08-17", "summary_ko": "2026-08-17 개시 공지: 주 전체 2,050석 중 491 배정 800석(ROI 접수 중). 단, 해외 491 Overseas Skilled Occupation Profiles(초청 전용 경로)는 2026–27 초청 미실시.", "summary_en": "2026–27 opening notice: 800 places for subclass 491 (of 2,050 total). Subclass 491 Overseas Skilled Occupation Profiles invitation-only pathway has no invitations planned for 2026–27.", "quote": "Tasmania has now received a total 2,050 nomination allocations for the 2026-27 program year.", "secondary_quote": "Subclass 491 Overseas Skilled Occupation Profiles - Invitation Only Pathway - No invitations planned for 2026-27", "source_url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois", "source_title": "Migration Tasmania · 2026-27 Program Opening Notice", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685", "gaps_ko": [], "history": [], "consecutive_failures": 0}, {"id": "act_190", "source_id": "act_round", "jurisdiction": "ACT", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "mentioned_date": "2026-10-12", "summary_ko": "2026–27 회계연도 배정 미발표(2025–26 배정 190 800석·잔여 0은 전년도 수치). 참고: 2026-10-12 라운드에서 190 초청 발행(박사 54, SBO 18[최소 120점], 거주 Critical 126, 해외 Critical 63 · 재원 연도는 페이지 미설명).", "summary_en": "2026–27 financial year allocation has not yet been announced (800 places / 0 remaining was 2025–26). Separate page fact: 12 Oct 2026 round issued 190 invitations only.", "quote": "The allocation for the 2026-27 financial year has not yet been announced.", "secondary_quote": "Matrix nominating Doctorate Streamlined Pathway 190 nominations: 54 invitations 491 nominations: 0 invitations", "source_url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round", "source_title": "Canberra Matrix Invitation Round", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5", "gaps_ko": ["2026–27 연간 배정 자리 수 미발표", "10월 12일 초청분의 배정 연도 미설명"], "history": [], "consecutive_failures": 0}, {"id": "act_491", "source_id": "act_round", "jurisdiction": "ACT", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "mentioned_date": "2026-10-12", "summary_ko": "2026–27 회계연도 배정 미발표(2025–26 배정 491 800석·잔여 0은 전년도 수치). 참고: 2026-10-12 라운드의 491 초청은 0건.", "summary_en": "2026–27 financial year allocation has not yet been announced (800 places / 0 remaining was 2025–26). Separate page fact: 12 Oct 2026 round issued 0 subclass 491 invitations.", "quote": "The allocation for the 2026-27 financial year has not yet been announced.", "secondary_quote": "Matrix nominating Doctorate Streamlined Pathway 190 nominations: 54 invitations 491 nominations: 0 invitations", "source_url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round", "source_title": "Canberra Matrix Invitation Round", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5", "gaps_ko": ["2026–27 연간 배정 자리 수 미발표"], "history": [], "consecutive_failures": 0}, {"id": "nt_190", "source_id": "nt_nom", "jurisdiction": "NT", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "closed", "places": null, "places_quote": "", "places_claim_state": "absent", "offshore_closed": true, "summary_ko": "2026–27 충분한 신청 접수 완료 · Subclass 190 및 모든 해외(Offshore) 스트림 신규 노미네이션 신청 접수 중단.", "summary_en": "Sufficient applications received for 2026–27 · no new nomination applications accepted for subclass 190 or any offshore streams.", "quote": "No new nomination applications will be accepted at this time for Skilled Nominated (subclass 190) visa or any offshore streams.", "secondary_quote": "The NT Government has now received sufficient applications for the 2026-27 program year.", "source_url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination", "source_title": "NT Government Visa Nomination", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032", "gaps_ko": ["2026–27 배정 자리 수 미기재", "주 정부 수수료 미기재"], "history": [], "consecutive_failures": 0}, {"id": "nt_491", "source_id": "nt_nom", "jurisdiction": "NT", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "offshore_closed": true, "mentioned_date": "2027-09-30", "summary_ko": "2026–27 해외·일반 491 신규 접수 중단. 온쇼어 NT Graduate·NT Resident 중 2027-09-30 전 비자 만료(485 불가)·만 45세 도래·점수 65점 미달 예정자만 예외 접수(허가 후 3년 거주·취업 약속).", "summary_en": "2026–27 offshore 491 closed; new 491 applications accepted by exception only for onshore NT Graduate/Resident applicants facing visa/age/points deadlines before 30 Sep 2027.", "quote": "The NT Government has now received sufficient applications for the 2026-27 program year.", "secondary_quote": "", "source_url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination", "source_title": "NT Government Visa Nomination", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032", "gaps_ko": ["2026–27 배정 자리 수 미기재", "주 정부 수수료 미기재"], "history": [], "consecutive_failures": 0}], "supplementary_records": [{"id": "vic_190_criteria", "source_id": "vic_190", "jurisdiction": "VIC", "kind": "criteria_note", "summary_ko": "VIC 190 요건 페이지 확인 항목: 빅토리아/해외 거주, 거주·취업 의사, ROI 선정, 45세 미만, Competent English+, 유효 기술심사, 65점+(주 5점 포함), 취업 필수 아님, 노미 신청 시 영어·기술심사 잔여 12주+, 노미 후 60일 내 비자 신청, 최소 2년 거주·취업, 평균 처리 20영업일.", "quote": "be living in Victoria or overseas, be committed to living and working in Victoria, have had your Registration of Interest (ROI) selected, be under 45 years of age, have at least Competent English", "secondary_quote": "The average processing time for skilled visa nomination applications is 20 business days.", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-nominated-visa-subclass-190", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "8f54999777871cbaa956077053fdac96a037cc631eef6a9e267ed55ce5bad47e", "history": []}, {"id": "vic_491_page", "source_id": "vic_491", "jurisdiction": "VIC", "kind": "status_corroboration", "summary_ko": "VIC 491 전용 페이지도 현재 미개방 및 491 ROI 미접수 명시.", "quote": "Victoria’s Skilled Work Regional (subclass 491) visa nomination program is not currently open, and Registrations of Interest for subclass 491 nomination are not being accepted.", "secondary_quote": "", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/491", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "3b8a61b0e3d99542e8536f98d93c87c94f144be8b47a617ef00ee15b6ed690bf", "history": []}, {"id": "vic_fees", "source_id": "vic_fees", "jurisdiction": "VIC", "kind": "fee_table", "summary_ko": "VIC 2026–27 공식 수수료 표: ROI $60(GST 포함 $66, 프로그램 연도당 1회), 190 노미 $180($198), 491 노미 $180($198).", "quote": "2026-27 fees Excluding GST Including GST* Registration of Interest $60 $66", "secondary_quote": "The Registration of Interest fee is charged once per program year.", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/fees", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "4020566eaa6607d50b9f16a8516e7897fd385fd69d36e42820b98ab3f601c68c", "history": []}, {"id": "qld_eligibility", "source_id": "qld_elig", "jurisdiction": "QLD", "kind": "criteria_note", "summary_ko": "QLD 자격 요건 허브: 호주 연방 이민성 비자 요건과 Migration Queensland 주정부 노미네이션 요건을 각각 별도로 모두 충족해야 함을 명시(세부 스트림별 주 20시간+·개월 수는 각 경로 페이지에 기재).", "quote": "To be considered for Queensland nomination, you need to meet the eligibility criteria of both the Australian Department of Home Affairs and Migration Queensland.", "secondary_quote": "Australian Government visa requirements and Migration Queensland nomination requirements are assessed separately, and both need to be satisfied.", "source_url": "https://www.migration.qld.gov.au/nomination-process/eligibility-criteria", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "7e0eb468c5b8f31c5bca2cf7e5194b4a15addfdefda226810de076f4684e018a", "history": [{"field": "quote", "quote": "Eligibility criteria are specific for each visa stream.", "badge": null, "retrieved_on": "2026-10-28", "archived_at": "2026-11-02"}]}, {"id": "sa_offshore", "source_id": "sa_offshore", "jurisdiction": "SA", "kind": "offshore_criteria_and_sectors", "summary_ko": "SA 해외 페이지(뉴스 목록과 별도): 2026–27 우선 산업 Construction, Engineering, Manufacturing, Trades, Health, Education. 최근 5년 내 숙련 경력 3년, 풀타임 주 20시간(SkillSelect 기준), 초청 후 14일 내 신청.", "quote": "For the 2026-27 GSM program, South Australia will prioritise candidates working in the following industries: Construction Engineering Manufacturing Trades Health Education", "secondary_quote": "Have at least three years of skilled work experience in your nominated or closely related occupation (within the last 5 years)", "source_url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants/moving-to-south-australia-from-overseas", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "00bbafe7fa14b4a4e922c6f4575409c19081f757f6cb8c15a7714633946bd871", "history": []}, {"id": "act_home_allocation", "source_id": "act_home", "jurisdiction": "ACT", "kind": "status_corroboration", "summary_ko": "ACT 홈: 2026–27 노미네이션 배정 자리는 연방 정부 미확정 상태.", "quote": "The ACT’s 2026-27 allocation of nomination places have not yet been confirmed by the Australian Government.", "secondary_quote": "", "source_url": "https://www.act.gov.au/migration", "retrieved_on": "2026-11-09", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "bb49d4f97b52da6af67086cbb349b60647b9f2c56995022474c55a2efb1f0d20", "history": []}, {"id": "act_190_criteria", "source_id": "act_190", "jurisdiction": "ACT", "kind": "criteria_note", "summary_ko": "ACT 190 기준 페이지: 비자 허가일(해외는 캔버라 도착일)부터 최소 2년 캔버라 거주·취업 서약(항목별 세부 점수표는 본문 미기재).", "quote": "you must live and work in Canberra for at least two years from visa grant, or if you are moving from overseas, date of arrival in Canberra.", "secondary_quote": "", "source_url": "https://www.act.gov.au/migration/skilled-migrants/190-nomination-criteria", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "c209efbce92e989cf3602467ef1f276778b2a1725ad92efbcd3381a64b828c18", "history": []}], "source_health": {"vic_prog": {"url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program", "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "vic_190": {"url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-nominated-visa-subclass-190", "content_sha256": "8f54999777871cbaa956077053fdac96a037cc631eef6a9e267ed55ce5bad47e", "consecutive_failures": 1, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 403, "status": "transient_failure"}, "vic_491": {"url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/491", "content_sha256": "3b8a61b0e3d99542e8536f98d93c87c94f144be8b47a617ef00ee15b6ed690bf", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "vic_fees": {"url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/fees", "content_sha256": "4020566eaa6607d50b9f16a8516e7897fd385fd69d36e42820b98ab3f601c68c", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "qld_home": {"url": "https://www.migration.qld.gov.au/", "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "qld_elig": {"url": "https://www.migration.qld.gov.au/nomination-process/eligibility-criteria", "content_sha256": "7e0eb468c5b8f31c5bca2cf7e5194b4a15addfdefda226810de076f4684e018a", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "nsw_190": {"url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-nominated-visa-subclass-190", "content_sha256": "421ee825ff0629d4e96bcd5daef7ef5c62f929ac4f276046281c80083df6f0f1", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "nsw_491": {"url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-work-regional-visa-subclass-491", "content_sha256": "35811af475050094f24ac59dd09f4f059a9274904a254e625abe93fbb14e2878", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "wa_snmp": {"url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program", "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "wa_home": {"url": "https://migration.wa.gov.au/", "content_sha256": "859a4fe630f6a316d67c7f7a3dfae253441f103feeae16f5c48306acd7040127", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "sa_news": {"url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update", "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "sa_offshore": {"url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants/moving-to-south-australia-from-overseas", "content_sha256": "00bbafe7fa14b4a4e922c6f4575409c19081f757f6cb8c15a7714633946bd871", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "sa_skilled": {"url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants", "content_sha256": "3bc3996ae08691b130e94c66c25d4cdf1831ed9a5d2f55607a50464de7240364", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "tas_news": {"url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois", "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "tas_home": {"url": "https://www.migration.tas.gov.au/", "content_sha256": "074665a97b76ba56107bf6f081d5b610fa9b72a046dabd928f1ca4b5dae6480d", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "act_home": {"url": "https://www.act.gov.au/migration", "content_sha256": "bb49d4f97b52da6af67086cbb349b60647b9f2c56995022474c55a2efb1f0d20", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "act_round": {"url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round", "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "act_190": {"url": "https://www.act.gov.au/migration/skilled-migrants/190-nomination-criteria", "content_sha256": "c209efbce92e989cf3602467ef1f276778b2a1725ad92efbcd3381a64b828c18", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "nt_nom": {"url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination", "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}}};
+  const DEFAULT_PROGRAM_STATUS = {"schema_version": "2026-10-28.1", "generated_at": "2026-11-09T07:45:08+10:00", "as_at_date": "2026-11-09", "dama_navigator_url": "https://changa9090.github.io/parkco-dama-navigator/", "dama_link_ko": "DAMA 일정·직종·완화 기준은 DAMA 네비게이터에서 확인하세요.", "dama_link_en": "For DAMA deadlines, occupations, and concessions, see the DAMA Navigator.", "records": [{"id": "nsw_190", "source_id": "nsw_190", "jurisdiction": "NSW", "subclass": "190", "program_year": null, "program_year_source": "unsaid", "badge": "unsaid", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "이 조회에서 2026–27 개방·마감 문장은 없음. 직접 신청 불가(초청 전용 · 초청 유효 14일, 연장 불가).", "summary_en": "No 2026–27 open/closed banner on page. Direct application is not permitted (invitation-only; 14-day non-extendable window).", "quote": "You cannot directly apply for NSW nomination.", "secondary_quote": "Your invitation to apply will be valid for 14 days only. When you apply, you need to provide valid documents to substantiate every claim made in your EOI. This 14-day window will not be extended.", "source_url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-nominated-visa-subclass-190", "source_title": "NSW Skilled Nominated visa (subclass 190)", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "421ee825ff0629d4e96bcd5daef7ef5c62f929ac4f276046281c80083df6f0f1", "gaps_ko": ["2026–27 배정 자리 수 미기재", "접수 개시·마감 문장 없음", "주 정부 수수료 미기재"], "history": [], "consecutive_failures": 0}, {"id": "nsw_491", "source_id": "nsw_491", "jurisdiction": "NSW", "subclass": "491", "program_year": null, "program_year_source": "unsaid", "badge": "closed", "places": null, "places_quote": "", "places_claim_state": "absent", "pathway_1_status": "Currently Closed", "summary_ko": "현재 프로그램 연도(연도 숫자 미표기) 신청 마감 · 배정 자리 전량 소진. Pathway 1 상태: Currently Closed.", "summary_en": "Applications closed for the current program year (year number unstated; places fully allocated). Pathway 1: Currently Closed.", "quote": "applications are now closed for the current program year, as all available nomination places have been fully allocated.", "secondary_quote": "Apply For Nomination: Currently Closed.", "source_url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-work-regional-visa-subclass-491", "source_title": "NSW Skilled Work Regional visa (subclass 491)", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "35811af475050094f24ac59dd09f4f059a9274904a254e625abe93fbb14e2878", "gaps_ko": ["프로그램 연도 숫자 미표기(current program year)", "배정 자리 수 미기재", "수수료 미기재"], "history": [], "consecutive_failures": 0}, {"id": "vic_190", "source_id": "vic_prog", "jurisdiction": "VIC", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "open", "places": 900, "places_quote": "For 2026–27, Victoria has been provided with 900 nomination places for the Skilled Nominated visa (subclass 190).", "places_claim_state": "current", "summary_ko": "2026–27 ROI 접수 중. 주 페이지 발표 자리 900석 (ROI $60/GST 포함 $66, 노미 $180/$198).", "summary_en": "2026–27 ROIs open for subclass 190. State-published places: 900.", "quote": "For 2026–27, Victoria has been provided with 900 nomination places for the Skilled Nominated visa (subclass 190).", "secondary_quote": "Victoria’s 2026–27 skilled visa nomination program is now open for Registrations of Interest for the Skilled Nominated visa (subclass 190).", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program", "source_title": "2026-27 Skilled visa nomination program", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577", "gaps_ko": [], "history": [], "consecutive_failures": 0}, {"id": "vic_491", "source_id": "vic_prog", "jurisdiction": "VIC", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "closed", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "2026–27 491 배정 자리 미확정 · 현재 491 ROI 접수 중단.", "summary_en": "2026–27 subclass 491 places not yet finalised; 491 ROIs are not currently being accepted.", "quote": "Victoria’s 2026–27 nomination places for the Skilled Work Regional (Provisional) visa (subclass 491) have not yet been finalised.", "secondary_quote": "Registrations of Interest for subclass 491 nomination are not currently being accepted.", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program", "source_title": "2026-27 Skilled visa nomination program", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577", "gaps_ko": ["2026–27 491 배정 자리 수 미확정", "491 재개 일정 미기재"], "history": [], "consecutive_failures": 0}, {"id": "qld_190", "source_id": "qld_home", "jurisdiction": "QLD", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "next_program_year_opening": "unsaid", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "2026–27 SNMP 발표 완료(2026-10-30) · 신규 ROI 접수 2026-11-06 개시 예정. 온쇼어 지원자는 ROI 제출 전 2025–26 소득세 신고 및 ATO NOA 수령 필수(단일 서브클래스 택1 · 전 스트림 주 20시간+ 유급근무).", "summary_en": "2026–27 SNMP is now published (30 Oct 2026); ROIs open on 6 November 2026. Onshore applicants must hold their 2025–26 ATO Notice of Assessment (NOA) before submitting an ROI.", "quote": "Queensland's State Nominated Migration Program (SNMP) for 2026-27 is now published.", "secondary_quote": "Registrations of Interest (ROIs) will open on 6 November 2026. Onshore applicants must have lodged their 2025–26 tax return and received their ATO Notice of Assessment (NOA) before submitting an ROI.", "source_url": "https://www.migration.qld.gov.au/", "source_title": "Migration Queensland · Home", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134", "gaps_ko": ["홈페이지에 2026–27 배정 자리 수 미기재", "수수료($630.30/$573) 및 주 20시간+ 요건은 개별 세부 페이지에 기재"], "history": [{"field": "quote", "quote": "Queensland's Registrations of Interest (ROIs) for the 2025-26 State Nominated Migration Program (SNMP) are now closed.", "badge": "closed", "retrieved_on": "2026-10-28", "archived_at": "2026-11-02"}], "consecutive_failures": 0, "mentioned_date": "2026-11-06"}, {"id": "qld_491", "source_id": "qld_home", "jurisdiction": "QLD", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "next_program_year_opening": "unsaid", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "2026–27 SNMP 발표 완료(2026-10-30) · 신규 ROI 접수 2026-11-06 개시 예정. 온쇼어 지원자는 ROI 제출 전 2025–26 소득세 신고 및 ATO NOA 수령 필수(단일 서브클래스 택1 · SBO는 2024.06.01~2025.09.19 창업분만 2027.04.30 전 ROI 가능).", "summary_en": "2026–27 SNMP is now published (30 Oct 2026); ROIs open on 6 November 2026. Onshore applicants must hold their 2025–26 ATO Notice of Assessment (NOA) before submitting an ROI.", "quote": "Queensland's State Nominated Migration Program (SNMP) for 2026-27 is now published.", "secondary_quote": "Registrations of Interest (ROIs) will open on 6 November 2026. Onshore applicants must have lodged their 2025–26 tax return and received their ATO Notice of Assessment (NOA) before submitting an ROI.", "source_url": "https://www.migration.qld.gov.au/", "source_title": "Migration Queensland · Home", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134", "gaps_ko": ["홈페이지에 2026–27 배정 자리 수 미기재", "수수료($630.30/$573) 및 주 20시간+ 요건은 개별 세부 페이지에 기재"], "history": [{"field": "quote", "quote": "Queensland's Registrations of Interest (ROIs) for the 2025-26 State Nominated Migration Program (SNMP) are now closed.", "badge": "closed", "retrieved_on": "2026-10-28", "archived_at": "2026-11-02"}], "consecutive_failures": 0, "mentioned_date": "2026-11-06"}, {"id": "wa_190", "source_id": "wa_snmp", "jurisdiction": "WA", "subclass": "190", "program_year": null, "program_year_source": "unsaid", "badge": "unsaid", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "이 조회에서 2026–27 개방·마감 문장은 없음(앵커·뉴스는 2025–26). 스트림: General(WASMOL Sch 1·2), Defence(Sch 3), Graduate(WA 2년 학업). 각주: WA 건설업 직종 초청자는 고용계약 면제.", "summary_en": "No 2026–27 open/closed statement on page (anchors/news reference 2025–26). Footnote: WA building & construction sector invitees do not need an employment contract.", "quote": "Applicants invited through a WA building and construction industry sector occupation (as per the WA State nomination occupation lists) do not need to have a contract of employment.", "secondary_quote": "for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA.", "source_url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program", "source_title": "Migration WA · State Nominated Migration Program", "retrieved_on": "2026-11-09", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387", "gaps_ko": ["2026–27 개시·마감 문장 없음", "배정 자리 수 미기재", "수수료 문구 미확인", "요건 표 체크 표시 텍스트 미추출"], "history": [], "consecutive_failures": 0}, {"id": "wa_491", "source_id": "wa_snmp", "jurisdiction": "WA", "subclass": "491", "program_year": null, "program_year_source": "unsaid", "badge": "unsaid", "places": null, "places_quote": "", "places_claim_state": "absent", "summary_ko": "이 조회에서 2026–27 개방·마감 문장은 없음(앵커·뉴스는 2025–26). 스트림: General(WASMOL Sch 1·2), Defence(Sch 3), Graduate(WA 2년 학업). 각주: WA 건설업 직종 초청자는 고용계약 면제.", "summary_en": "No 2026–27 open/closed statement on page (anchors/news reference 2025–26). Footnote: WA building & construction sector invitees do not need an employment contract.", "quote": "Applicants invited through a WA building and construction industry sector occupation (as per the WA State nomination occupation lists) do not need to have a contract of employment.", "secondary_quote": "for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA.", "source_url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program", "source_title": "Migration WA · State Nominated Migration Program", "retrieved_on": "2026-11-09", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387", "gaps_ko": ["2026–27 개시·마감 문장 없음", "배정 자리 수 미기재", "수수료 문구 미확인", "요건 표 체크 표시 텍스트 미추출"], "history": [], "consecutive_failures": 0}, {"id": "sa_190", "source_id": "sa_news", "jurisdiction": "SA", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "mentioned_date": "2027-01-31", "summary_ko": "2026-10-22 공지: SA 거주·취업자 중 현 비자가 2027-01-31까지 만료되는 대상에 한해 온쇼어 ROI 개방. 해외 지원자는 ROI 없이 SkillSelect EOI로 선발(뉴스 우선 분야: building & construction, defence, education, engineering, health, manufacturing).", "summary_en": "22 Oct 2026 update: Onshore ROI open for SA residents working in SA with visas expiring by 31 Jan 2027; offshore selected directly via SkillSelect EOI.", "quote": "South Australia is now open for Registrations of Interest (ROI) for individuals living and working in South Australia whose current visas are due to expire by 31 January 2027.", "secondary_quote": "with a focus on candidates working in priority sectors, including building and construction, defence, education, engineering, health and manufacturing.", "source_url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update", "source_title": "South Australia’s General Skilled Migration Program Update (22 Oct 2026)", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949", "gaps_ko": ["2026–27 배정 자리 수 미기재", "수수료 전용 표 미확인($394 단순 링크 문구는 수수료 레코드로 단정 안 함)"], "history": [], "consecutive_failures": 0}, {"id": "sa_491", "source_id": "sa_news", "jurisdiction": "SA", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "mentioned_date": "2027-01-31", "summary_ko": "2026-10-22 공지: SA 거주·취업자 중 현 비자가 2027-01-31까지 만료되는 대상에 한해 온쇼어 ROI 개방. 해외 지원자는 ROI 없이 SkillSelect EOI로 선발(뉴스 우선 분야: building & construction, defence, education, engineering, health, manufacturing).", "summary_en": "22 Oct 2026 update: Onshore ROI open for SA residents working in SA with visas expiring by 31 Jan 2027; offshore selected directly via SkillSelect EOI.", "quote": "South Australia is now open for Registrations of Interest (ROI) for individuals living and working in South Australia whose current visas are due to expire by 31 January 2027.", "secondary_quote": "with a focus on candidates working in priority sectors, including building and construction, defence, education, engineering, health and manufacturing.", "source_url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update", "source_title": "South Australia’s General Skilled Migration Program Update (22 Oct 2026)", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949", "gaps_ko": ["2026–27 배정 자리 수 미기재", "수수료 전용 표 미확인($394 단순 링크 문구는 수수료 레코드로 단정 안 함)"], "history": [], "consecutive_failures": 0}, {"id": "tas_190", "source_id": "tas_news", "jurisdiction": "TAS", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "open", "places": 1250, "total_state_places": 2050, "places_quote": "1,250 nomination places for subclass 190", "places_claim_state": "current", "mentioned_date": "2026-08-17", "summary_ko": "2026-08-17 개시 공지(갱신 2026-08-05, 이후 마감 공지 없음): 주 전체 2,050석 중 190 배정 1,250석. 8월 20일부터 주 단위 초청 · ROI 무료, 노미 수수료 $387(GST 포함 $425.70) · TSE Gold 단일 직장 주 30시간 · PIL $57,000/년 유지.", "summary_en": "2026–27 opening notice: 1,250 places for subclass 190 (of 2,050 total). Weekly invitations; ROI free, nomination fee $387 ($425.70 incl. GST).", "quote": "Tasmania has now received a total 2,050 nomination allocations for the 2026-27 program year.", "secondary_quote": "The service fee to apply for nomination has increased to $387 ($425.70 including GST). There remains no charge to submit a Registration of Interest.", "source_url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois", "source_title": "Migration Tasmania · 2026-27 Program Opening Notice", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685", "gaps_ko": [], "history": [], "consecutive_failures": 0}, {"id": "tas_491", "source_id": "tas_news", "jurisdiction": "TAS", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "open", "places": 800, "total_state_places": 2050, "places_quote": "800 nomination places for subclass 491.", "places_claim_state": "current", "osop_closed": true, "mentioned_date": "2026-08-17", "summary_ko": "2026-08-17 개시 공지: 주 전체 2,050석 중 491 배정 800석(ROI 접수 중). 단, 해외 491 Overseas Skilled Occupation Profiles(초청 전용 경로)는 2026–27 초청 미실시.", "summary_en": "2026–27 opening notice: 800 places for subclass 491 (of 2,050 total). Subclass 491 Overseas Skilled Occupation Profiles invitation-only pathway has no invitations planned for 2026–27.", "quote": "Tasmania has now received a total 2,050 nomination allocations for the 2026-27 program year.", "secondary_quote": "Subclass 491 Overseas Skilled Occupation Profiles - Invitation Only Pathway - No invitations planned for 2026-27", "source_url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois", "source_title": "Migration Tasmania · 2026-27 Program Opening Notice", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685", "gaps_ko": [], "history": [], "consecutive_failures": 0}, {"id": "act_190", "source_id": "act_round", "jurisdiction": "ACT", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "mentioned_date": "2026-10-12", "summary_ko": "2026–27 회계연도 배정 미발표(2025–26 배정 190 800석·잔여 0은 전년도 수치). 참고: 2026-10-12 라운드에서 190 초청 발행(박사 54, SBO 18[최소 120점], 거주 Critical 126, 해외 Critical 63 · 재원 연도는 페이지 미설명).", "summary_en": "2026–27 financial year allocation has not yet been announced (800 places / 0 remaining was 2025–26). Separate page fact: 12 Oct 2026 round issued 190 invitations only.", "quote": "The allocation for the 2026-27 financial year has not yet been announced.", "secondary_quote": "Matrix nominating Doctorate Streamlined Pathway 190 nominations: 54 invitations 491 nominations: 0 invitations", "source_url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round", "source_title": "Canberra Matrix Invitation Round", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5", "gaps_ko": ["2026–27 연간 배정 자리 수 미발표", "10월 12일 초청분의 배정 연도 미설명"], "history": [], "consecutive_failures": 0}, {"id": "act_491", "source_id": "act_round", "jurisdiction": "ACT", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "mentioned_date": "2026-10-12", "summary_ko": "2026–27 회계연도 배정 미발표(2025–26 배정 491 800석·잔여 0은 전년도 수치). 참고: 2026-10-12 라운드의 491 초청은 0건.", "summary_en": "2026–27 financial year allocation has not yet been announced (800 places / 0 remaining was 2025–26). Separate page fact: 12 Oct 2026 round issued 0 subclass 491 invitations.", "quote": "The allocation for the 2026-27 financial year has not yet been announced.", "secondary_quote": "Matrix nominating Doctorate Streamlined Pathway 190 nominations: 54 invitations 491 nominations: 0 invitations", "source_url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round", "source_title": "Canberra Matrix Invitation Round", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5", "gaps_ko": ["2026–27 연간 배정 자리 수 미발표"], "history": [], "consecutive_failures": 0}, {"id": "nt_190", "source_id": "nt_nom", "jurisdiction": "NT", "subclass": "190", "program_year": "2026-27", "program_year_source": "page", "badge": "closed", "places": null, "places_quote": "", "places_claim_state": "absent", "offshore_closed": true, "summary_ko": "2026–27 충분한 신청 접수 완료 · Subclass 190 및 모든 해외(Offshore) 스트림 신규 노미네이션 신청 접수 중단.", "summary_en": "Sufficient applications received for 2026–27 · no new nomination applications accepted for subclass 190 or any offshore streams.", "quote": "No new nomination applications will be accepted at this time for Skilled Nominated (subclass 190) visa or any offshore streams.", "secondary_quote": "The NT Government has now received sufficient applications for the 2026-27 program year.", "source_url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination", "source_title": "NT Government Visa Nomination", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032", "gaps_ko": ["2026–27 배정 자리 수 미기재", "주 정부 수수료 미기재"], "history": [], "consecutive_failures": 0}, {"id": "nt_491", "source_id": "nt_nom", "jurisdiction": "NT", "subclass": "491", "program_year": "2026-27", "program_year_source": "page", "badge": "limited", "places": null, "places_quote": "", "places_claim_state": "absent", "offshore_closed": true, "mentioned_date": "2027-09-30", "summary_ko": "2026–27 해외·일반 491 신규 접수 중단. 온쇼어 NT Graduate·NT Resident 중 2027-09-30 전 비자 만료(485 불가)·만 45세 도래·점수 65점 미달 예정자만 예외 접수(허가 후 3년 거주·취업 약속).", "summary_en": "2026–27 offshore 491 closed; new 491 applications accepted by exception only for onshore NT Graduate/Resident applicants facing visa/age/points deadlines before 30 Sep 2027.", "quote": "The NT Government has now received sufficient applications for the 2026-27 program year.", "secondary_quote": "", "source_url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination", "source_title": "NT Government Visa Nomination", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032", "gaps_ko": ["2026–27 배정 자리 수 미기재", "주 정부 수수료 미기재"], "history": [], "consecutive_failures": 0}], "supplementary_records": [{"id": "vic_190_criteria", "source_id": "vic_190", "jurisdiction": "VIC", "kind": "criteria_note", "summary_ko": "VIC 190 요건 페이지 확인 항목: 빅토리아/해외 거주, 거주·취업 의사, ROI 선정, 45세 미만, Competent English+, 유효 기술심사, 65점+(주 5점 포함), 취업 필수 아님, 노미 신청 시 영어·기술심사 잔여 12주+, 노미 후 60일 내 비자 신청, 최소 2년 거주·취업, 평균 처리 20영업일.", "quote": "be living in Victoria or overseas, be committed to living and working in Victoria, have had your Registration of Interest (ROI) selected, be under 45 years of age, have at least Competent English", "secondary_quote": "The average processing time for skilled visa nomination applications is 20 business days.", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-nominated-visa-subclass-190", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "8f54999777871cbaa956077053fdac96a037cc631eef6a9e267ed55ce5bad47e", "history": [], "summary_en": "VIC 190 criteria page check: live in Victoria or overseas, commit to live/work in Victoria for ≥2 yrs, selected ROI, under 45, Competent English+, valid skills assessment, 65+ pts (incl. 5 state pts), employment not mandatory, ≥12 wks validity left on English/skills assessment, apply within 60 days, avg processing 20 business days."}, {"id": "vic_491_page", "source_id": "vic_491", "jurisdiction": "VIC", "kind": "status_corroboration", "summary_ko": "VIC 491 전용 페이지도 현재 미개방 및 491 ROI 미접수 명시.", "quote": "Victoria’s Skilled Work Regional (subclass 491) visa nomination program is not currently open, and Registrations of Interest for subclass 491 nomination are not being accepted.", "secondary_quote": "", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/491", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "3b8a61b0e3d99542e8536f98d93c87c94f144be8b47a617ef00ee15b6ed690bf", "history": [], "summary_en": "Dedicated VIC 491 page also confirms subclass 491 nomination is not currently open and 491 ROIs are not being accepted."}, {"id": "vic_fees", "source_id": "vic_fees", "jurisdiction": "VIC", "kind": "fee_table", "summary_ko": "VIC 2026–27 공식 수수료 표: ROI $60(GST 포함 $66, 프로그램 연도당 1회), 190 노미 $180($198), 491 노미 $180($198).", "quote": "2026-27 fees Excluding GST Including GST* Registration of Interest $60 $66", "secondary_quote": "The Registration of Interest fee is charged once per program year.", "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/fees", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "4020566eaa6607d50b9f16a8516e7897fd385fd69d36e42820b98ab3f601c68c", "history": [], "summary_en": "Official VIC 2026–27 fee schedule: ROI $60 ($66 incl. GST, charged once per program year), 190 nomination $180 ($198 incl. GST), 491 nomination $180 ($198 incl. GST)."}, {"id": "qld_eligibility", "source_id": "qld_elig", "jurisdiction": "QLD", "kind": "criteria_note", "summary_ko": "QLD 자격 요건 허브: 호주 연방 이민성 비자 요건과 Migration Queensland 주정부 노미네이션 요건을 각각 별도로 모두 충족해야 함을 명시(세부 스트림별 주 20시간+·개월 수는 각 경로 페이지에 기재).", "quote": "To be considered for Queensland nomination, you need to meet the eligibility criteria of both the Australian Department of Home Affairs and Migration Queensland.", "secondary_quote": "Australian Government visa requirements and Migration Queensland nomination requirements are assessed separately, and both need to be satisfied.", "source_url": "https://www.migration.qld.gov.au/nomination-process/eligibility-criteria", "retrieved_on": "2026-11-05", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "7e0eb468c5b8f31c5bca2cf7e5194b4a15addfdefda226810de076f4684e018a", "history": [{"field": "quote", "quote": "Eligibility criteria are specific for each visa stream.", "badge": null, "retrieved_on": "2026-10-28", "archived_at": "2026-11-02"}], "summary_en": "QLD Eligibility Criteria Hub: Both Department of Home Affairs visa criteria and Migration Queensland nomination criteria are assessed separately and must both be satisfied."}, {"id": "sa_offshore", "source_id": "sa_offshore", "jurisdiction": "SA", "kind": "offshore_criteria_and_sectors", "summary_ko": "SA 해외 페이지(뉴스 목록과 별도): 2026–27 우선 산업 Construction, Engineering, Manufacturing, Trades, Health, Education. 최근 5년 내 숙련 경력 3년, 풀타임 주 20시간(SkillSelect 기준), 초청 후 14일 내 신청.", "quote": "For the 2026-27 GSM program, South Australia will prioritise candidates working in the following industries: Construction Engineering Manufacturing Trades Health Education", "secondary_quote": "Have at least three years of skilled work experience in your nominated or closely related occupation (within the last 5 years)", "source_url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants/moving-to-south-australia-from-overseas", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "00bbafe7fa14b4a4e922c6f4575409c19081f757f6cb8c15a7714633946bd871", "history": [], "summary_en": "SA Offshore page (separate from news list): 2026–27 priority industries are Construction, Engineering, Manufacturing, Trades, Health, and Education; requires ≥3 yrs skilled work in last 5 yrs (20h/wk SkillSelect standard) and application within 14 days of invitation."}, {"id": "act_home_allocation", "source_id": "act_home", "jurisdiction": "ACT", "kind": "status_corroboration", "summary_ko": "ACT 홈: 2026–27 노미네이션 배정 자리는 연방 정부 미확정 상태.", "quote": "The ACT’s 2026-27 allocation of nomination places have not yet been confirmed by the Australian Government.", "secondary_quote": "", "source_url": "https://www.act.gov.au/migration", "retrieved_on": "2026-11-09", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "bb49d4f97b52da6af67086cbb349b60647b9f2c56995022474c55a2efb1f0d20", "history": [], "summary_en": "ACT Migration Home: 2026–27 allocation of nomination places has not yet been confirmed by the Australian Government."}, {"id": "act_190_criteria", "source_id": "act_190", "jurisdiction": "ACT", "kind": "criteria_note", "summary_ko": "ACT 190 기준 페이지: 비자 허가일(해외는 캔버라 도착일)부터 최소 2년 캔버라 거주·취업 서약(항목별 세부 점수표는 본문 미기재).", "quote": "you must live and work in Canberra for at least two years from visa grant, or if you are moving from overseas, date of arrival in Canberra.", "secondary_quote": "", "source_url": "https://www.act.gov.au/migration/skilled-migrants/190-nomination-criteria", "retrieved_on": "2026-10-28", "last_checked": "2026-11-09T07:45:08+10:00", "claim_state": "current", "freshness": "live_verified", "content_sha256": "c209efbce92e989cf3602467ef1f276778b2a1725ad92efbcd3381a64b828c18", "history": [], "summary_en": "ACT 190 criteria page: commitment to live and work in Canberra for ≥2 years from visa grant (or arrival date in Canberra if offshore)."}], "source_health": {"vic_prog": {"url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program", "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "vic_190": {"url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-nominated-visa-subclass-190", "content_sha256": "8f54999777871cbaa956077053fdac96a037cc631eef6a9e267ed55ce5bad47e", "consecutive_failures": 1, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 403, "status": "transient_failure"}, "vic_491": {"url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/491", "content_sha256": "3b8a61b0e3d99542e8536f98d93c87c94f144be8b47a617ef00ee15b6ed690bf", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "vic_fees": {"url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/fees", "content_sha256": "4020566eaa6607d50b9f16a8516e7897fd385fd69d36e42820b98ab3f601c68c", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "qld_home": {"url": "https://www.migration.qld.gov.au/", "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "qld_elig": {"url": "https://www.migration.qld.gov.au/nomination-process/eligibility-criteria", "content_sha256": "7e0eb468c5b8f31c5bca2cf7e5194b4a15addfdefda226810de076f4684e018a", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "nsw_190": {"url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-nominated-visa-subclass-190", "content_sha256": "421ee825ff0629d4e96bcd5daef7ef5c62f929ac4f276046281c80083df6f0f1", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "nsw_491": {"url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-work-regional-visa-subclass-491", "content_sha256": "35811af475050094f24ac59dd09f4f059a9274904a254e625abe93fbb14e2878", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "wa_snmp": {"url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program", "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "wa_home": {"url": "https://migration.wa.gov.au/", "content_sha256": "859a4fe630f6a316d67c7f7a3dfae253441f103feeae16f5c48306acd7040127", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "sa_news": {"url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update", "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "sa_offshore": {"url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants/moving-to-south-australia-from-overseas", "content_sha256": "00bbafe7fa14b4a4e922c6f4575409c19081f757f6cb8c15a7714633946bd871", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "sa_skilled": {"url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants", "content_sha256": "3bc3996ae08691b130e94c66c25d4cdf1831ed9a5d2f55607a50464de7240364", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "tas_news": {"url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois", "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "tas_home": {"url": "https://www.migration.tas.gov.au/", "content_sha256": "074665a97b76ba56107bf6f081d5b610fa9b72a046dabd928f1ca4b5dae6480d", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "act_home": {"url": "https://www.act.gov.au/migration", "content_sha256": "bb49d4f97b52da6af67086cbb349b60647b9f2c56995022474c55a2efb1f0d20", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "act_round": {"url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round", "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "act_190": {"url": "https://www.act.gov.au/migration/skilled-migrants/190-nomination-criteria", "content_sha256": "c209efbce92e989cf3602467ef1f276778b2a1725ad92efbcd3381a64b828c18", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}, "nt_nom": {"url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination", "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032", "consecutive_failures": 0, "last_checked": "2026-11-09T07:45:08+10:00", "last_http_status": 200, "status": "live_verified"}}};
+
+  const DEFAULT_VAC_SCHEDULE = {"effective_date": "2026-07-01", "authority": "Migration Regulations 1994 Compilation 289 (F2026C01017) Sch 1 items 1137/1138/1139/1241 & Home Affairs GetPriceList API", "superseded_fy25_26_note_ko": "직전 FY2025–26 기준($4,910 / 성인 $2,455 / 자녀 $1,230)은 2026년 7월 1일 연례 인상으로 대체됨", "superseded_fy25_26_note_en": "Prior FY2025–26 VACs ($4,910 / adult $2,455 / child $1,230) were superseded on 1 July 2026", "subclasses": {"189": {"item": "1137", "base": 6135, "adult": 3070, "child": 1535}, "190": {"item": "1138", "base": 6140, "adult": 3070, "child": 1535}, "491": {"item": "1241", "base": 6140, "adult": 3070, "child": 1535}, "191": {"item": "1139", "base": 630, "adult": 315, "child": 160}}};
+
+  const KO_DOC_TITLE = "호주 일반기술이민 (189 · 190 · 491 Schedule 6D) 점수 계산기 & 8개 주정부 노미네이션 통합 네비게이터 | 법무법인 박앤코 (Park & Co Lawyers)";
+  const EN_DOC_TITLE = "Australia GSM Points Calculator (189 · 190 · 491 Schedule 6D) & 8-State Nomination Navigator | Park & Co Lawyers";
+
+  const ANZSCO_CODE_MAP = {
+    "254411": { occ: "Nurse Practitioner", label: "Nurse Practitioner" },
+    "254412": { occ: "Registered Nurse (Aged Care)", label: "Registered Nurse (Aged Care)" },
+    "254413": { occ: "Registered Nurse (Child and Family Health)", label: "Registered Nurse (Child and Family Health)" },
+    "254414": { occ: "Registered Nurse (Community Health)", label: "Registered Nurse (Community Health)" },
+    "254415": { occ: "Registered Nurse (Critical Care and Emergency)", label: "Registered Nurse (Critical Care and Emergency)" },
+    "254416": { occ: "Registered Nurse (Developmental Disability)", label: "Registered Nurse (Developmental Disability)" },
+    "254417": { occ: "Registered Nurse (Disability and Rehabilitation)", label: "Registered Nurse (Disability and Rehabilitation)" },
+    "254418": { occ: "Registered Nurse (Medical)", label: "Registered Nurse (Medical)" },
+    "254421": { occ: "Registered Nurse (Medical Practice)", label: "Registered Nurse (Medical Practice)" },
+    "254422": { occ: "Registered Nurse (Mental Health)", label: "Registered Nurse (Mental Health)" },
+    "254423": { occ: "Registered Nurse (Perioperative)", label: "Registered Nurse (Perioperative)" },
+    "254424": { occ: "Registered Nurse (Surgical)", label: "Registered Nurse (Surgical)" },
+    "254425": { occ: "Registered Nurse (Paediatrics)", label: "Registered Nurse (Paediatrics)" },
+    "254499": { occ: "Registered Nurses nec", label: "Registered Nurses nec" },
+    "254111": { occ: "Midwife", label: "Midwife" },
+    "262112": { occ: "ICT Security Specialist", label: "ICT Security Specialist" },
+    "261211": { occ: "Multimedia Specialist", label: "Multimedia Specialist" },
+    "261313": { occ: "", label: "Software Engineer" },
+    "261312": { occ: "", label: "Developer Programmer" },
+    "261311": { occ: "", label: "Analyst Programmer" },
+    "261111": { occ: "", label: "ICT Business Analyst" },
+    "263311": { occ: "Telecommunications Engineer", label: "Telecommunications Engineer" },
+    "263312": { occ: "Telecommunications Network Engineer", label: "Telecommunications Network Engineer" },
+    "233411": { occ: "Electronics Engineer", label: "Electronics Engineer" },
+    "233111": { occ: "Chemical Engineer", label: "Chemical Engineer" },
+    "233112": { occ: "Materials Engineer", label: "Materials Engineer" },
+    "232111": { occ: "Architect", label: "Architect" },
+    "133111": { occ: "Construction Project Manager", label: "Construction Project Manager" },
+    "241111": { occ: "Early Childhood (Pre-primary School) Teacher", label: "Early Childhood (Pre-primary School) Teacher" },
+    "241411": { occ: "Secondary School Teacher", label: "Secondary School Teacher" },
+    "253111": { occ: "General Practitioner", label: "General Practitioner" },
+    "252511": { occ: "Physiotherapist", label: "Physiotherapist" },
+    "272511": { occ: "Social Worker", label: "Social Worker" },
+    "271311": { occ: "Solicitor", label: "Solicitor" },
+    "331212": { occ: "Carpenter", label: "Carpenter" },
+    "341111": { occ: "Electrician (General)", label: "Electrician (General)" },
+    "334111": { occ: "Plumber (General)", label: "Plumber (General)" }
+  };
 
   const STATE = {
     lang: "ko",
@@ -14,12 +59,14 @@
     pts190: 70,
     pts491: 80,
     ageBlocked: false,
+    stemHovered: false,
     pointsInteracted: false,
     stateInteracted: false,
     costInteracted: false,
     sources: DEFAULT_SOURCES,
     skillselect: DEFAULT_SKILLSELECT_DATA,
     programStatus: DEFAULT_PROGRAM_STATUS,
+    vacSchedule: DEFAULT_VAC_SCHEDULE,
     selectedOcc: "Registered Nurses nec"
   };
 
@@ -62,6 +109,14 @@
     if (!q) return true;
     const target = String(occName || "").toLowerCase();
     if (target.includes(q)) return true;
+    const codeHit = ANZSCO_CODE_MAP[q];
+    if (codeHit) {
+      if (codeHit.occ && target === codeHit.occ.toLowerCase()) return true;
+      if (codeHit.label && target.includes(codeHit.label.toLowerCase())) return true;
+    }
+    if (/^2544\d{0,2}$/.test(q) && target.includes("registered nurse")) {
+      if (q.length < 6) return true;
+    }
     for (let i = 0; i < KO_OCC_ALIASES.length; i += 1) {
       const grp = KO_OCC_ALIASES[i];
       if (grp.ko.some((k) => q.includes(k) || k.includes(q))) {
@@ -116,6 +171,17 @@
     return `<span class="ps-badge ps-badge--${escHtml(b)}">${labels[b] || escHtml(b)}${cachedTag}</span>`;
   }
 
+  function formatLiveStatusShort(badge, en) {
+    const map = {
+      open: en ? "Open" : "접수 진행(Open)",
+      limited: en ? "Limited" : "제한 접수(Limited)",
+      closed: en ? "Closed" : "마감(Closed)",
+      unsaid: en ? "Awaiting notice" : "연방 배정·공지 대기",
+      needs_review: en ? "Review" : "확인 필요"
+    };
+    return map[badge] || badge;
+  }
+
   function formatStatePortalPlacesCell(stateCode, en) {
     const r190 = getProgramRecord(stateCode, "190");
     const r491 = getProgramRecord(stateCode, "491");
@@ -123,34 +189,40 @@
 
     const parts = [];
     if (r190?.total_state_places && (r190.places_claim_state === "current" || r491?.places_claim_state === "current")) {
-      const p190 = r190.places_claim_state === "current" && r190.places != null ? Number(r190.places).toLocaleString() : (en ? "unsaid" : "미기재");
-      const p491 = r491?.places_claim_state === "current" && r491?.places != null ? Number(r491.places).toLocaleString() : (en ? "unsaid" : "미기재");
+      const p190 = r190.places_claim_state === "current" && r190.places != null ? Number(r190.places).toLocaleString() : (en ? "unstated" : "미기재");
+      const p491 = r491?.places_claim_state === "current" && r491?.places != null ? Number(r491.places).toLocaleString() : (en ? "unstated" : "미기재");
       parts.push(en
-        ? `<strong>State notice: ${Number(r190.total_state_places).toLocaleString()}</strong> (190: ${p190} · 491: ${p491})`
-        : `<strong>주 페이지 발표: 합계 ${Number(r190.total_state_places).toLocaleString()}석</strong> (190: ${p190} · 491: ${p491})`);
+        ? `<strong>FY26–27 State Published: ${Number(r190.total_state_places).toLocaleString()}</strong> (190: ${p190} · 491: ${p491})`
+        : `<strong>FY26–27 주 발표: 합계 ${Number(r190.total_state_places).toLocaleString()}석</strong> (190: ${p190} · 491: ${p491})`);
     } else {
       if (r190?.places_claim_state === "current" && r190.places != null) {
         parts.push(en
-          ? `<strong>State 190: ${Number(r190.places).toLocaleString()}</strong>`
-          : `<strong>주 페이지 190: ${Number(r190.places).toLocaleString()}석</strong>`);
+          ? `<strong>FY26–27 State 190: ${Number(r190.places).toLocaleString()} places</strong>`
+          : `<strong>FY26–27 주 발표 190: ${Number(r190.places).toLocaleString()}석</strong>`);
       } else if (stateCode === "ACT" && isActiveCurrent(r190)) {
         parts.push(en
-          ? `2026–27 unannounced <span style="color:#64748B;">(800+800 on page was 2025–26)</span>`
-          : `2026–27 배정 미발표 <span style="color:#64748B;">(페이지의 800+800은 2025–26)</span>`);
+          ? `FY26–27 awaiting federal allocation <span style="color:#64748B;">(800+800 was FY25–26)</span>`
+          : `FY26–27 연방 배정 대기·미발표 <span style="color:#64748B;">(800+800은 전년도)</span>`);
+      } else if (stateCode === "NT" && isActiveCurrent(r190) && r190.badge === "closed") {
+        parts.push(en
+          ? `FY26–27 places unstated · 190 &amp; offshore closed`
+          : `FY26–27 배정량 미기재 · 190·해외 접수 마감`);
       } else {
-        parts.push(en ? `State places: unsaid` : `주 페이지 자리 수: 미기재`);
+        parts.push(en
+          ? `FY26–27 places: awaiting federal/state notice`
+          : `FY26–27 배정량: 연방 배정·주 발표 대기(미기재)`);
       }
       if (r491?.places_claim_state === "current" && r491.places != null) {
         parts.push(en
-          ? `<strong>State 491: ${Number(r491.places).toLocaleString()}</strong>`
-          : `<strong>주 페이지 491: ${Number(r491.places).toLocaleString()}석</strong>`);
+          ? `<strong>FY26–27 State 491: ${Number(r491.places).toLocaleString()} places</strong>`
+          : `<strong>FY26–27 주 발표 491: ${Number(r491.places).toLocaleString()}석</strong>`);
       } else if (stateCode === "VIC" && isActiveCurrent(r491) && r491.badge === "closed") {
-        parts.push(en ? `491: unfinalised (ROI closed)` : `491: 미확정 (ROI 중단)`);
+        parts.push(en ? `491: awaiting federal allocation (ROI closed)` : `491: 연방 배정 미확정 (ROI 중단)`);
       }
     }
     const b190 = r190?.badge || "unsaid";
     const b491 = r491?.badge || "unsaid";
-    parts.push(`<span style="font-size:11px;color:#475569;">190: <code>${escHtml(b190)}</code> · 491: <code>${escHtml(b491)}</code></span>`);
+    parts.push(`<span style="font-size:11px;color:#334155;font-weight:700;">190: ${escHtml(formatLiveStatusShort(b190, en))} · 491: ${escHtml(formatLiveStatusShort(b491, en))}</span>`);
     return `<div style="font-size:12px;line-height:1.45;">${parts.join("<br/>")}</div>`;
   }
 
@@ -247,6 +319,8 @@
 
   const I18N = {
     ko: {
+      ariaBrandHub: "법무법인 박앤코 통합 허브",
+      ariaQuickNav: "핵심 도구 바로가기",
       navBrandTitle: "법무법인 박앤코 · 일반기술이민",
       navPoints: "6D 점수계산",
       navCutoffs: "직군별 컷오프",
@@ -268,21 +342,85 @@
       btnCalcPoints: "내 Schedule 6D 점수 판정하기",
       btnCalcState: "8개 주정부 적격 여부 판정하기",
       btnCalcCost: "총비용 및 191 전환 판정하기",
+      ptFormHeading: "Schedule 6D 11대 평가 항목 입력",
+      lblPtAge: "1. 초청 시점 만 나이 (Part 6D.1)",
+      lblPtDob: "생년월일 입력(선택 · 브리즈번 기준 만 나이 & 연령 감점 D-Day)",
+      lblPtEnglish: "2. 영어 능력 (Part 6D.2 · 유효기간 3년)",
+      btnPteRef: "ⓘ LIN 25/016 PTE 기준표",
+      pteCardTitle: "📌 LIN 25/016 개정 PTE Academic 과목별 기준 (2025년 8월 7일 응시분부터 시행)",
+      pteColTier: "영어 등급 (배점)",
+      pteColIelts: "IELTS (L/R/W/S)",
+      pteColPost: "PTE (2025.08.07 이후)",
+      pteColPre: "2025.08.07 이전 응시",
+      ptePreComp: "각 50점 (50 each)",
+      ptePreProf: "각 65점 (65 each)",
+      ptePreSup: "각 79점 (79 each)",
+      lblPtOvExp: "3. 해외 숙련 경력 (Part 6D.3 · 최근 10년 내 주 20h+)",
+      lblPtAuExp: "4. 호주 내 숙련 경력 (Part 6D.4 · 최근 10년 내 주 20h+)",
+      lblPtEdu: "5. 최종 학력/자격 (Part 6D.7)",
+      lblPtPartner: "6. 배우자/파트너 자격 또는 미혼 (Part 6D.11)",
+      lblPtBonus: "7. 추가 가점 항목 (해당 항목 모두 체크 · Part 6D.6 / 6D.7A / 6D.8 / 6D.9 / 6D.10)",
+      chkAuStudy: "호주 학업 요건 충족 (2년/92주 이상 CRICOS · <strong>+5점</strong>)",
+      chkRegStudy: "호주 지정 지방(Regional) 캠퍼스 학업·거주 (<strong>+5점</strong>)",
+      chkStem: "호주 STEM/ICT 연구석사(Research) 또는 박사 2년+ (<strong>+10점</strong>)",
+      chkPy: "호주 Professional Year (회계·IT·엔지니어링 1년 수료 · <strong>+5점</strong>)",
+      chkCcl: "NAATI CCL 커뮤니티 언어 인증 취득 (<strong>+5점</strong>)",
       sec0_title: "호주 8개 주/준주 노미네이션 핵심 요건 & Schedule 6D 점수 구조 시각화",
       sec1_title: "호주 기술이민 Schedule 6D 법정 점수 정밀 계산기 (189 · 190 · 491 동시 산출)",
       sec1_desc: "초청 시점(Time of Invitation) 기준 나이·영어·해외 및 호주 숙련 경력(무경력·졸업생 0년 포함)·학력·파트너·추가 가점을 선택하면 Item 6D51 경력 합산 20점 상한과 만 45세 연령 상한을 반영해 189 · 190 · 491 점수를 동시에 산출합니다.",
-      ssExplorerTitle: "SkillSelect 직군별 실제 초청 컷오프 검색 & 8개 주 연간 노미네이션 쿼터(20,350석) 대조",
-      ssExplorerDesc: "경력이 0년(무경력·졸업생)인 경우에도 전체 초청 직군을 제한 없이 검색하고 직전 라운드 189 최저 초청 점수 및 주정부 190/491 현실 경쟁권 기준을 함께 비교할 수 있습니다.",
+      ssExplorerTitle: "SkillSelect 직군별 실제 초청 컷오프 검색 & 직전 연방 배정 참고치(FY25–26 20,350석) vs FY26–27 주별 실시간 접수 현황",
+      ssExplorerDesc: "경력이 0년(무경력·졸업생)인 경우에도 전체 초청 직군을 제한 없이 검색하고 직전 라운드 189 최저 초청 점수·직전 회계연도(FY2025–26) 연방 배정 참고치 및 FY2026–27 각 주정부의 실시간 접수 개방/배정 대기 상태를 함께 대조할 수 있습니다.",
+      ssFedRefBadge: "FY25–26 연방배정 참고: 20,350석 · FY26–27 주별 현황 대조",
+      ssOccCardTitle: "1. 직군별 실제 초청 컷오프 점수 검색 & 189·190·491 전략 비교",
+      lblSsOccSearch: "직군 영문·한글·ANZSCO 코드 실시간 검색",
+      phSsOccSearch: "예: 254418, Nurse/간호, 261313, Engineer, Carpenter/목수...",
+      thOccName: "직군명 (ANZSCO Occupation)",
+      thOccCut189: "189 실제 컷오프",
+      thOccVsMine: "내 189 점수 대비",
+      thOccStateStrat: "190(+5) / 491(+15) 전략",
+      ssQuotaCardTitle: "2. 직전 연방 배정 참고치(FY2025–26 20,350석) & SkillSelect YTD 발급 vs FY2026–27 주정부 실시간 접수 상태",
+      kpi190Label: "직전 FY25–26 190 연방 배정 참고치",
+      kpi190Val: "12,850석 (참고)",
+      kpi190Sub: "SkillSelect 전년도 기준 · Direct PR",
+      kpi491Label: "직전 FY25–26 491 연방 배정 참고치",
+      kpi491Val: "7,500석 (참고)",
+      kpi491Sub: "SkillSelect 전년도 기준 · 지방 5년→191",
+      kpiTotalLabel: "FY25–26 합계 참고치 vs FY26–27 현황",
+      kpiTotalVal: "20,350석 (FY25–26 Ref)",
+      kpiTotalSub: "FY26–27 주별 개방·배정 대기 여부는 아래 표 확인",
+      thQuotaState: "주/준주",
+      thQuota190: "190 직전 연방배정 참고 (YTD)",
+      thQuota491: "491 직전 연방배정 참고 (YTD)",
+      thQuotaTotal: "직전 배정 합계 (참고)",
+      thQuotaLiveStatus: "FY2026–27 주정부 실시간 접수 상태 & 발표 자리",
+      thQuotaModel: "선발 모델 및 주별 컷오프·접수 조건",
       sec2_title: "8개 주/준주 노미네이션(190 · 491) 조건 검증 & 내 프로필 맞춤 매칭기",
       sec2_desc: "현재 거주 주(또는 해외)·거주 및 근무 개월 수(무경력 0개월 포함)·주당 유급 근무시간·주내 대학 졸업 여부·직군 분야(건설·보건·일반)를 선택하면 8개 주/준주의 현재 접수 상태와 상설 요건 충족 여부를 즉시 판정합니다.",
       sec3_title: "491/494 → Subclass 191 영주권 전환 진단($0 소득하한) & 주정부+연방 비자비 계산기",
       sec3_desc: "Subclass 491 또는 494 비자 소지자가 3년 후 Subclass 191 영주권(cl 191.212 / 191.214)으로 전환할 때 적용되는 최저소득 폐지($0 기준 · NOA 3개 연도 제출) 규정과 주정부 노미네이션 수수료 및 FY2026–27 연방 비자 신청비(VAC) 총합을 산출합니다.",
+      exportCardTitle: "내 기술이민 점수(Schedule 6D) & 주정부 노미네이션 진단서 복사 · 인쇄(PDF) & 공식 상담 신청",
+      stateEncycSubTitle: "8개 주/준주별 190·491 세부 스트림 · 거주/근무/고용계약 · 수수료 정리",
+      stat191Sub: "최저소득 폐지 · ATO NOA 3개 연도 제출",
+      chart1Sub: "WA는 491 고용계약·경력 면제 및 신청비 $0이 적용되며 QLD는 2026–27부터 전 스트림 주 20시간+ 유급근무(190 9개월 / 491 6개월 · 2025–26 NOA 필수) 기준이 적용됩니다.",
+      chart2Sub: "나이(30점) + 영어(20점) + 경력합산(최대 20점) + 학력/STEM/호주학업/파트너 + 주정부 가점(+5/+15점) 구조입니다.",
+      solCalloutTitle: "내 직군의 ANZSCO/OSCA 기술심사기관 확인 및 대안 비자(482·186·DAMA) 동시 비교 안내",
+      solCalloutDesc: "법무법인 박앤코 종합 비자 솔루션 가이드에서 통합 직업군 리스트(SOL)·기술심사기관 검색·이력서 기반 비자 매칭 및 호주이민 실전 FAQ 백과를 이어서 확인할 수 있습니다.",
+      btnSidCompare: "SID 482·186·DAMA 허브 비교 →",
+      bioNameLink: "박창민 대표변호사 (Chang Min Park · QLS Accredited Specialist in Immigration Law)",
+      bioSubHtml: "법무법인 박앤코 (PNC Legal Pty Ltd t/a Park &amp; Co Lawyers · Underwood QLD) · 공식 이메일 <a href='mailto:enquiry@parkcolawyers.com' style='color:#0E3A3E;font-weight:700;'>enquiry@parkcolawyers.com</a>",
+      btnS57Diag: "🚨 s 57 · PIC 4020 통지서 진단 →",
+      btnArtRev: "⚖️ 행정재심기구(ART) 재심 검토 →",
+      disclaimerP1: "본 호주 일반기술이민(Subclasses 189 · 190 · 491 · 191) 및 8개 주정부 노미네이션 통합 네비게이터는 법무법인 박앤코(PNC Legal Pty Ltd t/a Park & Co Lawyers)가 1차 법령(Schedule 6D) 및 각 주정부 공식 가이드라인을 기반으로 제작한 정보 제공 도구입니다. 개별 사안에 대한 법률 자문을 대체하지 않습니다.",
+      disclaimerP2Html: "주정부 할당량(Quota)과 우선 초청 직군은 수시로 변동됩니다. SkillSelect EOI에서 입증 불가능한 점수를 과장 청구(Over-claiming)할 경우 초청 시점 점수 미달(<code>cl 189.224 / 190.214 / 491.215</code>)로 비자가 거절될 수 있으므로 EOI 또는 ROI 접수 전 박창민 대표변호사(QLS Accredited Specialist in Immigration Law · 공식 문의 허브: <a class='parkco-svc-link' href='https://parklawyers.com.au/links/?lang=ko' data-ko-href='https://parklawyers.com.au/links/?lang=ko' data-en-href='https://parklawyers.com.au/links/' target='_blank' rel='noopener' style='color:#0E3A3E;font-weight:700;'>parklawyers.com.au/links</a> · 이메일: <a href='mailto:enquiry@parkcolawyers.com' style='color:#0E3A3E;font-weight:700;'>enquiry@parkcolawyers.com</a>)와 상담하시기 바랍니다.",
+      footerFirmHtml: "<strong style='color:#FFFFFF;'>법무법인 박앤코 (PNC Legal Pty Ltd t/a Park &amp; Co Lawyers)</strong> · 박창민 대표변호사 (QLS Accredited Specialist in Immigration Law)",
       sec4_title: "1차 법령 데이터 출처(12개 연방·8개 주정부 포털 SHA-256) 및 법률 면책공고 확인",
       discStateTitle: "8개 주/준주(QLD~NT) 190·491 상설 요건 · 수수료 · 주의사항 백과사전 펼쳐보기",
       discChartsTitle: "배경 통계 · 8개 주 비교 차트 · Schedule 6D 배점 구조 펼쳐보기",
       discExpandHint: "클릭하여 열기"
     },
     en: {
+      ariaBrandHub: "Park & Co Lawyers Unified Hub",
+      ariaQuickNav: "Quick Navigation Tools",
       navBrandTitle: "Park & Co · Skilled Migration",
       navPoints: "6D Points",
       navCutoffs: "Cut-Offs",
@@ -304,15 +442,77 @@
       btnCalcPoints: "Calculate Schedule 6D Points",
       btnCalcState: "Assess 8-State Eligibility",
       btnCalcCost: "Calculate Total Fees & 191 PR",
+      ptFormHeading: "Schedule 6D 11-Factor Assessment Inputs",
+      lblPtAge: "1. Age at Time of Invitation (Part 6D.1)",
+      lblPtDob: "Optional Date of Birth (Auto Age & Birthday Cliff D-Day in Brisbane Time)",
+      lblPtEnglish: "2. English Language Ability (Part 6D.2 · 3-Year Validity)",
+      btnPteRef: "ⓘ LIN 25/016 PTE Table",
+      pteCardTitle: "📌 LIN 25/016 Revised PTE Academic Component Thresholds (Effective 7 August 2025)",
+      pteColTier: "English Tier (Points)",
+      pteColIelts: "IELTS (L/R/W/S)",
+      pteColPost: "PTE (On/After 7 Aug 2025)",
+      pteColPre: "Pre-7 Aug 2025 Test",
+      ptePreComp: "50 each",
+      ptePreProf: "65 each",
+      ptePreSup: "79 each",
+      lblPtOvExp: "3. Overseas Skilled Employment (Part 6D.3 · 20h+/wk in last 10 yrs)",
+      lblPtAuExp: "4. Australian Skilled Employment (Part 6D.4 · 20h+/wk in last 10 yrs)",
+      lblPtEdu: "5. Educational Qualifications (Part 6D.7)",
+      lblPtPartner: "6. Partner Skills or Single Status (Part 6D.11)",
+      lblPtBonus: "7. Bonus Point Factors (Tick all that apply · Parts 6D.6–6D.10)",
+      chkAuStudy: "Australian Study Requirement Met (≥2 academic yrs / 92 wks CRICOS · <strong>+5 pts</strong>)",
+      chkRegStudy: "Study &amp; Residence in Designated Regional Australia (<strong>+5 pts</strong>)",
+      chkStem: "Australian STEM/ICT Masters by Research or Doctorate ≥2 yrs (<strong>+10 pts</strong>)",
+      chkPy: "Australian Professional Year (Accounting / IT / Engineering 12m · <strong>+5 pts</strong>)",
+      chkCcl: "NAATI CCL Credentialed Community Language (<strong>+5 pts</strong>)",
       sec0_title: "8-State Nomination Requirements & Schedule 6D Points Visual Dashboard",
       sec1_title: "Statutory Schedule 6D GSM Points Calculator (Simultaneous 189 · 190 · 491)",
       sec1_desc: "Select your age at invitation, English score, overseas/Australian skilled experience (including 0-year graduates), qualifications, partner skills, and bonus factors to compute 189, 190, and 491 scores simultaneously.",
-      ssExplorerTitle: "SkillSelect Live Occupation Cut-Off Explorer & 8-State Annual Quotas (20,350 Places)",
-      ssExplorerDesc: "Search all invited occupations—even with 0 years of experience—and compare latest 189 cut-offs against realistic state 190/491 thresholds.",
+      ssExplorerTitle: "SkillSelect Live Occupation Cut-Off Explorer & Prior FY25–26 Federal Allocation Ref (20,350) vs Live FY26–27 State Status",
+      ssExplorerDesc: "Search all invited occupations—even with 0 years of experience—and compare latest 189 cut-offs, prior FY2025–26 federal allocation references, and live FY2026–27 State/Territory program intake status.",
+      ssFedRefBadge: "Prior FY25–26 Fed Allocation Ref: 20,350 · Live FY26–27 State Status",
+      ssOccCardTitle: "1. Live Occupation Cut-Off Search & 189 · 190 · 491 Strategy Comparison",
+      lblSsOccSearch: "Live Search by Occupation Name or ANZSCO Code",
+      phSsOccSearch: "e.g. 254418, Registered Nurse, 261313, Engineer, Carpenter...",
+      thOccName: "Occupation (ANZSCO)",
+      thOccCut189: "Latest 189 Cut-Off",
+      thOccVsMine: "vs Your 189 Score",
+      thOccStateStrat: "190 (+5) / 491 (+15) Strategy",
+      ssQuotaCardTitle: "2. Prior FY2025–26 Federal Allocation Reference (20,350) & YTD Nominations vs Live FY2026–27 State Program Status",
+      kpi190Label: "Prior FY25–26 190 Federal Ref",
+      kpi190Val: "12,850 (FY25–26 Ref)",
+      kpi190Sub: "Prior SkillSelect baseline · Direct PR",
+      kpi491Label: "Prior FY25–26 491 Federal Ref",
+      kpi491Val: "7,500 (FY25–26 Ref)",
+      kpi491Sub: "Prior SkillSelect baseline · Regional 5-Yr",
+      kpiTotalLabel: "FY25–26 Total Ref vs FY26–27 Live",
+      kpiTotalVal: "20,350 (FY25–26 Ref)",
+      kpiTotalSub: "Check live FY26–27 state status & published places below",
+      thQuotaState: "State",
+      thQuota190: "190 Prior FY25–26 Ref (YTD)",
+      thQuota491: "491 Prior FY25–26 Ref (YTD)",
+      thQuotaTotal: "Prior FY25–26 Total Ref",
+      thQuotaLiveStatus: "Live FY2026–27 State Program Status & Published Places",
+      thQuotaModel: "Selection Model & Live Intake Notes",
       sec2_title: "8-State & Territory (QLD–NT) Nomination Eligibility Combinator",
       sec2_desc: "Select your current jurisdiction (or offshore), residence/work months (0 allowed), weekly paid hours, local study, and industry sector to check live program intake status and standing eligibility.",
       sec3_title: "491/494 → Subclass 191 PR Transition ($0 Min Income) & Total Fee Calculator",
       sec3_desc: "Assess Subclass 191 permanent residency transition rules ($0 minimum taxable income · 3 ATO NOAs) and total State Nomination + FY2026–27 Federal VAC charges.",
+      exportCardTitle: "Copy, Print (PDF) & Enquire Online with Your GSM Points & State Nomination Brief",
+      stateEncycSubTitle: "8-State/Territory 190 & 491 Streams, Residency/Work Rules & Nomination Fees",
+      stat191Sub: "No min income · 3 yrs ATO NOAs required",
+      chart1Sub: "WA waives nomination fees ($0) & 491 job offers; QLD 2026–27 requires ≥20 paid hrs/wk across all streams (9m 190 / 6m 491 + 2025–26 ATO NOA).",
+      chart2Sub: "Age (30) + English (20) + Combined Work (max 20) + Qualifications/STEM/AU Study/Partner + State Nomination (+5/+15).",
+      solCalloutTitle: "Check Your ANZSCO/OSCA Assessing Authority & Compare 482 · 186 · DAMA Alternatives",
+      solCalloutDesc: "Use the Park & Co Visa Solution Guide to search the unified Skilled Occupation List (SOL), verify assessing authorities, match your resume, and browse our Practical Immigration FAQ Portal.",
+      btnSidCompare: "Compare SID 482 · 186 · DAMA Hub →",
+      bioNameLink: "Chang Min Park · Legal Practitioner Director (QLS Accredited Specialist in Immigration Law)",
+      bioSubHtml: "PNC Legal Pty Ltd t/a Park &amp; Co Lawyers (Underwood QLD) · Official Email <a href='mailto:enquiry@parkcolawyers.com' style='color:#0E3A3E;font-weight:700;'>enquiry@parkcolawyers.com</a>",
+      btnS57Diag: "🚨 s 57 · PIC 4020 Notice Triage →",
+      btnArtRev: "⚖️ ART Tribunal Review Assessment →",
+      disclaimerP1: "This Australia General Skilled Migration (Subclasses 189 · 190 · 491 · 191) and 8-State Nomination Navigator is a general legal information tool prepared by PNC Legal Pty Ltd t/a Park & Co Lawyers from primary legislation (Schedule 6D) and official State/Territory guidelines. It does not constitute legal advice for individual matters.",
+      disclaimerP2Html: "State nomination allocations and priority occupations change without notice. Over-claiming unsubstantiated points in a SkillSelect EOI can lead to visa refusal for failing the invitation score test (<code>cl 189.224 / 190.214 / 491.215</code>). Before lodging an EOI or ROI, consult Chang Min Park (QLS Accredited Specialist in Immigration Law · Official Hub: <a class='parkco-svc-link' href='https://parklawyers.com.au/links/' data-ko-href='https://parklawyers.com.au/links/?lang=ko' data-en-href='https://parklawyers.com.au/links/' target='_blank' rel='noopener' style='color:#0E3A3E;font-weight:700;'>parklawyers.com.au/links</a> · Email: <a href='mailto:enquiry@parkcolawyers.com' style='color:#0E3A3E;font-weight:700;'>enquiry@parkcolawyers.com</a>).",
+      footerFirmHtml: "<strong style='color:#FFFFFF;'>PNC Legal Pty Ltd t/a Park &amp; Co Lawyers</strong> · Chang Min Park, Legal Practitioner Director (QLS Accredited Specialist in Immigration Law)",
       sec4_title: "Primary Statutory & 8-State Portal Sources (12 Live SHA-256) & Legal Disclaimer",
       discStateTitle: "Expand 8-State/Territory (QLD–NT) Standing 190 & 491 Rules, Fees & Key Traps",
       discChartsTitle: "Expand Background Statistics, 8-State Comparison Charts & Schedule 6D Breakdown",
@@ -625,7 +825,7 @@
           <rect x="235" y="20" width="240" height="20" rx="4" fill="#7A1F2B"/>
           <text x="485" y="35" font-size="11" font-weight="800" fill="#7A1F2B">${en ? "Max 30 pts (Part 6D.1)" : "최대 30점 (Part 6D.1)"}</text>
 
-          <text x="24" y="68" font-size="11.5" font-weight="700" fill="#2E2E2E">${en ? "2. English (Superior IELTS 8.0 / PTE 79)" : "2. 영어 (Superior IELTS 8.0 / PTE 79)"}</text>
+          <text x="24" y="68" font-size="11.5" font-weight="700" fill="#2E2E2E">${en ? "2. English (Superior IELTS 8.0 / LIN 25/016 PTE)" : "2. 영어 (Superior IELTS 8.0 / LIN 25/016 PTE)"}</text>
           <rect x="235" y="54" width="160" height="20" rx="4" fill="#1F5A5E"/>
           <text x="405" y="69" font-size="11" font-weight="800" fill="#1F5A5E">${en ? "Max 20 pts (Part 6D.2)" : "최대 20점 (Part 6D.2)"}</text>
 
@@ -653,8 +853,181 @@
     }
   }
 
-  /* 2. Schedule 6D Points Test Calculator */
+  /* 2. Schedule 6D Prerequisite Guards, Birthday D-Day Countdown, PTE Ref & Points Calculator */
+  function applySchedule6DGuards() {
+    const en = STATE.lang === "en";
+    const auStudyEl = document.getElementById("pt-au-study");
+    const regStudyEl = document.getElementById("pt-reg-study");
+    const pyEl = document.getElementById("pt-py");
+    const stemEl = document.getElementById("pt-stem");
+    const eduVal = document.getElementById("pt-edu")?.value || "15";
+
+    const auStudyChecked = Boolean(auStudyEl?.checked);
+    if (regStudyEl) {
+      if (!auStudyChecked) regStudyEl.checked = false;
+      regStudyEl.disabled = !auStudyChecked;
+    }
+    if (pyEl) {
+      if (!auStudyChecked) pyEl.checked = false;
+      pyEl.disabled = !auStudyChecked;
+    }
+    document.getElementById("lbl-wrap-reg-study")?.classList?.toggle("is-disabled", !auStudyChecked);
+    document.getElementById("lbl-wrap-py")?.classList?.toggle("is-disabled", !auStudyChecked);
+
+    const eduAllowsStem = eduVal === "20" || eduVal === "15";
+    const stemAllowed = auStudyChecked && eduAllowsStem;
+    if (stemEl) {
+      if (!stemAllowed) stemEl.checked = false;
+      stemEl.disabled = !stemAllowed;
+    }
+    document.getElementById("lbl-wrap-stem")?.classList?.toggle("is-disabled", !stemAllowed);
+
+    const guardHintEl = document.getElementById("pt-au-study-guard-hint");
+    if (guardHintEl) {
+      if (!auStudyChecked) {
+        guardHintEl.hidden = false;
+        guardHintEl.innerHTML = en
+          ? "🔒 <strong>Schedule 6D Prerequisite Guard (Items 6D81 · 6D101 · 6D71)</strong>: Regional Study (+5 pts), Professional Year (+5 pts), and Specialist STEM Research (+10 pts) require meeting the <strong>Australian Study Requirement (+5 pts · Item 6D61 / reg 1.15F)</strong> first and are auto-zeroed until checked."
+          : "🔒 <strong>Schedule 6D 선행요건 자동 잠금 (Items 6D81 · 6D101 · 6D71)</strong>: 지방 캠퍼스 학업(+5점)·Professional Year(+5점)·STEM 연구석박사(+10점)는 먼저 <strong>호주 학업 요건 충족(+5점 · Item 6D61 / reg 1.15F)</strong>을 체크해야 활성화되며 미체크 시 자동으로 0점 처리됩니다.";
+      } else {
+        guardHintEl.hidden = true;
+        guardHintEl.innerHTML = "";
+      }
+    }
+
+    const stemWarnEl = document.getElementById("pt-stem-guard-warning");
+    if (stemWarnEl) {
+      const stemChecked = Boolean(stemEl?.checked);
+      const showStemWarn = stemChecked || STATE.stemHovered || eduVal === "15" || !eduAllowsStem;
+      if (showStemWarn) {
+        stemWarnEl.hidden = false;
+        stemWarnEl.innerHTML = en
+          ? `⚠️ <strong>Item 6D71 (LIN 19/219) Specialist Educational Qualification Warning</strong>: <strong>Coursework Masters and Bachelor (including Bachelor Honours) degrees do NOT qualify</strong>! Only an Australian <strong>Doctoral degree (PhD) or Masters degree by Research</strong> (at least 2 academic years CRICOS in an eligible STEM/ICT field) qualifies for +10 pts.${!eduAllowsStem ? " (Auto-disabled because current qualification is Diploma/Trade or None.)" : ""}`
+          : `⚠️ <strong>Item 6D71 (LIN 19/219) STEM 전문학위(+10점) 주의</strong>: 일반 <strong>수업석사(Coursework Masters) 및 학사·우등학사(Bachelor Honours)는 절대 해당하지 않습니다!</strong> 호주 대학에서 최소 2학사연도(92주 CRICOS) 이상 이수한 <strong>박사(Doctoral degree) 또는 연구석사(Masters degree by Research · 지정 STEM/ICT 분야)</strong>만 인정됩니다.${!eduAllowsStem ? " (현재 학력이 디플로마/기능직 이하이므로 자동 비활성화됨)" : ""}`;
+      } else {
+        stemWarnEl.hidden = true;
+        stemWarnEl.innerHTML = "";
+      }
+    }
+
+    return { auStudyChecked, eduAllowsStem, stemAllowed };
+  }
+
+  function mapAgeParamToBracket(rawAge) {
+    const s = String(rawAge ?? "").trim();
+    if (!s) return null;
+    if (s === "25_33") return "25_33";
+    if (s === "0") return "0";
+    if (s === "15") return "15";
+    if (!/^\d{1,3}$/.test(s)) return null;
+    const n = parseInt(s, 10);
+    if (n < 18) return "0";
+    if (n <= 24) return "25";
+    if (n <= 32) return "30";
+    if (n <= 39) return "25_33";
+    if (n <= 44) return "15";
+    return "0";
+  }
+
+  function evaluateDobCountdown(dobStr, refBneStr) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(dobStr || "").trim());
+    const ref = String(refBneStr || getTodayBneStr()).trim();
+    const rm = /^(\d{4})-(\d{2})-(\d{2})$/.exec(ref);
+    if (!m || !rm) return null;
+
+    const by = parseInt(m[1], 10), bm = parseInt(m[2], 10), bd = parseInt(m[3], 10);
+    const ry = parseInt(rm[1], 10), rmo = parseInt(rm[2], 10), rd = parseInt(rm[3], 10);
+    const dobUtc = Date.UTC(by, bm - 1, bd);
+    const refUtc = Date.UTC(ry, rmo - 1, rd);
+    if (Number.isNaN(dobUtc) || Number.isNaN(refUtc) || dobUtc > refUtc) return null;
+
+    let age = ry - by;
+    if (rmo < bm || (rmo === bm && rd < bd)) age -= 1;
+
+    const ageOptionValue = mapAgeParamToBracket(age) || "0";
+    const daysUntilAge = (targetAge) => Math.max(0, Math.round((Date.UTC(by + targetAge, bm - 1, bd) - refUtc) / 86400000));
+
+    let cliffAge = null;
+    let daysRemaining = 0;
+    let blocked = false;
+    let messageKo = "";
+    let messageEn = "";
+
+    if (age >= 45) {
+      blocked = true;
+      cliffAge = 45;
+      daysRemaining = 0;
+      messageKo = `❌ 브리즈번 현재 만 ${age}세 · 이미 만 45세 이상 도달 (GSM 189·190·491 초청 불가 · DAMA 만 50·55세 또는 186 면제 검토)`;
+      messageEn = `❌ Current age ${age} (Brisbane) · Already 45+ — Ineligible for GSM 189/190/491 at invitation (check DAMA 50/55 or 186 exemptions)`;
+    } else if (age < 18) {
+      blocked = true;
+      cliffAge = 18;
+      daysRemaining = daysUntilAge(18);
+      messageKo = `❌ 브리즈번 현재 만 ${age}세 · 만 18세 미만 신청 불가 (만 18세 도래까지 D-${daysRemaining})`;
+      messageEn = `❌ Current age ${age} (Brisbane) · Under 18 ineligible (D-${daysRemaining} days until turning 18)`;
+    } else if (age < 33) {
+      cliffAge = 33;
+      daysRemaining = daysUntilAge(33);
+      const extra25Ko = age < 25 ? ` (참고: 만 25세 30점 승급까지 D-${daysUntilAge(25)})` : "";
+      const extra25En = age < 25 ? ` (Note: D-${daysUntilAge(25)} until turning 25 for +5 pts: 25→30)` : "";
+      messageKo = `⏳ 브리즈번 현재 만 ${age}세 · 만 33세 생일 감점 구간(-5점: 30→25점)까지 D-${daysRemaining}일 남음${extra25Ko}`;
+      messageEn = `⏳ Current age ${age} (Brisbane) · D-${daysRemaining} days remaining before turning 33 (-5 pts cliff: 30→25)${extra25En}`;
+    } else if (age < 40) {
+      cliffAge = 40;
+      daysRemaining = daysUntilAge(40);
+      messageKo = `⏳ 브리즈번 현재 만 ${age}세 · 만 40세 생일 감점 구간(-10점: 25→15점)까지 D-${daysRemaining}일 남음`;
+      messageEn = `⏳ Current age ${age} (Brisbane) · D-${daysRemaining} days remaining before turning 40 (-10 pts cliff: 25→15)`;
+    } else {
+      cliffAge = 45;
+      daysRemaining = daysUntilAge(45);
+      messageKo = `🚨 브리즈번 현재 만 ${age}세 · 만 45세 GSM 자격 상실(189·190·491 초청 마감)까지 D-${daysRemaining}일 남음!`;
+      messageEn = `🚨 Current age ${age} (Brisbane) · D-${daysRemaining} days remaining before turning 45 (GSM 189/190/491 cutoff)!`;
+    }
+
+    return { age, ageOptionValue, cliffAge, daysRemaining, blocked, messageKo, messageEn };
+  }
+
+  function handleDobInput(markInteracted, refBneStr) {
+    const dobEl = document.getElementById("pt-dob");
+    const msgEl = document.getElementById("pt-dob-countdown");
+    const ageEl = document.getElementById("pt-age");
+    if (!dobEl || !msgEl) return null;
+    const raw = (dobEl.value || "").trim();
+    if (!raw) {
+      msgEl.textContent = "";
+      return null;
+    }
+    const res = evaluateDobCountdown(raw, refBneStr);
+    if (!res) {
+      msgEl.textContent = STATE.lang === "en"
+        ? "Please enter a valid past Date of Birth (YYYY-MM-DD)."
+        : "유효한 과거 생년월일(YYYY-MM-DD)을 입력해 주십시오.";
+      msgEl.style.color = "#9E2A2B";
+      return null;
+    }
+    if (ageEl && markInteracted !== false) {
+      ageEl.value = res.ageOptionValue;
+    }
+    msgEl.textContent = STATE.lang === "en" ? res.messageEn : res.messageKo;
+    msgEl.style.color = res.blocked ? "#9E2A2B" : (res.cliffAge === 45 ? "#946200" : "#0E3A3E");
+    if (markInteracted === true) {
+      updatePointsCalculator(true);
+    }
+    return res;
+  }
+
+  function togglePteReference(forceOpen) {
+    const btn = document.getElementById("btn-pte-lin25016-ref");
+    const card = document.getElementById("pte-lin25016-card");
+    if (!card) return false;
+    const nextOpen = typeof forceOpen === "boolean" ? forceOpen : Boolean(card.hidden);
+    card.hidden = !nextOpen;
+    btn?.setAttribute("aria-expanded", nextOpen ? "true" : "false");
+    return nextOpen;
+  }
+
   function computePointsSnapshot() {
+    const guards = applySchedule6DGuards();
     const ageVal = document.getElementById("pt-age")?.value || "30";
     const agePts = ageVal === "25_33" ? 25 : parseInt(ageVal, 10);
     const engPts = parseInt(document.getElementById("pt-english")?.value || "10", 10);
@@ -668,10 +1041,10 @@
     const partVal = document.getElementById("pt-partner")?.value || "10_single";
     const partPts = partVal.startsWith("10") ? 10 : (partVal.startsWith("5") ? 5 : 0);
 
-    const auStudy = document.getElementById("pt-au-study")?.checked ? 5 : 0;
-    const regStudy = document.getElementById("pt-reg-study")?.checked ? 5 : 0;
-    const stem = document.getElementById("pt-stem")?.checked ? 10 : 0;
-    const py = document.getElementById("pt-py")?.checked ? 5 : 0;
+    const auStudy = guards.auStudyChecked ? 5 : 0;
+    const regStudy = (guards.auStudyChecked && document.getElementById("pt-reg-study")?.checked) ? 5 : 0;
+    const stem = (guards.stemAllowed && document.getElementById("pt-stem")?.checked) ? 10 : 0;
+    const py = (guards.auStudyChecked && document.getElementById("pt-py")?.checked) ? 5 : 0;
     const ccl = document.getElementById("pt-ccl")?.checked ? 5 : 0;
 
     const ageBlocked = agePts === 0;
@@ -692,7 +1065,7 @@
   }
 
   function updatePointsCalculator(markInteracted) {
-    if (markInteracted === true) {
+    if (markInteracted !== false) {
       STATE.pointsInteracted = true;
     }
     const en = STATE.lang === "en";
@@ -838,25 +1211,44 @@
         : `초청 직군 선택 (${occs.length}개 직군 · 무경력 0년 전체 열람 가능)`;
     }
 
-    if (selEl && occs.length > 0 && selEl.getAttribute("data-occ-len") !== String(occs.length)) {
-      selEl.setAttribute("data-occ-len", String(occs.length));
+    const occCacheKey = `${occs.length}-${en ? "en" : "ko"}`;
+    if (selEl && occs.length > 0 && selEl.getAttribute("data-occ-len") !== occCacheKey) {
+      selEl.setAttribute("data-occ-len", occCacheKey);
       selEl.innerHTML = occs.map((o) => {
         const isSel = o.occupation === STATE.selectedOcc ? "selected" : "";
-        return `<option value="${escHtml(o.occupation)}" ${isSel}>${escHtml(o.occupation)} · 189 Cut-off: ${o.min_score_189} pts</option>`;
+        const cutLbl = en ? `189 Cut-off: ${o.min_score_189} pts` : `189 컷오프: ${o.min_score_189}점`;
+        return `<option value="${escHtml(o.occupation)}" ${isSel}>${escHtml(o.occupation)} · ${cutLbl}</option>`;
       }).join("");
+      if (STATE.selectedOcc) selEl.value = STATE.selectedOcc;
     }
 
     const qRaw = (searchEl?.value || "").trim();
     const filtered = qRaw ? occs.filter((o) => matchesOccupationQuery(o.occupation, qRaw)) : occs;
 
-    let chosenName = selEl?.value || STATE.selectedOcc || (occs[0] && occs[0].occupation) || "";
+    let chosenName = STATE.selectedOcc || selEl?.value || (occs[0] && occs[0].occupation) || "";
     if (qRaw && filtered.length > 0 && !filtered.some((o) => o.occupation === chosenName)) {
       chosenName = filtered[0].occupation;
     }
     STATE.selectedOcc = chosenName;
-    const chosenObj = occs.find((o) => o.occupation === chosenName) || filtered[0] || occs[0];
+    if (selEl && chosenName && filtered.some((o) => o.occupation === chosenName)) {
+      selEl.value = chosenName;
+    }
+    const chosenObj = (qRaw && filtered.length === 0)
+      ? null
+      : (occs.find((o) => o.occupation === chosenName) || filtered[0] || occs[0]);
 
-    if (verdictEl && chosenObj) {
+    if (verdictEl && !chosenObj && qRaw) {
+      const codeInfo = ANZSCO_CODE_MAP[qRaw.toLowerCase()];
+      const occTitle = codeInfo ? `ANZSCO ${qRaw} (${codeInfo.label})` : qRaw;
+      verdictEl.innerHTML = `
+        <div class="alert-box alert-box--warn" style="margin:0;">
+          <strong>ℹ️ [${escHtml(occTitle)}] ${en ? "Not Invited in Latest Federal 189 Round · Target State 190 / Regional 491" : "직전 연방 189 라운드 미초청 직군 · 주정부 190 / 지방 491 우선 검토"}</strong><br/>
+          ${en
+            ? `This occupation was not included in the ${escHtml(ss.latest_round_date || "latest")} Subclass 189 round. ${STATE.pointsInteracted ? (STATE.ageBlocked ? "Note: Age 45+ exceeds GSM statutory cap." : `Compare your State 190 (<strong>${STATE.pts190} pts</strong>) and Regional 491 (<strong>${STATE.pts491} pts</strong>) scores in the 8-State Combinator below.`) : "Check State 190 (+5) and Regional 491 (+15) eligibility in the 8-State Combinator below."}`
+            : `해당 직군은 직전(${escHtml(ss.latest_round_date || "최근")}) 연방 189 초청 라운드 대상에 포함되지 않았습니다. ${STATE.pointsInteracted ? (STATE.ageBlocked ? "❌ 만 45세 이상은 GSM 신청 불가합니다." : `산출된 주정부 190(<strong>${STATE.pts190}점</strong>) 및 지방 491(<strong>${STATE.pts491}점</strong>) 점수로 아래 8개 주정부 매칭기를 확인하십시오.`) : "아래 8개 주정부 노미네이션(190 +5점 / 491 +15점) 매칭기에서 주별 대상 여부를 확인하십시오."}`}
+        </div>
+      `;
+    } else if (verdictEl && chosenObj) {
       const cut189 = Number(chosenObj.min_score_189) || 85;
       if (!STATE.pointsInteracted) {
         verdictEl.innerHTML = `
@@ -964,9 +1356,9 @@
         return `
           <tr>
             <td><strong>${a.state}</strong></td>
-            <td><strong>${Number(a.quota_190).toLocaleString()}</strong> <span style="font-size:11.5px;color:#525866;">(YTD: ${a.ytd_190})</span></td>
-            <td><strong>${Number(a.quota_491).toLocaleString()}</strong> <span style="font-size:11.5px;color:#525866;">(YTD: ${a.ytd_491})</span></td>
-            <td><strong style="color:#7A1F2B;">${Number(a.total_quota).toLocaleString()}</strong></td>
+            <td><strong>${Number(a.quota_190).toLocaleString()}</strong> <span style="font-size:11px;color:#525866;">(${en ? "FY25–26 Ref · YTD" : "전년도 참고 · YTD"}: ${a.ytd_190})</span></td>
+            <td><strong>${Number(a.quota_491).toLocaleString()}</strong> <span style="font-size:11px;color:#525866;">(${en ? "FY25–26 Ref · YTD" : "전년도 참고 · YTD"}: ${a.ytd_491})</span></td>
+            <td><strong style="color:#7A1F2B;">${Number(a.total_quota).toLocaleString()}</strong><div style="font-size:10.5px;color:#64748B;">${en ? "FY25–26 Ref" : "전년도 참고"}</div></td>
             <td>${formatStatePortalPlacesCell(a.state, en)}</td>
             <td style="font-size:12px;line-height:1.4;">${noteText}</td>
           </tr>
@@ -977,7 +1369,7 @@
 
   /* 3. 8-State Combinator */
   function updateStateCombinator(markInteracted) {
-    if (markInteracted === true) {
+    if (markInteracted !== false) {
       STATE.stateInteracted = true;
     }
     const en = STATE.lang === "en";
@@ -1304,7 +1696,7 @@
 
   /* 5. Subclass 191 & Total Cost Calculator */
   function updateCostAnd191(markInteracted) {
-    if (markInteracted === true) STATE.costInteracted = true;
+    if (markInteracted !== false) STATE.costInteracted = true;
     const en = STATE.lang === "en";
     const sub = document.getElementById("cost-visa-sub")?.value || "491";
     const stSelect = document.getElementById("cost-state");
@@ -1327,7 +1719,7 @@
     }
 
     if (s191Fields) {
-      s191Fields.style.display = is191Pathway ? "grid" : "none";
+      s191Fields.style.display = is191Pathway ? "" : "none";
     }
     if (directPrNotice) {
       if (!is191Pathway) {
@@ -1356,16 +1748,20 @@
     const stateFees = { QLD: 630.30, NSW: 346.50, VIC: 264.00, WA: 0, SA: 394.00, TAS: 425.70, ACT: 385.00, NT: 300.00 };
     const stateFee = usesStateNom ? (stateFees[st] ?? 0) : 0;
 
-    let baseVac = 6140, adultVac = 3070, childVac = 1535;
-    if (sub === "189") {
-      baseVac = 6135; adultVac = 3070; childVac = 1540;
-    } else if (sub === "191") {
-      baseVac = 630; adultVac = 315; childVac = 160;
-    }
+    const vacSchedule = STATE.vacSchedule || DEFAULT_VAC_SCHEDULE;
+    const vacSubMap = vacSchedule.subclasses || DEFAULT_VAC_SCHEDULE.subclasses;
+    const curVac = vacSubMap[sub] || vacSubMap["491"] || { base: 6140, adult: 3070, child: 1535 };
+    const vac191 = vacSubMap["191"] || { base: 630, adult: 315, child: 160 };
+    const baseVac = Number(curVac.base);
+    const adultVac = Number(curVac.adult);
+    const childVac = Number(curVac.child);
 
     const totalVac = baseVac + adultVac * adults + childVac * children;
-    const stage2Vac191 = 630 + 315 * adults + 160 * children;
+    const stage2Vac191 = Number(vac191.base) + Number(vac191.adult) * adults + Number(vac191.child) * children;
     const grandTotal = stateFee + totalVac;
+    const supersededVacNote = en
+      ? (vacSchedule.superseded_fy25_26_note_en || DEFAULT_VAC_SCHEDULE.superseded_fy25_26_note_en)
+      : (vacSchedule.superseded_fy25_26_note_ko || DEFAULT_VAC_SCHEDULE.superseded_fy25_26_note_ko);
 
     let pathwayDetailHtml = "";
     if (is191Pathway) {
@@ -1426,7 +1822,7 @@
         <div class="mini-kpi" style="border-top:3px solid #6B4A1F;">
           <span>${en ? `Federal Subclass ${sub} VAC (FY26–27)` : `연방 Subclass ${sub} 비자 신청비 (FY26–27)`}</span>
           <strong style="color:#6B4A1F;">${fmtAUD(totalVac)}</strong>
-          <small>${en ? `Base ${fmtAUD(baseVac)} + Adults ${fmtAUD(adultVac * adults)} + Children ${fmtAUD(childVac * children)}` : `주신청 ${fmtAUD(baseVac)} + 성인 ${fmtAUD(adultVac * adults)} + 자녀 ${fmtAUD(childVac * children)}`}</small>
+          <small>${en ? `Base ${fmtAUD(baseVac)} + Adults ${fmtAUD(adultVac * adults)} + Children ${fmtAUD(childVac * children)} (${supersededVacNote})` : `주신청 ${fmtAUD(baseVac)} + 성인 ${fmtAUD(adultVac * adults)} + 자녀 ${fmtAUD(childVac * children)} (${supersededVacNote})`}</small>
         </div>
         <div class="mini-kpi" style="border-top:3px solid #2E6B4F;">
           <span>${en ? "Total Government Charges" : "정부 납부 총합계"}</span>
@@ -1541,7 +1937,7 @@
             ? "Live status of 12 Federal (Schedule 6D / LIN 19/210 / SkillSelect) and 8-State/Territory nomination portals verified by <code>poller/gsm_state_poller.py</code>."
             : "<code>poller/gsm_state_poller.py</code>가 정기 점검하는 12개 연방 법령(Schedule 6D / LIN 19/210 / SkillSelect) 및 호주 8개 주/준주 노미네이션 포털 상태입니다."}
         </p>
-        <div class="table-wrap">
+        <div class="table-wrap table-scroll">
           <table class="data-table">
             <thead>
               <tr><th>#</th><th>${en ? "Category" : "구분"}</th><th>${en ? "Source & Content Hash" : "출처명 및 본문 해시"}</th><th>${en ? "Authority" : "관할"}</th><th>${en ? "Status" : "상태"}</th></tr>
@@ -1631,15 +2027,321 @@
     updateCostAnd191(true);
   }
 
-  function init() {
+  const LEAF_KO_TO_EN = {
+    "← 박앤코 법률 인텔리전스 통합 허브 (All 12 Navigators)": "← Park & Co Legal & Visa Hub",
+    "← 박앤코 법률·비자 통합 허브": "← Park & Co Legal & Visa Hub",
+    "🧭 종합 비자·SOL 진단 가이드": "🧭 Visa & SOL Solution Guide",
+    "📚 호주이민 FAQ 백과": "📚 Immigration FAQ",
+    "종합 비자 솔루션 가이드": "Visa Solution Guide",
+    "이민·비자 FAQ 포털": "Immigration FAQ Portal",
+    "법률·비자 통합 허브": "Legal & Visa Hub",
+    "0년 (무경력·졸업생 · 3년 미만 0점)": "0 years (Graduate / No experience · Under 3 yrs = 0 pts)",
+    "0년 (무경력·졸업생 · 1년 미만 0점)": "0 years (Graduate / No experience · Under 1 yr = 0 pts)",
+    "0시간 · 현재 미취업 (무경력·졸업생 스트림 / WA 건설·491 면제 / 해외 경력)": "0 hrs · Currently unemployed (Graduate stream / WA Construction & 491 waiver / Offshore)",
+    "4. 현 거주 주 내 숙련 직무 연속 근무 개월 수 (무경력 0 입력 가능)": "4. Continuous Skilled Employment in Current State (Months · enter 0 if none)",
+    "건축·건설·트레이드 (Building & Construction · QLD 3개월·WA 고용계약 면제)": "Building & Construction Trades (QLD 3m / WA job-offer waiver)",
+    "초청 직군 선택 (전체 직군 열람 가능)": "Select Invited Occupation (All occupations available)",
+    "직군 영문·한글 키워드 실시간 검색": "Live Search by English or Korean Keyword",
+    "예시 데이터 넣어보기": "Load Sample Profile",
+    "내 Schedule 6D 점수 판정하기": "Calculate Schedule 6D Points",
+    "8개 주정부 적격 여부 판정하기": "Assess 8-State Eligibility",
+    "총비용 및 191 전환 판정하기": "Calculate Total Fees & 191 PR",
+    "🔎 직업군·기술심사기관 통합 검색 (SOL) →": "🔎 Unified Occupation & Assessing Authority Search (SOL) →",
+    "📄 이력서·경력 비자 매칭 →": "📄 Resume-to-Visa Matcher →",
+    "📚 호주이민 실전 FAQ 백과 →": "📚 Practical Immigration FAQs →",
+    "📋 박앤코 GSM Case Review™️ 신청 →": "📋 Apply for Park & Co GSM Case Review™️ →",
+    "법무법인 박앤코 (PNC Legal Pty Ltd t/a Park & Co Lawyers)": "PNC Legal Pty Ltd t/a Park & Co Lawyers",
+    "법령 및 주정부 심사 근거": "Statutory & State Nomination Authority",
+    "65점": "65 pts",
+    "190(+5점) · 491(+15점) 가점 포함": "Incl. 190 (+5 pts) & 491 (+15 pts)",
+    "최대 20점": "Max 20 pts",
+    "해외(15점)+호주(20점) 통합 상한": "Combined Overseas (15) + AUS (20) Cap",
+    "FY26–27 주신청자 (189는 $6,135)": "FY26–27 Primary VAC (189 is $6,135)",
+    "$0 하한": "$0 Floor",
+    "최저소득 폐지 · ATO NOA 3개 연도 제출": "No min income · 3 yrs ATO NOAs required",
+    "배우자 +$315 · 미성년 자녀 +$160": "Partner +$315 · Child +$160",
+    "그래프 1 · 8개 주/준주 일반 거주자 190 vs 491 필수 근무/거주 개월 수 & 신청비 비교": "Chart 1 · 8-State/Territory Onshore 190 vs 491 Minimum Work/Residency Months & Fees",
+    "그래프 2 · Schedule 6D 항목별 최대 배점 및 해외+호주 경력 20점 통합 상한(Item 6D51)": "Chart 2 · Schedule 6D Maximum Points & Item 6D51 20-Point Combined Work Experience Cap",
+    "Schedule 6D 11대 평가 항목 입력": "Schedule 6D 11-Factor Assessment Inputs",
+    "1. 초청 시점 만 나이 (Part 6D.1)": "1. Age at Time of Invitation (Part 6D.1)",
+    "만 18세 ~ 24세 (25점)": "Aged 18–24 (25 pts)",
+    "만 25세 ~ 32세 (30점 · 최고 배점)": "Aged 25–32 (30 pts · Maximum)",
+    "만 33세 ~ 39세 (25점)": "Aged 33–39 (25 pts)",
+    "만 40세 ~ 44세 (15점)": "Aged 40–44 (15 pts)",
+    "만 45세 이상 (0점 · GSM 189/190/491 신청 불가)": "Aged 45+ (0 pts · Ineligible for GSM 189/190/491)",
+    "2. 영어 능력 (Part 6D.2 · 유효기간 3년)": "2. English Language Ability (Part 6D.2 · 3-Year Validity)",
+    "Competent English · IELTS 각 6.0 / PTE L47·R48·W51·S54 (0점 · 최소 기본요건)": "Competent English · IELTS 6.0 each / PTE L47·R48·W51·S54 (0 pts · Minimum)",
+    "Proficient English · IELTS 각 7.0 / PTE L58·R59·W69·S76 (10점)": "Proficient English · IELTS 7.0 each / PTE L58·R59·W69·S76 (10 pts)",
+    "Superior English · IELTS 각 8.0 / PTE L69·R70·W85·S88 (20점)": "Superior English · IELTS 8.0 each / PTE L69·R70·W85·S88 (20 pts)",
+    "3. 해외 숙련 경력 (Part 6D.3 · 최근 10년 내 주 20h+)": "3. Overseas Skilled Employment (Part 6D.3 · 20h+/wk in last 10 yrs)",
+    "3년 미만 (0점)": "Under 3 years (0 pts)",
+    "3년 이상 ~ 5년 미만 (5점)": "3 to <5 years (5 pts)",
+    "5년 이상 ~ 8년 미만 (10점)": "5 to <8 years (10 pts)",
+    "8년 이상 (15점)": "8+ years (15 pts)",
+    "4. 호주 내 숙련 경력 (Part 6D.4 · 최근 10년 내 주 20h+)": "4. Australian Skilled Employment (Part 6D.4 · 20h+/wk in last 10 yrs)",
+    "1년 미만 (0점)": "Under 1 year (0 pts)",
+    "1년 이상 ~ 3년 미만 (5점)": "1 to <3 years (5 pts)",
+    "3년 이상 ~ 5년 미만 (10점)": "3 to <5 years (10 pts)",
+    "5년 이상 ~ 8년 미만 (15점)": "5 to <8 years (15 pts)",
+    "8년 이상 (20점)": "8+ years (20 pts)",
+    "5. 최종 학력/자격 (Part 6D.7)": "5. Educational Qualifications (Part 6D.7)",
+    "박사 학위 (Doctorate / PhD · 20점)": "Doctorate / PhD (20 pts)",
+    "학사(Bachelor) 또는 석사(Masters) 학위 (15점)": "Bachelor or Masters Degree (15 pts)",
+    "호주 Diploma / Trade 학위 또는 기술심사기관 인정 자격 (10점)": "Australian Diploma / Trade Qualification or Recognised Award (10 pts)",
+    "인정 학력 없음 (0점)": "No Recognised Qualification (0 pts)",
+    "6. 배우자/파트너 자격 또는 미혼 (Part 6D.11)": "6. Partner Skills or Single Status (Part 6D.11)",
+    "미혼(Single) 또는 파트너가 호주 시민권자/영주권자 (10점 · 6D112)": "Single OR Partner is Australian Citizen/PR (10 pts · 6D112)",
+    "파트너가 만 45세 미만 + Competent 영어 + 동일 리스트 기술심사 보유 (10점 · 6D111)": "Partner <45 + Competent English + Skilled Assessment (10 pts · 6D111)",
+    "파트너가 Competent 영어(IELTS 6.0)만 보유 (5점 · 6D113)": "Partner has Competent English (IELTS 6.0) only (5 pts · 6D113)",
+    "파트너가 시민권/영주권자가 아니며 영어/기술심사 미보유 (0점)": "Partner is non-citizen/PR without English or Skills Assessment (0 pts)",
+    "7. 추가 가점 항목 (해당 항목 모두 체크 · Part 6D.6 / 6D.7A / 6D.8 / 6D.9 / 6D.10)": "7. Bonus Point Factors (Tick all that apply · Parts 6D.6–6D.10)",
+    "Subclass 189 · 190 · 491 법정 점수 산출 결과": "Subclass 189 · 190 · 491 Statutory Points Breakdown",
+    "내 거주지 · 근무 개월 · 주당 시간 · 졸업생 프로필 입력": "Your Current State, Work Months, Weekly Hours & Graduate Profile",
+    "1. 현재 거주 중인 주/준주 (또는 해외)": "1. Current State/Territory of Residence (or Offshore)",
+    "Queensland (QLD · 브리즈번 / 골드코스트·지방 QLD)": "Queensland (QLD · Brisbane / Gold Coast & Regional QLD)",
+    "New South Wales (NSW · 시드니 / 지방 NSW)": "New South Wales (NSW · Sydney / Regional NSW)",
+    "Victoria (VIC · 멜버른 / 지방 VIC)": "Victoria (VIC · Melbourne / Regional VIC)",
+    "Western Australia (WA · 퍼스 및 서호주 전역)": "Western Australia (WA · Perth & Statewide WA)",
+    "South Australia (SA · 애들레이드 및 외곽 SA)": "South Australia (SA · Adelaide & Regional SA)",
+    "Tasmania (TAS · 호바트·론세스턴 등 전역)": "Tasmania (TAS · Hobart, Launceston & Statewide)",
+    "Australian Capital Territory (ACT · 캔버라)": "Australian Capital Territory (ACT · Canberra)",
+    "Northern Territory (NT · 다윈·앨리스스프링스 등)": "Northern Territory (NT · Darwin & Regional NT)",
+    "해외 거주 중 (Offshore · 한국 등 호주 외 거주)": "Residing Offshore (Outside Australia)",
+    "2. 직군 산업 분야 (Priority Sector)": "2. Occupation Industry Sector",
+    "일반 기술·전문직·기능직 (General CSOL/State List)": "General Skilled / Professional / Trade Occupation",
+    "보건·의료·간호·교육·사회복지 (Health, Nursing, Teaching, Social Work)": "Health, Nursing, Teaching & Social Work",
+    "3. 현 거주 주(State) 연속 거주 개월 수 (개월)": "3. Continuous Residency in Current State (Months)",
+    "5. 주당 평균 유급 근무시간 (시간/주)": "5. Average Paid Working Hours per Week",
+    "주 35~38시간 이상 (Full-time · 전 주정부 190/491 기준 충족)": "35–38+ hrs/wk (Full-time · Meets all State 190/491 thresholds)",
+    "주 30시간 이상 (SA·ACT 190 및 TAS Gold 기준 충족)": "30+ hrs/wk (Meets SA & ACT 190 / TAS Gold thresholds)",
+    "주 20시간 이상 (QLD 2026–27 전 스트림 · NSW · TAS · SA 491 기준 충족)": "20+ hrs/wk (Meets QLD 2026–27 all streams, NSW, TAS & SA 491)",
+    "주 15시간 이상 (ACT 491 13/15주 기준 충족)": "15+ hrs/wk (Meets ACT 491 threshold)",
+    "6. 현 거주 주(State) 내 대학/VET 졸업 여부": "6. Graduate of a University/VET Institution in Current State?",
+    "아니오 (일반 숙련 근로자 스트림)": "No (Standard Skilled Worker Stream)",
+    "예 · 해당 주에서 학사/석사/학위(2년+) 졸업 (Regional NSW·WA·TAS·SA·NT 졸업생 특례)": "Yes · Bachelor/Masters (2+ yrs) in this State (Graduate concessions)",
+    "예 · 해당 주에서 박사(PhD) 학위 취득 (ACT 무료·자동초청 / QLD·WA·SA 우대)": "Yes · Doctorate (PhD) completed in this State (Priority stream)",
+    "예 · 해당 주에서 2년 이상 VET (Cert III/IV/Diploma) 졸업 (WA·TAS·SA 졸업생)": "Yes · 2+ yr VET (Cert III/IV/Diploma) in this State",
+    "내 프로필 기준 주정부 노미네이션(190 · 491) 적격 판정": "State Nomination (190 · 491) Eligibility Assessment",
+    "QLD (퀸즐랜드)": "QLD (Queensland)",
+    "NSW (뉴사우스웨일스)": "NSW (New South Wales)",
+    "VIC (빅토리아)": "VIC (Victoria)",
+    "WA (서호주)": "WA (Western Australia)",
+    "SA (남호주)": "SA (South Australia)",
+    "TAS (태즈메이니아)": "TAS (Tasmania)",
+    "ACT (캔버라)": "ACT (Canberra)",
+    "NT (노던준주)": "NT (Northern Territory)",
+    "비자 종류 · 노미네이션 주 · 가족 수 · [491/494 전용] 191 전환 요건": "Visa Subclass, Nominating State, Family Size & [491/494 Only] 191 PR Check",
+    "1. 신청 비자 서브클래스": "1. Target Visa Subclass",
+    "Subclass 491 · 지방 주정부/가족 지명 임시 5년 (3년 후 191 영주권 전환 대상 · VAC $6,140)": "Subclass 491 · Regional Provisional 5-Yr (Eligible for 191 PR after 3 yrs · VAC $6,140)",
+    "Subclass 191 · [491/494 소지자 전용] 3년 후 영주권 전환 신청 (VAC $630 · 주정부 비용 $0)": "Subclass 191 · [491/494 Holders Only] 3-Yr PR Transition (VAC $630 · State Fee $0)",
+    "Subclass 190 · 주정부 지명 영주비자 (처음부터 영주권 Direct PR · 191 전환 대상 아님 · VAC $6,140)": "Subclass 190 · State Nominated Direct PR (Direct PR · Not a 191 pathway · VAC $6,140)",
+    "Subclass 189 · 독립기술 영주비자 (처음부터 영주권 Direct PR · 주정부/191 대상 아님 · VAC $6,135)": "Subclass 189 · Skilled Independent Direct PR (Direct PR · Not a 191 pathway · VAC $6,135)",
+    "2. 노미네이션 신청 주/준주 (190·491만 해당)": "2. Nominating State/Territory (190 & 491 Only)",
+    "QLD · $630.30 (Onshore GST 포함)": "QLD · $630.30 (incl. Onshore GST)",
+    "NSW · $346.50 (Onshore GST 포함)": "NSW · $346.50 (incl. Onshore GST)",
+    "WA · $0 (서호주 주정부 신청비 전면 무료)": "WA · $0 (Western Australia $0 Nomination Fee)",
+    "WA · $0 (서호주 주정부 신청비 전면 무료!)": "WA · $0 (Western Australia $0 Nomination Fee)",
+    "3. 동반 성인 가족 수 (만 18세 이상 배우자 등)": "3. Accompanying Adult Applicants (18+ Partner/Dependants)",
+    "0명 (단독 신청)": "0 (Single Applicant)",
+    "1명 (+$3,070 / 191은 +$315)": "1 Adult (+$3,070 / 191 is +$315)",
+    "2명": "2",
+    "3명": "3",
+    "0명": "0",
+    "1명": "1",
+    "4. 동반 미성년 자녀 수 (만 18세 미만)": "4. Accompanying Minor Children (Under 18)",
+    "1명 (+$1,535 / 191은 +$160)": "1 Child (+$1,535 / 191 is +$160)",
+    "5. [491/494 소지자 전용] 보유 기간 & ATO NOA 수": "5. [491/494 Holders Only] Years Held & ATO NOAs",
+    "491/494 보유 3년 이상 + ATO Notice of Assessment 3개 연도 확보 완료": "Held 491/494 for 3+ yrs + 3 income years of ATO NOAs ready",
+    "아직 3년 미만 보유 중 (5년 비자 기간 중 총 3개 과세연도 NOA 확보 필요)": "Held <3 yrs (Must complete 3 years and 3 ATO NOAs within 5-yr validity)",
+    "6. [491/494 소지자 전용] 지방 거주·근무 조건(8579) 준수": "6. [491/494 Holders Only] Condition 8579 Regional Compliance",
+    "준수 완료 · 지정 지방(Designated Regional Area) 내 거주·근무·학업 유지": "Compliant · Resided, worked & studied exclusively in Designated Regional Areas",
+    "주의 필요 · 대도시(시드니·멜버른·브리즈번) 장기 체류 또는 주소 변경 미신고(8578)": "Caution · Extended metro stay (Sydney/Melbourne/Brisbane) or unnotified address (8578)",
+    "FY2026–27 총비용 & Subclass 191 영주권 전환 판정": "FY2026–27 Total Statutory Cost & Subclass 191 PR Assessment",
+    "위 계산기에서 산출된 189·190·491 점수·거주 주 노미네이션 판정·비자비 요약문을 복사하여 공식 온라인 상담 신청 시 활용할 수 있습니다.": "Copy your calculated 189/190/491 points, state nomination eligibility, and fee breakdown to attach directly to your Park & Co online consultation request.",
+    "📋 진단 요약 클립보드 복사": "📋 Copy Diagnostic Summary",
+    "🖨️ PDF / 브리프 인쇄": "🖨️ Print / Save PDF",
+    "💬 진단 요약 복사 & 박앤코 온라인 상담 →": "💬 Copy Brief & Enquire Online →",
+    "구분": "Category",
+    "공식 법령 · 주정부 이민 포털 및 링크": "Official Legislation / State Portal & Link",
+    "관할 기관": "Authority",
+    "추적 지표": "Monitored Metrics",
+    "검증 주기": "Schedule",
+    "상태": "Status",
+    "법률 면책공고 (Legal Disclaimer) · 주정부 노미네이션 할당량(Quota) 안내": "Legal Disclaimer & State Nomination Quota Notice",
+    "연방 Schedule 6D & 8개 주정부 포털 실시간 모니터 (12/12 Live Verified)": "Federal Schedule 6D & 8-State Portal Live Monitor (12/12 Verified)"
+  };
+
+  function applyUniversalLeafTranslation(lang) {
+    if (typeof document === "undefined" || !document.body) return;
+    const isEn = lang === "en";
+    document.querySelectorAll(".parkco-svc-link").forEach((lnk) => {
+      const h = isEn ? lnk.getAttribute("data-en-href") : lnk.getAttribute("data-ko-href");
+      if (h) lnk.setAttribute("href", h);
+    });
+    document.querySelectorAll("a.cta-enquiry").forEach((a) => {
+      a.setAttribute("href", isEn ? "https://parklawyers.com.au/links/" : "https://parklawyers.com.au/links/?lang=ko");
+      if ((a.textContent || "").indexOf("https://parklawyers.com.au/links") === 0) {
+        a.textContent = isEn ? "https://parklawyers.com.au/links/" : "https://parklawyers.com.au/links/?lang=ko";
+      }
+    });
+    const vcEl = document.getElementById("visit-counter");
+    if (vcEl) {
+      vcEl.setAttribute("title", isEn
+        ? "Click to view daily visit trends and referral channels"
+        : "클릭하면 일별 방문 추이와 유입 경로를 볼 수 있어요");
+    }
+    const vcLblTotal = document.getElementById("vc-lbl-total");
+    const vcLblToday = document.getElementById("vc-lbl-today");
+    const vcLblVis = document.getElementById("vc-lbl-visitors");
+    if (vcLblTotal) vcLblTotal.textContent = isEn ? "Total Visits" : "누적 방문";
+    if (vcLblToday) vcLblToday.textContent = isEn ? "Today" : "오늘 방문";
+    if (vcLblVis) vcLblVis.textContent = isEn ? "Visitors" : "방문자";
+
+    const walk = (el) => {
+      if (!el || !el.children || el.tagName === "SCRIPT" || el.tagName === "STYLE" || el.tagName === "PRE") return;
+      if (el.getAttribute && (el.getAttribute("data-i18n") || el.getAttribute("data-i18n-html"))) return;
+      let hasElementChildren = false;
+      for (let i = 0; i < el.children.length; i += 1) {
+        if (el.children[i].tagName !== "BR") {
+          hasElementChildren = true;
+          break;
+        }
+      }
+      if (!hasElementChildren && el.tagName !== "BODY" && typeof el.getAttribute === "function" && typeof el.setAttribute === "function") {
+        const raw = (el.textContent || "").trim().replace(/\s+/g, " ");
+        if (!el.getAttribute("data-ko-leaf") && /[가-힣]/.test(raw) && raw.indexOf("한국어") === -1) {
+          el.setAttribute("data-ko-leaf", el.textContent);
+        }
+        const koOrig = el.getAttribute("data-ko-leaf");
+        if (koOrig) {
+          const normKo = koOrig.trim().replace(/\s+/g, " ");
+          if (isEn) {
+            if (LEAF_KO_TO_EN[normKo]) {
+              el.textContent = LEAF_KO_TO_EN[normKo];
+            }
+          } else {
+            el.textContent = koOrig;
+          }
+        }
+      }
+      for (let j = 0; j < el.children.length; j += 1) {
+        walk(el.children[j]);
+      }
+    };
+    walk(document.body);
+  }
+
+  function setLanguage(lang, updateUrl) {
+    const nextLang = lang === "en" ? "en" : "ko";
+    STATE.lang = nextLang;
+    if (typeof document !== "undefined") {
+      if (document.documentElement) document.documentElement.lang = nextLang;
+      document.title = nextLang === "en" ? EN_DOC_TITLE : KO_DOC_TITLE;
+      document.querySelectorAll(".lang-btn").forEach((b) => {
+        const bLang = b.dataset?.lang || b.getAttribute?.("data-lang");
+        b.classList?.toggle("active", bLang === nextLang);
+      });
+      const dict = I18N[nextLang] || I18N.ko;
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const k = el.getAttribute("data-i18n");
+        if (dict[k]) el.textContent = dict[k];
+      });
+      document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+        const k = el.getAttribute("data-i18n-html");
+        if (dict[k]) el.innerHTML = dict[k];
+      });
+      document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+        const k = el.getAttribute("data-i18n-placeholder");
+        if (dict[k]) el.setAttribute("placeholder", dict[k]);
+      });
+      document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+        const k = el.getAttribute("data-i18n-aria-label");
+        if (dict[k]) el.setAttribute("aria-label", dict[k]);
+      });
+      applyUniversalLeafTranslation(nextLang);
+    }
+
+    if (updateUrl && typeof window !== "undefined" && window.location && window.history?.replaceState) {
+      try {
+        const u = new URL(window.location.href);
+        u.searchParams.set("lang", nextLang);
+        window.history.replaceState({}, "", u.toString());
+      } catch (_) {}
+    }
+
     renderCharts();
+    handleDobInput(false);
     updatePointsCalculator(false);
     renderSkillSelectExplorer();
-    renderStateDeepDive("QLD");
     updateStateCombinator(false);
+    renderStateDeepDive(STATE.activeTab || "QLD");
     updateCostAnd191(false);
-    renderPollerTable(STATE.sources);
-    updateFooterCurrency(null);
+    if (STATE.sources && STATE.sources.length) renderPollerTable(STATE.sources);
+    updateFooterCurrency(STATE.pollingMeta || null);
+  }
+
+  function applyQueryPrefill(rawSearch) {
+    const searchStr = typeof rawSearch === "string"
+      ? rawSearch
+      : (typeof window !== "undefined" && window.location ? window.location.search : "");
+    if (!searchStr) return { applied: false };
+    let params;
+    try {
+      params = new URLSearchParams(searchStr);
+    } catch (_) {
+      return { applied: false };
+    }
+
+    let prefillApplied = false;
+    const ageParam = params.get("age");
+    if (ageParam !== null && ageParam !== "") {
+      const mappedBracket = mapAgeParamToBracket(ageParam);
+      const ageEl = document.getElementById("pt-age");
+      if (mappedBracket && ageEl) {
+        ageEl.value = mappedBracket;
+        prefillApplied = true;
+      }
+    }
+
+    const anzscoParam = params.get("anzsco");
+    if (anzscoParam !== null && anzscoParam.trim() !== "") {
+      const cleanQ = anzscoParam.trim();
+      const searchEl = document.getElementById("ss-occ-search");
+      const selEl = document.getElementById("ss-occ-select");
+      if (searchEl) searchEl.value = cleanQ;
+      const occs = getUniqueOccupationCutoffs();
+      const codeInfo = ANZSCO_CODE_MAP[cleanQ.toLowerCase()];
+      let matchedOcc = null;
+      if (codeInfo && codeInfo.occ) {
+        matchedOcc = occs.find((o) => o.occupation.toLowerCase() === codeInfo.occ.toLowerCase()) || null;
+      }
+      if (!matchedOcc) {
+        matchedOcc = occs.find((o) => matchesOccupationQuery(o.occupation, cleanQ)) || null;
+      }
+      if (matchedOcc) {
+        STATE.selectedOcc = matchedOcc.occupation;
+        if (selEl) selEl.value = matchedOcc.occupation;
+      }
+      prefillApplied = true;
+    }
+
+    if (prefillApplied) {
+      STATE.pointsInteracted = true;
+      updatePointsCalculator(true);
+      renderSkillSelectExplorer();
+    }
+    return { applied: prefillApplied };
+  }
+
+  function init() {
+    let initLang = "ko";
+    try {
+      const initParams = new URLSearchParams(window.location.search || "");
+      if (initParams.get("lang") === "en") initLang = "en";
+    } catch (_) {}
+
+    setLanguage(initLang, false);
+    applyQueryPrefill();
 
     document.getElementById("ss-occ-select")?.addEventListener("change", function () {
       STATE.selectedOcc = this.value;
@@ -1651,6 +2353,15 @@
       document.getElementById(id)?.addEventListener("input", () => updatePointsCalculator(true));
       document.getElementById(id)?.addEventListener("change", () => updatePointsCalculator(true));
     });
+
+    document.getElementById("pt-dob")?.addEventListener("input", () => handleDobInput(true));
+    document.getElementById("pt-dob")?.addEventListener("change", () => handleDobInput(true));
+
+    const stemWrap = document.getElementById("lbl-wrap-stem");
+    stemWrap?.addEventListener("mouseenter", () => { STATE.stemHovered = true; applySchedule6DGuards(); });
+    stemWrap?.addEventListener("mouseleave", () => { STATE.stemHovered = false; applySchedule6DGuards(); });
+
+    document.getElementById("btn-pte-lin25016-ref")?.addEventListener("click", () => togglePteReference());
 
     ["sc-current-loc", "sc-sector", "sc-res-months", "sc-work-months", "sc-work-hours", "sc-graduate"].forEach((id) => {
       document.getElementById(id)?.addEventListener("input", () => updateStateCombinator(true));
@@ -1682,8 +2393,11 @@
     document.getElementById("btn-gsm-copy")?.addEventListener("click", function () {
       const txt = document.getElementById("gsm-diagnostic-preview")?.textContent || "";
       navigator.clipboard?.writeText(txt);
-      this.textContent = "✅ 복사 완료 (Copied)";
-      setTimeout(() => { this.textContent = "📋 진단 요약 클립보드 복사"; }, 2200);
+      const isEn = STATE.lang === "en";
+      this.textContent = isEn ? "✅ Copied to Clipboard" : "✅ 복사 완료 (Copied)";
+      setTimeout(() => {
+        this.textContent = STATE.lang === "en" ? "📋 Copy Diagnostic Summary" : "📋 진단 요약 클립보드 복사";
+      }, 2200);
     });
     document.getElementById("btn-gsm-print")?.addEventListener("click", function () {
       window.print();
@@ -1704,11 +2418,17 @@
       fetch("data/polling_status.json")
         .then((r) => r.json())
         .then((d) => {
-          if (d && Array.isArray(d.sources)) {
-            STATE.sources = d.sources;
-            STATE.pollingMeta = d;
-            renderPollerTable(d.sources);
-            updateFooterCurrency(d);
+          if (d) {
+            if (d.vac_schedule) {
+              STATE.vacSchedule = d.vac_schedule;
+              updateCostAnd191(false);
+            }
+            if (Array.isArray(d.sources)) {
+              STATE.sources = d.sources;
+              STATE.pollingMeta = d;
+              renderPollerTable(d.sources);
+              updateFooterCurrency(d);
+            }
           }
         })
         .catch(() => {});
@@ -1718,7 +2438,7 @@
           if (psData && Array.isArray(psData.records)) {
             STATE.programStatus = psData;
             renderSkillSelectExplorer();
-            updateStateCombinator();
+            updateStateCombinator(false);
             renderStateDeepDive(STATE.activeTab || "QLD");
             updateFooterCurrency(STATE.pollingMeta || null);
           }
@@ -1730,6 +2450,9 @@
           if (ssData && Array.isArray(ssData.occupation_cutoffs)) {
             STATE.skillselect = ssData;
             renderSkillSelectExplorer();
+            if (window.location.search && window.location.search.includes("anzsco=")) {
+              applyQueryPrefill();
+            }
           }
         })
         .catch(() => {});
@@ -1737,26 +2460,7 @@
 
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", function () {
-        STATE.lang = this.dataset.lang || "ko";
-        document.querySelectorAll(".lang-btn").forEach((b) => b.classList.toggle("active", b === this));
-        const dict = I18N[STATE.lang] || I18N.ko;
-        document.querySelectorAll("[data-i18n]").forEach((el) => {
-          const k = el.getAttribute("data-i18n");
-          if (dict[k]) el.textContent = dict[k];
-        });
-        try {
-          const u = new URL(window.location.href);
-          u.searchParams.set("lang", STATE.lang);
-          window.history.replaceState({}, "", u.toString());
-        } catch (err) {}
-        renderCharts();
-        updatePointsCalculator();
-        renderSkillSelectExplorer();
-        updateStateCombinator();
-        renderStateDeepDive(STATE.activeTab || "QLD");
-        updateCostAnd191();
-        if (STATE.sources.length) renderPollerTable(STATE.sources);
-        updateFooterCurrency(STATE.pollingMeta || null);
+        setLanguage(this.dataset.lang || "ko", true);
       });
     });
   }
@@ -1764,6 +2468,15 @@
   const GSM_NAVIGATOR = {
     STATE,
     STATE_RULES,
+    DEFAULT_VAC_SCHEDULE,
+    ANZSCO_CODE_MAP,
+    applySchedule6DGuards,
+    mapAgeParamToBracket,
+    evaluateDobCountdown,
+    handleDobInput,
+    togglePteReference,
+    applyQueryPrefill,
+    setLanguage,
     computePointsSnapshot,
     getUniqueOccupationCutoffs,
     matchesOccupationQuery,
@@ -1790,283 +2503,5 @@
     } else {
       init();
     }
-  }
-})();
-
-
-/* === Park & Co Universal Ecosystem Strip & Static Leaf KO<->EN Enhancer === */
-(function () {
-  var LEAF_KO_TO_EN = {
-    "← 박앤코 법률 인텔리전스 통합 허브 (All 12 Navigators)": "← Park & Co Legal & Visa Hub",
-    "← 박앤코 법률·비자 통합 허브": "← Park & Co Legal & Visa Hub",
-    "🧭 종합 비자·SOL 진단 가이드": "🧭 Visa & SOL Solution Guide",
-    "📚 호주이민 FAQ 백과": "📚 Immigration FAQ",
-    "종합 비자 솔루션 가이드": "Visa Solution Guide",
-    "이민·비자 FAQ 포털": "Immigration FAQ Portal",
-    "법률·비자 통합 허브": "Legal & Visa Hub",
-    "🧭 내 직군의 ANZSCO/OSCA 기술심사기관 확인 및 대안 비자(482·186·DAMA) 동시 비교가 필요하신가요?": "🧭 Need to check your ANZSCO/OSCA assessing authority or compare 482, 186 & DAMA alternatives?",
-    "박앤코 종합 비자 솔루션 가이드에서 전체 통합 직업군 리스트(SOL)·기술심사기관 검색·이력서 기반 비자 매칭·호주이민 실전 FAQ 백과를 함께 확인하실 수 있습니다.": "Use the Park & Co Visa Solution Guide to search the full Skilled Occupation List (SOL) & assessing authorities, match your resume to visa pathways, and explore our Practical Immigration FAQ Encyclopedia.",
-    "0년 (무경력·졸업생 · 3년 미만 0점)": "0 years (Graduate / No experience · Under 3 yrs = 0 pts)",
-    "0년 (무경력·졸업생 · 1년 미만 0점)": "0 years (Graduate / No experience · Under 1 yr = 0 pts)",
-    "0시간 · 현재 미취업 (무경력·졸업생 스트림 / WA 건설·491 면제 / 해외 경력)": "0 hrs · Currently unemployed (Graduate stream / WA Construction & 491 waiver / Offshore)",
-    "4. 현 거주 주 내 숙련 직무 연속 근무 개월 수 (무경력 0 입력 가능)": "4. Continuous Skilled Employment in Current State (Months · enter 0 if none)",
-    "건축·건설·트레이드 (Building & Construction · QLD 3개월·WA 고용계약 면제)": "Building & Construction Trades (QLD 3m / WA job-offer waiver)",
-    "초청 직군 선택 (전체 직군 열람 가능)": "Select Invited Occupation (All occupations available)",
-    "직군 영문·한글 키워드 실시간 검색": "Live Search by English or Korean Keyword",
-    "예시 데이터 넣어보기": "Fill Sample Profile",
-    "내 Schedule 6D 점수 판정하기": "Calculate Schedule 6D Points",
-    "8개 주정부 적격 여부 판정하기": "Assess 8-State Eligibility",
-    "총비용 및 191 전환 판정하기": "Calculate Total Cost & 191 PR",
-    "🔎 직업군·기술심사기관 통합 검색 (SOL) →": "🔎 Unified Occupation & Assessing Authority Search (SOL) →",
-    "📄 이력서·경력 비자 매칭 →": "📄 Resume-to-Visa Matcher →",
-    "📚 호주이민 실전 FAQ 백과 →": "📚 Practical Immigration FAQs →",
-    "📋 박앤코 GSM Case Review™️ 신청 →": "📋 Apply for Park & Co GSM Case Review™️ →",
-    "📋 GSM Case Review™️ (189·190·491 전문 서류검토 신청) →": "📋 GSM Case Review™️ (189·190·491 Document Audit) →",
-    "📋 GSM Case Review™ (초청 후 60일 서류 감사) →": "📋 GSM Case Review™ (60-Day Post-Invite Audit) →",
-    "📋 GSM Case Review™️ (189·190·491 서류검토) 신청하기 →": "📋 Apply for GSM Case Review™️ (189·190·491) →",
-    "🚨 비자응급실 (s 57 · PIC 4020 소명 통지 무료 진단) →": "🚨 Visa Emergency (Free s 57 / PIC 4020 Notice Triage) →",
-    "🚨 비자응급실 (s 57 · PIC 4020 위험 통지서 무료 진단) →": "🚨 Visa Emergency (Free s 57 / PIC 4020 Notice Triage) →",
-    "⚖️ 189·190·491 거절 무료 ART Case Review™ →": "⚖️ Free ART Case Review™ for 189·190·491 Refusals →",
-    "⚖️ ART Case Review™ (비자 거절 무료 재심 검토) →": "⚖️ ART Case Review™ (Free Refusal Review Assessment) →",
-    "📋 GSM 서류검토(Case Review™)": "📋 GSM Case Review™",
-    "🚨 비자응급실(무료 통지서 진단)": "🚨 Visa Emergency",
-    "⚖️ ART 무료 재심검토": "⚖️ Free ART Review",
-    "파트너(820)·485": "Partner (820) & 485",
-    "부모비자": "Parent Visas",
-    "고용법(FWC)": "Employment Law (FWC)",
-    "가족법·재산분할": "Family Law & Property",
-    "위기·ART": "Visa Crisis & ART",
-    "← 전체 네비게이터 허브": "← All Navigators Hub",
-    "💬 온라인 상담신청": "💬 Enquire Online",
-    "박창민 대표변호사 (Chang Min Park)": "Chang Min Park (Legal Practitioner Director)",
-    "\"삶에 집중하세요, 법률은 저희가 맡겠습니다.\"": "\"You focus on life, we'll handle the law.\"",
-    "법무법인 박앤코 (PNC Legal Pty Ltd t/a Park & Co Lawyers)": "PNC Legal Pty Ltd t/a Park & Co Lawyers",
-    "법령 및 주정부 심사 근거": "Statutory & State Nomination Authority",
-    "법령 및 심사 근거": "Statutory & Policy Authority",
-    "법령 및 재판소 근거": "Statutory & Tribunal Authority",
-    "Schedule 6D (189·190·491) 점수 계산기 ↓": "Schedule 6D (189·190·491) Points Calculator ↓",
-    "8개 주정부(QLD~NT) 자격 매칭 & 백과사전": "8-State (QLD–NT) Eligibility Matcher & Compendium",
-    "1. 8개 주정부 비교 & 점수 차트": "1. 8-State Comparison & Points Charts",
-    "2. Schedule 6D 점수 계산기": "2. Schedule 6D Points Calculator",
-    "3. 8개 주정부(QLD~NT) 정밀 매칭기": "3. 8-State (QLD–NT) Eligibility Matcher",
-    "4. 491→191 영주권 & 총비용·진단서": "4. 491→191 PR & Total Cost / Brief",
-    "변호사 1:1 기술이민·주정부 노미네이션 상담 신청 →": "Request 1:1 Skilled & State Nomination Consultation →",
-    "65점": "65 pts",
-    "190(+5점) · 491(+15점) 가점 포함": "Incl. 190 (+5 pts) & 491 (+15 pts)",
-    "최대 20점": "Max 20 pts",
-    "해외(15점)+호주(20점) 통합 상한": "Combined Overseas (15) + AUS (20) Cap",
-    "FY26–27 주신청자 (189는 $6,135)": "FY26–27 Primary VAC (189 is $6,135)",
-    "$0 하한": "$0 Floor",
-    "최저소득 폐지 · ATO NOA 3년치 제출": "No min income · 3 yrs ATO NOAs required",
-    "배우자 +$315 · 미성년 자녀 +$160": "Partner +$315 · Child +$160",
-    "190·491 최소 거주·근무 개월 수 및 주정부 수수료 비교": "190/491 Minimum Residency/Work Months & State Fee Comparison",
-    "그래프 1 · 8개 주/준주 일반 거주자 190 vs 491 필수 근무/거주 개월 수 & 신청비 비교": "Chart 1 · 8-State/Territory Onshore 190 vs 491 Minimum Work/Residency Months & Fees",
-    "WA는 491 고용계약·경력 면제 및 신청비 $0이며 QLD는 2026–27부터 전 스트림 주 20시간+ 유급근무(190 9개월 / 491 6개월 · 2025–26 NOA 필수)가 적용됩니다.": "WA waives fees ($0) & 491 job offers; QLD 2026–27 requires ≥20 paid hrs/wk across all streams (9m 190 / 6m 491 + 2025–26 ATO NOA).",
-    "그래프 2 · Schedule 6D 항목별 최대 배점 및 해외+호주 경력 20점 통합 상한(Item 6D51)": "Chart 2 · Schedule 6D Maximum Points & Item 6D51 20-Point Combined Work Experience Cap",
-    "나이(30점) + 영어(20점) + 경력합산(최대 20점) + 학력/STEM/호주학업/파트너 + 주정부 가점(+5/+15점).": "Age (30) + English (20) + Combined Work (max 20) + Education/STEM/Study/Partner + State (+5/+15).",
-    "Schedule 6D 11대 평가 항목 입력": "Schedule 6D 11-Factor Assessment Inputs",
-    "1. 초청 시점 만 나이 (Part 6D.1)": "1. Age at Time of Invitation (Part 6D.1)",
-    "만 18세 ~ 24세 (25점)": "Aged 18–24 (25 pts)",
-    "만 25세 ~ 32세 (30점 · 최고 배점)": "Aged 25–32 (30 pts · Maximum)",
-    "만 33세 ~ 39세 (25점)": "Aged 33–39 (25 pts)",
-    "만 40세 ~ 44세 (15점)": "Aged 40–44 (15 pts)",
-    "만 45세 이상 (0점 · GSM 189/190/491 신청 불가)": "Aged 45+ (0 pts · Ineligible for GSM 189/190/491)",
-    "2. 영어 능력 (Part 6D.2 · 유효기간 3년)": "2. English Language Ability (Part 6D.2 · 3-Year Validity)",
-    "Competent English · IELTS 각 6.0 / PTE 50 (0점 · 최소 기본요건)": "Competent English · IELTS 6.0 / PTE 50 (0 pts · Minimum Threshold)",
-    "Proficient English · IELTS 각 7.0 / PTE 65 (10점)": "Proficient English · IELTS 7.0 / PTE 65 (10 pts)",
-    "Superior English · IELTS 각 8.0 / PTE 79 (20점)": "Superior English · IELTS 8.0 / PTE 79 (20 pts)",
-    "3. 해외 숙련 경력 (Part 6D.3 · 최근 10년 내 주 20h+)": "3. Overseas Skilled Employment (Part 6D.3 · 20h+/wk in last 10 yrs)",
-    "3년 미만 (0점)": "Under 3 years (0 pts)",
-    "3년 이상 ~ 5년 미만 (5점)": "3 to <5 years (5 pts)",
-    "5년 이상 ~ 8년 미만 (10점)": "5 to <8 years (10 pts)",
-    "8년 이상 (15점)": "8+ years (15 pts)",
-    "4. 호주 내 숙련 경력 (Part 6D.4 · 최근 10년 내 주 20h+)": "4. Australian Skilled Employment (Part 6D.4 · 20h+/wk in last 10 yrs)",
-    "1년 미만 (0점)": "Under 1 year (0 pts)",
-    "1년 이상 ~ 3년 미만 (5점)": "1 to <3 years (5 pts)",
-    "8년 이상 (20점)": "8+ years (20 pts)",
-    "5. 최종 학력/자격 (Part 6D.7)": "5. Educational Qualifications (Part 6D.7)",
-    "박사 학위 (Doctorate / PhD · 20점)": "Doctorate / PhD (20 pts)",
-    "학사(Bachelor) 또는 석사(Masters) 학위 (15점)": "Bachelor or Masters Degree (15 pts)",
-    "호주 Diploma / Trade 학위 또는 기술심사기관 인정 자격 (10점)": "Australian Diploma / Trade Qualification or Recognised Award (10 pts)",
-    "인정 학력 없음 (0점)": "No Recognised Qualification (0 pts)",
-    "6. 배우자/파트너 자격 또는 미혼 (Part 6D.11)": "6. Partner Skills or Single Status (Part 6D.11)",
-    "미혼(Single) 또는 파트너가 호주 시민권자/영주권자 (10점 · 6D112)": "Single OR Partner is Australian Citizen/PR (10 pts · 6D112)",
-    "파트너가 만 45세 미만 + Competent 영어 + 동일 리스트 기술심사 보유 (10점 · 6D111)": "Partner <45 + Competent English + Skilled Assessment (10 pts · 6D111)",
-    "파트너가 Competent 영어(IELTS 6.0)만 보유 (5점 · 6D113)": "Partner has Competent English (IELTS 6.0) only (5 pts · 6D113)",
-    "파트너가 시민권/영주권자가 아니며 영어/기술심사 미보유 (0점)": "Partner is non-citizen/PR without English or Skills Assessment (0 pts)",
-    "7. 추가 가점 항목 (해당 항목 모두 체크 · Part 6D.6 / 6D.7A / 6D.8 / 6D.9 / 6D.10)": "7. Bonus Point Factors (Tick all that apply · Parts 6D.6–6D.10)",
-    "Subclass 189 · 190 · 491 법정 점수 산출 결과": "Subclass 189 · 190 · 491 Statutory Points Breakdown",
-    "8개 주/준주 중 현재 바로 노미네이션 신청(또는 ROI/Matrix 접수)이 가능한 주와 부족한 개월 수를 즉시 판정": "Instantly identify eligible States/Territories and any remaining residency/work months required",
-    "내 거주지 · 근무 개월 · 주당 시간 · 졸업생 프로필 입력": "Your Current State, Work Months, Weekly Hours & Graduate Profile",
-    "1. 현재 거주 중인 주/준주 (또는 해외)": "1. Current State/Territory of Residence (or Offshore)",
-    "Queensland (QLD · 브리즈번 / 골드코스트·지방 QLD)": "Queensland (QLD · Brisbane / Gold Coast & Regional QLD)",
-    "New South Wales (NSW · 시드니 / 지방 NSW)": "New South Wales (NSW · Sydney / Regional NSW)",
-    "Victoria (VIC · 멜버른 / 지방 VIC)": "Victoria (VIC · Melbourne / Regional VIC)",
-    "Western Australia (WA · 퍼스 및 서호주 전역)": "Western Australia (WA · Perth & Statewide WA)",
-    "South Australia (SA · 애들레이드 및 외곽 SA)": "South Australia (SA · Adelaide & Regional SA)",
-    "Tasmania (TAS · 호바트·론세스턴 등 전역)": "Tasmania (TAS · Hobart, Launceston & Statewide)",
-    "Australian Capital Territory (ACT · 캔버라)": "Australian Capital Territory (ACT · Canberra)",
-    "Northern Territory (NT · 다윈·앨리스스프링스 등)": "Northern Territory (NT · Darwin & Regional NT)",
-    "해외 거주 중 (Offshore · 한국 등 호주 외 거주)": "Residing Offshore (Outside Australia)",
-    "2. 직군 산업 분야 (Priority Sector)": "2. Occupation Industry Sector",
-    "일반 기술·전문직·기능직 (General CSOL/State List)": "General Skilled / Professional / Trade Occupation",
-    "건축·건설·트레이드 (Building & Construction · QLD·WA·SA 최우선 우대)": "Building & Construction Trades (Priority in QLD, WA, SA)",
-    "보건·의료·간호·교육·사회복지 (Health, Nursing, Teaching, Social Work)": "Health, Nursing, Teaching & Social Work",
-    "3. 현 거주 주(State) 연속 거주 개월 수 (개월)": "3. Continuous Residency in Current State (Months)",
-    "4. 현 거주 주 내 숙련 직무 연속 근무 개월 수 (개월)": "4. Continuous Skilled Employment in Current State (Months)",
-    "5. 주당 평균 유급 근무시간 (시간/주)": "5. Average Paid Working Hours per Week",
-    "주 35~38시간 이상 (Full-time · 전 주정부 190/491 기준 충족)": "35–38+ hrs/wk (Full-time · Meets all State 190/491 thresholds)",
-    "주 30시간 이상 (QLD·SA·ACT 190 기준 충족)": "30+ hrs/wk (Meets SA & ACT 190 thresholds)",
-    "주 30시간 이상 (SA·ACT 190 및 TAS Gold 기준 충족)": "30+ hrs/wk (Meets SA & ACT 190 / TAS Gold thresholds)",
-    "주 20시간 이상 (NSW·TAS·SA 491 기준 충족)": "20+ hrs/wk (Meets NSW, TAS, SA 491 thresholds)",
-    "주 20시간 이상 (QLD 2026–27 전 스트림 · NSW · TAS · SA 491 기준 충족)": "20+ hrs/wk (Meets QLD 2026–27 all streams, NSW, TAS & SA 491)",
-    "주 15시간 이상 (ACT 491 13/15주 기준 충족)": "15+ hrs/wk (Meets ACT 491 threshold)",
-    "현재 미취업 (졸업생 무경력 스트림 또는 해외 경력 활용)": "Currently Unemployed (Graduate stream or offshore experience)",
-    "6. 현 거주 주(State) 내 대학/VET 졸업 여부": "6. Graduate of a University/VET Institution in Current State?",
-    "아니오 (일반 숙련 근로자 스트림)": "No (Standard Skilled Worker Stream)",
-    "예 · 해당 주에서 학사/석사/학위(2년+) 졸업 (Regional NSW·WA·TAS·SA·NT 졸업생 특례)": "Yes · Bachelor/Masters (2+ yrs) in this State (Graduate concessions)",
-    "예 · 해당 주에서 박사(PhD) 학위 취득 (ACT 무료·자동초청 / QLD·WA·SA 우대)": "Yes · Doctorate (PhD) completed in this State (Priority stream)",
-    "예 · 해당 주에서 2년 이상 VET (Cert III/IV/Diploma) 졸업 (WA·TAS·SA 졸업생)": "Yes · 2+ yr VET (Cert III/IV/Diploma) in this State",
-    "내 프로필 기준 주정부 노미네이션(190 · 491) 적격 판정": "State Nomination (190 · 491) Eligibility Assessment",
-    "8개 주/준주별 190·491 세부 스트림 · 거주/근무/고용계약 · 수수료 · 숨은 함정 총정리": "8-State/Territory 190 & 491 Streams, Residency/Work Rules, Fees & Key Traps",
-    "QLD (퀸즐랜드)": "QLD (Queensland)",
-    "NSW (뉴사우스웨일스)": "NSW (New South Wales)",
-    "VIC (빅토리아)": "VIC (Victoria)",
-    "WA (서호주)": "WA (Western Australia)",
-    "SA (남호주)": "SA (South Australia)",
-    "TAS (태즈메이니아)": "TAS (Tasmania)",
-    "ACT (캔버라)": "ACT (Canberra)",
-    "NT (노던준주)": "NT (Northern Territory)",
-    "최저소득 폐지($0 기준 · NOA 3년치 제출)": "No Minimum Income ($0 floor · 3 ATO NOAs required)",
-    "주정부 노미네이션 수수료 + FY2026–27 연방 비자비(VAC) 총합": "State Nomination Fee + FY2026–27 Federal VAC Total",
-    "비자 종류 · 노미네이션 주 · 가족 수 · [491/494 전용] 191 전환 요건": "Visa Subclass, Nominating State, Family Size & [491/494 Only] 191 PR Check",
-    "1. 신청 비자 서브클래스": "1. Target Visa Subclass",
-    "Subclass 491 · 지방 주정부/가족 지명 임시 5년 (3년 후 191 영주권 전환 대상 · VAC $6,140)": "Subclass 491 · Regional Provisional 5-Yr (Eligible for 191 PR after 3 yrs · VAC $6,140)",
-    "Subclass 191 · [491/494 소지자 전용] 3년 후 영주권 전환 신청 (VAC $630 · 주정부 비용 $0)": "Subclass 191 · [491/494 Holders Only] 3-Yr PR Transition (VAC $630 · State Fee $0)",
-    "Subclass 190 · 주정부 지명 영주비자 (처음부터 영주권 Direct PR · 191 전환 대상 아님 · VAC $6,140)": "Subclass 190 · State Nominated Direct PR (Direct PR · Not a 191 pathway · VAC $6,140)",
-    "Subclass 189 · 독립기술 영주비자 (처음부터 영주권 Direct PR · 주정부/191 대상 아님 · VAC $6,135)": "Subclass 189 · Skilled Independent Direct PR (Direct PR · Not a 191 pathway · VAC $6,135)",
-    "2. 노미네이션 신청 주/준주 (190·491만 해당)": "2. Nominating State/Territory (190 & 491 Only)",
-    "QLD · $630.30 (Onshore GST 포함)": "QLD · $630.30 (incl. Onshore GST)",
-    "NSW · $346.50 (Onshore GST 포함)": "NSW · $346.50 (incl. Onshore GST)",
-    "WA · $0 (서호주 주정부 신청비 전면 무료!)": "WA · $0 (Western Australia $0 Nomination Fee)",
-    "3. 동반 성인 가족 수 (만 18세 이상 배우자 등)": "3. Accompanying Adult Applicants (18+ Partner/Dependants)",
-    "0명 (단독 신청)": "0 (Single Applicant)",
-    "1명 (+$3,070 / 191은 +$315)": "1 Adult (+$3,070 / 191 is +$315)",
-    "1명 (배우자 동반)": "1 Adult (Accompanying Partner)",
-    "2명": "2",
-    "3명": "3",
-    "0명": "0",
-    "1명": "1",
-    "4. 동반 미성년 자녀 수 (만 18세 미만)": "4. Accompanying Minor Children (Under 18)",
-    "1명 (+$1,535 / 189는 +$1,540 / 191은 +$160)": "1 Child (+$1,535 / 189 is +$1,540 / 191 is +$160)",
-    "5. [491/494 소지자 전용] 보유 기간 & ATO NOA 수": "5. [491/494 Holders Only] Years Held & ATO NOAs",
-    "491/494 보유 3년 이상 + ATO Notice of Assessment 3개 연도 확보 완료": "Held 491/494 for 3+ yrs + 3 income years of ATO NOAs ready",
-    "아직 3년 미만 보유 중 (5년 비자 기간 중 총 3개 과세연도 NOA 확보 필요)": "Held <3 yrs (Must complete 3 years and 3 ATO NOAs within 5-yr validity)",
-    "6. [491/494 소지자 전용] 지방 거주·근무 조건(8579) 준수": "6. [491/494 Holders Only] Condition 8579 Regional Compliance",
-    "준수 완료 · 지정 지방(Designated Regional Area) 내 거주·근무·학업 유지": "Compliant · Resided, worked & studied exclusively in Designated Regional Areas",
-    "주의 필요 · 대도시(시드니·멜버른·브리즈번) 장기 체류 또는 주소 변경 미신고(8578)": "Caution · Extended metro stay (Sydney/Melbourne/Brisbane) or unnotified address (8578)",
-    "FY2026–27 총비용 & Subclass 191 영주권 전환 판정": "FY2026–27 Total Statutory Cost & Subclass 191 PR Assessment",
-    "내 기술이민 점수(Schedule 6D) & 주정부 노미네이션 진단서 복사 · 인쇄(PDF) & 온라인 상담 신청": "Copy, Print (PDF) & Enquire Online with Your GSM Points & State Nomination Brief",
-    "위 계산기에서 산출된 189·190·491 점수·거주 주 노미네이션 판정·비자비 요약문을 복사하여 공식 온라인 상담 신청 시 활용할 수 있습니다.": "Copy your calculated 189/190/491 points, state nomination eligibility, and fee breakdown to attach directly to your Park & Co online consultation request.",
-    "📋 진단 요약 클립보드 복사": "📋 Copy Diagnostic Summary",
-    "📋 긴급 진단서 클립보드 복사": "📋 Copy Urgent Diagnostic Brief",
-    "🖨️ PDF / 브리프 인쇄": "🖨️ Print / Save PDF",
-    "💬 진단 요약 복사 & 박앤코 온라인 상담 →": "💬 Copy Brief & Enquire Online →",
-    "🚨 진단 결과 담아 박앤코 긴급 자문 요청 →": "🚨 Email Urgent Brief to Park & Co →",
-    "구분": "Category",
-    "공식 법령 · 주정부 이민 포털 및 링크": "Official Legislation / State Portal & Link",
-    "공식 문서명 및 링크": "Official Instrument / Source & Link",
-    "공식 법령 · 재판소 안내 및 링크": "Official Legislation / Tribunal Guide & Link",
-    "관할 기관": "Authority",
-    "추적 지표": "Monitored Metrics",
-    "검증 주기": "Schedule",
-    "상태": "Status",
-    "법률 면책공고 (Legal Disclaimer) · 주정부 노미네이션 할당량(Quota) 안내": "Legal Disclaimer & State Nomination Quota Notice",
-    "법률 면책공고 (Legal Disclaimer) · Migration Act s 245AR 비용 전가 금지 안내": "Legal Disclaimer & Migration Act s 245AR Prohibition Notice",
-    "법률 면책공고 (Legal Disclaimer) · 송달 간주 규정(s 494B / s 494C) 안내": "Legal Disclaimer & Deemed Notification Rules (s 494B / s 494C)",
-    "연방 Schedule 6D & 8개 주정부 포털 실시간 모니터 (12/12 Live Verified)": "Federal Schedule 6D & 8-State Portal Live Monitor (12/12 Verified)",
-    "공식 1차 출처 실시간 모니터 (12/12 Live Verified)": "Official Primary Source Live Monitor (12/12 Verified)",
-    "공식 1차 법령·ART 출처 실시간 모니터 (12/12 Live Verified)": "Official Statutory & ART Primary Source Monitor (12/12 Verified)",
-    "비자 만료 시까지 (Until Visa Expiry)": "Until Visa Expiry (LIN 22/012 & LIN 22/013)",
-    "28 역일": "28 Calendar Days",
-    "일반 비자·노미네이션 거절 (reg 4.10)": "Standard Onshore Visa/Nomination Refusal (reg 4.10)",
-    "7 영업일": "7 Working Days",
-    "호주 내 일반 비자 취소 · 구금 재심": "Onshore s 116 Cancellation / Detention Review",
-    "9일 / 28일": "9 Days / 28 Days",
-    "ART 재심 9일(s 500(6B)) · 철회 28일": "ART s 500(6B) 9d · Revocation Request 28d",
-    "+ 파트너(820) · 의료(602) · 보호(866)": "+ Partner (820) · Medical (602) · Protection (866)",
-    "3년 / 10년": "3 Yrs / 10 Yrs",
-    "허위서류 3년(Waiver유) · 신원 10년(무)": "Bogus Doc 3yr (Waivable) · Identity 10yr (No Waiver)",
-    "35 역일": "35 Calendar Days",
-    "ART 기각 후 관할권 오류 사법심사(s 477)": "FCFCOA Judicial Review after ART Dismissal (s 477)",
-    "2. ART 재심 · s 501 데드라인 계산기": "2. ART Review & s 501 Deadline Calculator",
-    "3. Section 48 Bar 예외 비자 진단": "3. Section 48 Bar Exempt Visa Checker",
-    "긴급 비자 거절·취소 1:1 변호사 자문 요청 →": "Request Urgent 1:1 Refusal/Cancellation Legal Advice →"
-  };
-
-  function applyUniversalLeafTranslation(lang) {
-    var isEn = lang === "en";
-    document.querySelectorAll(".parkco-svc-link").forEach(function (lnk) {
-      var h = isEn ? lnk.getAttribute("data-en-href") : lnk.getAttribute("data-ko-href");
-      if (h) lnk.setAttribute("href", h);
-    });
-    document.querySelectorAll("a.cta-enquiry").forEach(function (a) {
-      a.setAttribute("href", isEn ? "https://parklawyers.com.au/links/" : "https://parklawyers.com.au/links/?lang=ko");
-    });
-    var walk = function (el) {
-      if (!el || el.tagName === "SCRIPT" || el.tagName === "STYLE" || el.tagName === "PRE") return;
-      var hasElementChildren = false;
-      for (var i = 0; i < el.children.length; i++) {
-        if (el.children[i].tagName !== "BR") {
-          hasElementChildren = true;
-          break;
-        }
-      }
-      if (!hasElementChildren) {
-        var raw = (el.textContent || "").trim().replace(/\s+/g, " ");
-        if (!el.getAttribute("data-ko-leaf") && /[가-힣]/.test(raw) && raw.indexOf("한국어") === -1) {
-          el.setAttribute("data-ko-leaf", el.textContent);
-        }
-        var koOrig = el.getAttribute("data-ko-leaf");
-        if (koOrig) {
-          var normKo = koOrig.trim().replace(/\s+/g, " ");
-          if (isEn) {
-            if (LEAF_KO_TO_EN[normKo]) {
-              el.textContent = LEAF_KO_TO_EN[normKo];
-            } else if (normKo.indexOf("(") !== -1 && /[A-Za-z]/.test(normKo)) {
-              /* If option has bilingual text like '1월 (Jan)' or '만 67세 미만 (Under 67)', extract English or keep clean */
-            }
-          } else {
-            el.textContent = koOrig;
-          }
-        }
-      }
-      for (var j = 0; j < el.children.length; j++) {
-        walk(el.children[j]);
-      }
-    };
-    walk(document.body);
-  }
-
-  if (typeof document !== "undefined") {
-    document.addEventListener("DOMContentLoaded", function () {
-      var btns = document.querySelectorAll("#lang-en, #lang-ko, #lang-toggle-en, #lang-toggle-ko, .lang-btn");
-      btns.forEach(function (b) {
-        b.addEventListener("click", function () {
-          var isEn = (b.id && b.id.indexOf("en") !== -1) || b.getAttribute("data-lang") === "en";
-          document.documentElement.lang = isEn ? "en" : "ko";
-          setTimeout(function () { applyUniversalLeafTranslation(isEn ? "en" : "ko"); }, 20);
-        });
-      });
-
-      var params = new URLSearchParams(window.location.search);
-      if (params.get("lang") === "en") {
-        var enBtn = document.getElementById("lang-en") || document.getElementById("lang-toggle-en") || document.querySelector('[data-lang="en"]');
-        if (enBtn) {
-          enBtn.click();
-          setTimeout(function () { applyUniversalLeafTranslation("en"); }, 40);
-        }
-      }
-    });
   }
 })();

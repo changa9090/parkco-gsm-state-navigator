@@ -515,7 +515,8 @@
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "8f54999777871cbaa956077053fdac96a037cc631eef6a9e267ed55ce5bad47e",
-      "history": []
+      "history": [],
+      "summary_en": "VIC 190 criteria page check: live in Victoria or overseas, commit to live/work in Victoria for ≥2 yrs, selected ROI, under 45, Competent English+, valid skills assessment, 65+ pts (incl. 5 state pts), employment not mandatory, ≥12 wks validity left on English/skills assessment, apply within 60 days, avg processing 20 business days."
     },
     {
       "id": "vic_491_page",
@@ -531,7 +532,8 @@
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "3b8a61b0e3d99542e8536f98d93c87c94f144be8b47a617ef00ee15b6ed690bf",
-      "history": []
+      "history": [],
+      "summary_en": "Dedicated VIC 491 page also confirms subclass 491 nomination is not currently open and 491 ROIs are not being accepted."
     },
     {
       "id": "vic_fees",
@@ -547,7 +549,8 @@
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "4020566eaa6607d50b9f16a8516e7897fd385fd69d36e42820b98ab3f601c68c",
-      "history": []
+      "history": [],
+      "summary_en": "Official VIC 2026–27 fee schedule: ROI $60 ($66 incl. GST, charged once per program year), 190 nomination $180 ($198 incl. GST), 491 nomination $180 ($198 incl. GST)."
     },
     {
       "id": "qld_eligibility",
@@ -571,7 +574,8 @@
           "retrieved_on": "2026-10-28",
           "archived_at": "2026-11-02"
         }
-      ]
+      ],
+      "summary_en": "QLD Eligibility Criteria Hub: Both Department of Home Affairs visa criteria and Migration Queensland nomination criteria are assessed separately and must both be satisfied."
     },
     {
       "id": "sa_offshore",
@@ -587,7 +591,8 @@
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "00bbafe7fa14b4a4e922c6f4575409c19081f757f6cb8c15a7714633946bd871",
-      "history": []
+      "history": [],
+      "summary_en": "SA Offshore page (separate from news list): 2026–27 priority industries are Construction, Engineering, Manufacturing, Trades, Health, and Education; requires ≥3 yrs skilled work in last 5 yrs (20h/wk SkillSelect standard) and application within 14 days of invitation."
     },
     {
       "id": "act_home_allocation",
@@ -603,7 +608,8 @@
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "bb49d4f97b52da6af67086cbb349b60647b9f2c56995022474c55a2efb1f0d20",
-      "history": []
+      "history": [],
+      "summary_en": "ACT Migration Home: 2026–27 allocation of nomination places has not yet been confirmed by the Australian Government."
     },
     {
       "id": "act_190_criteria",
@@ -619,7 +625,8 @@
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "c209efbce92e989cf3602467ef1f276778b2a1725ad92efbcd3381a64b828c18",
-      "history": []
+      "history": [],
+      "summary_en": "ACT 190 criteria page: commitment to live and work in Canberra for ≥2 years from visa grant (or arrival date in Canberra if offshore)."
     }
   ],
   "source_health": {
