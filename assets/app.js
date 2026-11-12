@@ -469,7 +469,7 @@
       sec1_title: "Statutory Schedule 6D GSM Points Calculator (Simultaneous 189 · 190 · 491)",
       sec1_desc: "Select your age at invitation, English score, overseas/Australian skilled experience (including 0-year graduates), qualifications, partner skills, and bonus factors to compute 189, 190, and 491 scores simultaneously.",
       ssExplorerTitle: "SkillSelect Live Occupation Cut-Off Explorer & Prior FY25–26 Federal Allocation Ref (20,350) vs Live FY26–27 State Status",
-      ssExplorerDesc: "Search all invited occupations—even with 0 years of experience—and compare latest 189 cut-offs, prior FY2025–26 federal allocation references, and live FY2026–27 State/Territory program intake status.",
+      ssExplorerDesc: "Search all invited occupations·even with 0 years of experience·and compare latest 189 cut-offs, prior FY2025–26 federal allocation references, and live FY2026–27 State/Territory program intake status.",
       ssFedRefBadge: "Prior FY25–26 Fed Allocation Ref: 20,350 · Live FY26–27 State Status",
       ssOccCardTitle: "1. Live Occupation Cut-Off Search & 189 · 190 · 491 Strategy Comparison",
       lblSsOccSearch: "Live Search by Occupation Name or ANZSCO Code",
@@ -958,7 +958,7 @@
       cliffAge = 45;
       daysRemaining = 0;
       messageKo = `❌ 브리즈번 현재 만 ${age}세 · 이미 만 45세 이상 도달 (GSM 189·190·491 초청 불가 · DAMA 만 50·55세 또는 186 면제 검토)`;
-      messageEn = `❌ Current age ${age} (Brisbane) · Already 45+ — Ineligible for GSM 189/190/491 at invitation (check DAMA 50/55 or 186 exemptions)`;
+      messageEn = `❌ Current age ${age} (Brisbane) · Already 45+ · Ineligible for GSM 189/190/491 at invitation (check DAMA 50/55 or 186 exemptions)`;
     } else if (age < 18) {
       blocked = true;
       cliffAge = 18;
