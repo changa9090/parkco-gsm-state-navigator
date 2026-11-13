@@ -101,7 +101,8 @@
         <a href="#skillselect-cutoff-explorer" data-i18n="navCutoffs">직군별 컷오프</a>
         <a href="#state-combinator" data-i18n="navStates">8개 주정부 매칭</a>
         <a href="#subclass-191-cost" data-i18n="nav191Cost">191·비자비용</a>
-        <a class="parkco-svc-link" href="https://faq.immispecialist.com/?lang=ko" data-ko-href="https://faq.immispecialist.com/?lang=ko" data-en-href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener" data-i18n="navFaq">이민 FAQ</a>
+        <a href="#gsm-knowledge-hub" data-i18n="navGsmHub">60문항 지식허브</a>
+        <a class="parkco-svc-link" href="https://faq.immispecialist.com/category/skilled-migration-gsm?lang=ko" data-ko-href="https://faq.immispecialist.com/category/skilled-migration-gsm?lang=ko" data-en-href="https://faq.immispecialist.com/category/skilled-migration-gsm?lang=en" target="_blank" rel="noopener" data-i18n="navFaq">기술이민 FAQ</a>
       </nav>
 
       <div class="pk-unified-header__actions">
@@ -568,6 +569,59 @@
           </div>
         </div>
         <pre id="gsm-diagnostic-preview" style="margin-top:12px;padding:12px 14px;background:#FFFFFF;border:1px solid #E5DFD3;border-radius:8px;font-size:12.5px;color:#14282A;white-space:pre-wrap;font-family:inherit;line-height:1.55;"></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOL 04: 5-TAB GSM & STATE NOMINATION KNOWLEDGE HUB (G01-G60, 7 CASES, 8-STATE MATRIX, 11 CURRENTNESS RULES, 5 CHECKLISTS) -->
+  <section class="band-ivory" id="gsm-knowledge-hub">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="overline-serif light-mode">TOOL 04 · 5-TAB GENERAL SKILLED MIGRATION &amp; STATE NOMINATION KNOWLEDGE HUB (2026-11-12 VERIFIED)</span>
+          <h2 data-i18n="gkhTitle">일반기술이민 · 주정부 노미네이션(189 · 190 · 491 · 191) 60문항 지식허브 · 핵심 판례 7선 · 8개 주 매트릭스 · 통념 대조표</h2>
+          <p data-i18n="gkhDesc">2026-11-12 기준 1차 연방 법령(Migration Act 1958 s 93 · Migration Regulations 1994 Schedule 6D · LIN 25/016 · LIN 26/057 · LIN 20/272 · reg 2.12), 연방법원 및 2025–2026 행정재심기구(ART) 판례 7선(Thapa · Grewal · Yew · Thiede-Palmer · Toor · Ali · Trivedi), 8개 주·준주 노미네이션 매트릭스를 통합한 심층 지식 베이스입니다.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background:#FFFFFF;border-top:4px solid #7A1F2B;">
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-bottom:14px;">
+          <div style="display:flex;flex-wrap:wrap;gap:6px;" role="tablist" aria-label="GSM Knowledge Hub Tabs">
+            <button type="button" class="btn-secondary gkh-tab-btn active" data-gkh-tab="faqs" data-i18n="gkhTabFaqs">60문항 핵심 Q&amp;A (G01~G60)</button>
+            <button type="button" class="btn-secondary gkh-tab-btn" data-gkh-tab="cases" data-i18n="gkhTabCases">연방법원 · ART 핵심 판례 7선</button>
+            <button type="button" class="btn-secondary gkh-tab-btn" data-gkh-tab="states" data-i18n="gkhTabStates">8개 주·준주 매트릭스 &amp; ART 통계</button>
+            <button type="button" class="btn-secondary gkh-tab-btn" data-gkh-tab="currentness" data-i18n="gkhTabCurrentness">과거 속설 vs 현행 법령 11대 대조 (GR01~GR11)</button>
+            <button type="button" class="btn-secondary gkh-tab-btn" data-gkh-tab="checklists" data-i18n="gkhTabChecklists">단계별 실무 체크리스트 (GCL01~GCL05)</button>
+          </div>
+          <a class="btn-burgundy parkco-svc-link" href="https://faq.immispecialist.com/category/skilled-migration-gsm?lang=ko" data-ko-href="https://faq.immispecialist.com/category/skilled-migration-gsm?lang=ko" data-en-href="https://faq.immispecialist.com/category/skilled-migration-gsm?lang=en" target="_blank" rel="noopener" style="font-size:12.5px;padding:7px 13px;" data-i18n="gkhBtnOpenPortal">공식 FAQ 포털(71문항) 전체 보기 &nearr;</a>
+        </div>
+
+        <div id="gkh-panel-faqs" class="gkh-panel">
+          <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-bottom:10px;">
+            <div id="gkh-faq-cat-bar" style="display:flex;flex-wrap:wrap;gap:6px;flex:1;"></div>
+            <div style="min-width:250px;max-width:400px;width:100%;">
+              <input type="search" id="gkh-faq-search" class="form-control" placeholder="60문항 검색 (예: 189, 190, 491, 191, EOI, ROI, 초청, 영어, LIN 25/016, 배우자, Grewal, Yew, 8579, NOA, s 48)..." />
+            </div>
+          </div>
+          <div id="gkh-faq-count" style="font-size:12.5px;color:#47433E;margin-bottom:10px;"></div>
+          <div id="gkh-faq-list" style="display:grid;grid-template-columns:1fr;gap:10px;"></div>
+        </div>
+
+        <div id="gkh-panel-cases" class="gkh-panel" hidden>
+          <div id="gkh-cases-content"></div>
+        </div>
+
+        <div id="gkh-panel-states" class="gkh-panel" hidden>
+          <div id="gkh-states-content"></div>
+        </div>
+
+        <div id="gkh-panel-currentness" class="gkh-panel" hidden>
+          <div id="gkh-currentness-content"></div>
+        </div>
+
+        <div id="gkh-panel-checklists" class="gkh-panel" hidden>
+          <div id="gkh-checklists-content"></div>
+        </div>
       </div>
     </div>
   </section>

@@ -326,7 +326,16 @@
       navCutoffs: "직군별 컷오프",
       navStates: "8개 주정부 매칭",
       nav191Cost: "191·비자비용",
-      navFaq: "이민 FAQ",
+      navGsmHub: "60문항 지식허브",
+      navFaq: "기술이민 FAQ",
+      gkhTitle: "일반기술이민 · 주정부 노미네이션(189 · 190 · 491 · 191) 60문항 지식허브 · 핵심 판례 7선 · 8개 주 매트릭스 · 통념 대조표",
+      gkhDesc: "2026-11-12 기준 1차 연방 법령(Migration Act 1958 s 93 · Migration Regulations 1994 Schedule 6D · LIN 25/016 · LIN 26/057 · LIN 20/272 · reg 2.12), 연방법원 및 2025–2026 행정재심기구(ART) 판례 7선(Thapa · Grewal · Yew · Thiede-Palmer · Toor · Ali · Trivedi), 8개 주·준주 노미네이션 매트릭스를 통합한 심층 지식 베이스입니다.",
+      gkhTabFaqs: "60문항 핵심 Q&A (G01~G60)",
+      gkhTabCases: "연방법원 · ART 핵심 판례 7선",
+      gkhTabStates: "8개 주·준주 매트릭스 & ART 통계",
+      gkhTabCurrentness: "과거 속설 vs 현행 법령 11대 대조 (GR01~GR11)",
+      gkhTabChecklists: "단계별 실무 체크리스트 (GCL01~GCL05)",
+      gkhBtnOpenPortal: "공식 FAQ 포털(71문항) 전체 보기 ↗",
       brandTag: "호주 기술이민 (189 · 190 · 491 Schedule 6D) & 8개 주정부 노미네이션 네비게이터",
       pollBtnLabel: "12/12 연방·8개 주정부 검증됨",
       topCta: "공식 문의 허브",
@@ -426,7 +435,16 @@
       navCutoffs: "Cut-Offs",
       navStates: "8-State Match",
       nav191Cost: "191 & Fees",
-      navFaq: "Visa FAQ",
+      navGsmHub: "60-Q Hub",
+      navFaq: "GSM FAQ",
+      gkhTitle: "General Skilled Migration & State Nomination (189 · 190 · 491 · 191) 60-Question Hub · 7 Court/ART Cases · 8-State Matrix · Myth vs Law",
+      gkhDesc: "Primary-source knowledge base verified as at 2026-11-12 integrating Migration Act 1958 s 93, Migration Regulations 1994 Schedule 6D, LIN 25/016, LIN 26/057, LIN 20/272, reg 2.12, 7 Federal Court & 2025–2026 ART decisions (Thapa · Grewal · Yew · Thiede-Palmer · Toor · Ali · Trivedi), and the 8-State/Territory Nomination Matrix.",
+      gkhTabFaqs: "60 Core Q&As (G01–G60)",
+      gkhTabCases: "7 Court & ART Precedents",
+      gkhTabStates: "8-State Matrix & ART Stats",
+      gkhTabCurrentness: "11 Legacy Myths vs Current Law (GR01–GR11)",
+      gkhTabChecklists: "5 Stage Checklists (GCL01–GCL05)",
+      gkhBtnOpenPortal: "Open Full GSM FAQ Portal (71 Q&As) ↗",
       brandTag: "Australia GSM Points (189 · 190 · 491 Schedule 6D) & 8-State Nomination Navigator",
       pollBtnLabel: "12/12 Federal & 8-State Sources Verified",
       topCta: "Official Hub",
@@ -2276,8 +2294,236 @@
     updateStateCombinator(false);
     renderStateDeepDive(STATE.activeTab || "QLD");
     updateCostAnd191(false);
+    renderGsmKnowledgeHub();
     if (STATE.sources && STATE.sources.length) renderPollerTable(STATE.sources);
     updateFooterCurrency(STATE.pollingMeta || null);
+  }
+
+  let cachedGsmKnowledgeHub = null;
+  let currentGkhTab = "faqs";
+  let currentGkhCategory = "ALL";
+  let currentGkhQuery = "";
+
+  function renderGsmKnowledgeHub() {
+    if (typeof document === "undefined") return;
+    const rootBox = document.getElementById("gsm-knowledge-hub");
+    if (!rootBox || !cachedGsmKnowledgeHub) return;
+
+    const isEn = STATE.lang === "en";
+    const data = cachedGsmKnowledgeHub;
+    const faqs = Array.isArray(data.faq_items) ? data.faq_items : [];
+    const casesList = Array.isArray(data.review_and_cases) ? data.review_and_cases : [];
+    const stateMatrix = Array.isArray(data.state_matrix) ? data.state_matrix : [];
+    const rulesList = Array.isArray(data.currentness_rules) ? data.currentness_rules : [];
+    const checkList = Array.isArray(data.stage_checklists) ? data.stage_checklists : [];
+    const stats = data.statistics_summary || {};
+
+    const searchInput = document.getElementById("gkh-faq-search");
+    if (searchInput) {
+      searchInput.placeholder = isEn
+        ? "Search 60 Q&As (e.g. 189, 190, 491, 191, EOI, ROI, invitation, LIN 25/016, partner, Grewal, Yew, 8579, NOA, s 48)..."
+        : "60문항 검색 (예: 189, 190, 491, 191, EOI, ROI, 초청, 영어, LIN 25/016, 배우자, Grewal, Yew, 8579, NOA, s 48)...";
+    }
+
+    document.querySelectorAll(".gkh-tab-btn").forEach((btn) => {
+      btn.classList.toggle("active", btn.getAttribute("data-gkh-tab") === currentGkhTab);
+    });
+    ["faqs", "cases", "states", "currentness", "checklists"].forEach((t) => {
+      const pan = document.getElementById("gkh-panel-" + t);
+      if (pan) pan.hidden = currentGkhTab !== t;
+    });
+
+    const catBar = document.getElementById("gkh-faq-cat-bar");
+    const faqList = document.getElementById("gkh-faq-list");
+    const countEl = document.getElementById("gkh-faq-count");
+
+    if (catBar && faqList) {
+      const catMap = {};
+      faqs.forEach((f) => {
+        const c = f.category || "CAT";
+        if (!catMap[c]) {
+          catMap[c] = {
+            code: c,
+            ko: f.category_label_ko || c,
+            en: f.category_label_en || c,
+            count: 0
+          };
+        }
+        catMap[c].count += 1;
+      });
+      const cats = Object.keys(catMap);
+      let catHtml = `<button type="button" class="btn-secondary js-gkh-cat-chip ${currentGkhCategory === "ALL" ? "active" : ""}" data-cat="ALL" style="font-size:11.5px;padding:4px 9px;">${escapeHtml(isEn ? `All Categories (${faqs.length})` : `전체 분류 (${faqs.length})`)}</button>`;
+      cats.forEach((c) => {
+        const info = catMap[c];
+        catHtml += `<button type="button" class="btn-secondary js-gkh-cat-chip ${currentGkhCategory === c ? "active" : ""}" data-cat="${escapeHtml(c)}" style="font-size:11.5px;padding:4px 9px;">${escapeHtml((isEn ? info.en : info.ko) + " (" + info.count + ")")}</button>`;
+      });
+      catBar.innerHTML = catHtml;
+
+      const qLower = String(currentGkhQuery || "").trim().toLowerCase();
+      const filtered = faqs.filter((f) => {
+        if (currentGkhCategory !== "ALL" && f.category !== currentGkhCategory) return false;
+        if (!qLower) return true;
+        const hay = [
+          f.id, f.slug, f.category_label_ko, f.category_label_en,
+          f.question_ko, f.question_en, f.summary_ko, f.summary_en,
+          f.review_reason_ko, f.review_reason_en, f.source_notes, f.source_notes_en
+        ].join(" ").toLowerCase();
+        return hay.includes(qLower);
+      });
+
+      if (countEl) {
+        countEl.textContent = isEn
+          ? `Showing ${filtered.length} of ${faqs.length} verified GSM & State Nomination Q&A items (primary legislation, Court/ART case law & 8-state rules verified as at 2026-11-12)`
+          : `검색 결과: 총 ${filtered.length}개 문항 / 전체 ${faqs.length}개 (2026-11-12 기준 1차 법령 · 판례 · 8개 주 매트릭스 검증 완료)`;
+      }
+
+      const hashTarget = (typeof window !== "undefined" && window.location && window.location.hash)
+        ? window.location.hash.replace(/^#/, "").toUpperCase()
+        : "";
+
+      faqList.innerHTML = filtered.map((f, idx) => {
+        const q = isEn ? f.question_en : f.question_ko;
+        const sum = isEn ? f.summary_en : f.summary_ko;
+        const rev = isEn ? f.review_reason_en : f.review_reason_ko;
+        const src = isEn ? (f.source_notes_en || f.source_notes || "") : (f.source_notes || "");
+        const catLbl = isEn ? f.category_label_en : f.category_label_ko;
+        const portalUrl = isEn
+          ? (f.faq_url_en || `https://faq.immispecialist.com/q/${encodeURIComponent(f.slug)}?lang=en`)
+          : (f.faq_url_ko || `https://faq.immispecialist.com/q/${encodeURIComponent(f.slug)}?lang=ko`);
+        const isOpen = idx < 3 || hashTarget === f.id || hashTarget === String(f.slug || "").toUpperCase();
+        const boundaryChip = f.has_boundary
+          ? `<span class="badge badge-burgundy" style="font-size:11px;">${escapeHtml(isEn ? "Statutory Boundary" : "해석 경계 주의")}</span>`
+          : "";
+        return `
+          <details class="pk-disclosure" id="${escapeHtml(f.id)}" ${isOpen ? "open" : ""} style="margin-top:0;">
+            <summary style="font-size:13.5px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;">
+              <span><strong>[${escapeHtml(f.id)}]</strong> ${escapeHtml(q)}</span>
+              <span style="display:inline-flex;gap:6px;flex-wrap:wrap;">
+                ${boundaryChip}
+                <span class="badge-ok" style="font-size:11px;">${escapeHtml(catLbl)}</span>
+              </span>
+            </summary>
+            <div class="pk-disclosure__body" style="font-size:13px;line-height:1.62;">
+              <div class="alert-box alert-box--ok" style="margin-bottom:8px;">
+                <strong>${escapeHtml(isEn ? "Statutory Rule & Conclusion: " : "핵심 법령 결론: ")}</strong>${escapeHtml(sum)}
+              </div>
+              <p style="margin:0 0 8px 0;">
+                <strong>${escapeHtml(isEn ? "When Individual Legal Review Is Needed: " : "박앤코 개별 법률 검토 포인트: ")}</strong>${escapeHtml(rev)}
+              </p>
+              <p style="margin:0 0 10px 0;font-size:12px;color:#47433E;">
+                <strong>${escapeHtml(isEn ? "Primary Authorities (Verified 2026-11-12): " : "1차 법령·판례 근거 (검증일 2026-11-12): ")}</strong>${escapeHtml(src)}
+              </p>
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+                <span class="badge badge-burgundy" style="font-size:11px;">${escapeHtml(isEn ? `Fact-Checked: ${f.fact_checked_on || "2026-11-12"}` : `검증 기준일: ${f.fact_checked_on || "2026-11-12"}`)}</span>
+                <a href="${escapeHtml(portalUrl)}" target="_blank" rel="noopener" style="font-size:12.5px;font-weight:800;color:#0E3A3E;">
+                  ${escapeHtml(isEn ? "Read Full Legal Guide on FAQ Portal ↗" : "공식 FAQ 포털에서 전문 및 체크리스트 보기 ↗")}
+                </a>
+              </div>
+            </div>
+          </details>
+        `;
+      }).join("");
+    }
+
+    const casesBox = document.getElementById("gkh-cases-content");
+    if (casesBox) {
+      casesBox.innerHTML = `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:12px;">` + casesList.map((c) => `
+        <div class="card" style="padding:14px 16px;border-left:4px solid #0E3A3E;background:#FBF9F5;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+            <strong style="font-size:13.8px;color:#0E3A3E;">${escapeHtml(c.case_name)}</strong>
+            <span class="badge badge-burgundy" style="font-size:11px;">${escapeHtml(c.date || "2026")}</span>
+          </div>
+          <div style="font-size:12px;font-weight:700;color:#7A1F2B;margin-bottom:6px;">${escapeHtml(isEn ? c.topic_en : c.topic_ko)}</div>
+          <p style="margin:0 0 8px 0;font-size:12.8px;line-height:1.58;color:#14282A;">${escapeHtml(isEn ? c.holding_en : c.holding_ko)}</p>
+          <div style="font-size:12px;color:#47433E;background:#FFFFFF;border:1px solid #E5DFD3;border-radius:6px;padding:8px 10px;margin-bottom:8px;">
+            <strong>${escapeHtml(isEn ? "Scope & Caution: " : "적용 범위 및 한계: ")}</strong>${escapeHtml(isEn ? c.limit_en : c.limit_ko)}
+          </div>
+          <a href="${escapeHtml(c.primary_url || "https://www.legislation.gov.au/")}" target="_blank" rel="noopener" style="font-size:12px;font-weight:700;color:#0E3A3E;">
+            ${escapeHtml(isEn ? "Verify Full Federal Court Judgment ↗" : "연방법원 공식 판결문 원문 확인 ↗")}
+          </a>
+        </div>
+      `).join("") + `</div>`;
+    }
+
+    const statesBox = document.getElementById("gkh-states-content");
+    if (statesBox) {
+      const artRows = Array.isArray(stats.art_processing_times_apr_sep_2026) ? stats.art_processing_times_apr_sep_2026 : [];
+      statesBox.innerHTML = `
+        <div class="table-wrap" style="margin-bottom:14px;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>${escapeHtml(isEn ? "State / Territory" : "주 · 준주")}</th>
+                <th>${escapeHtml(isEn ? "Residency & Location Rules" : "거주지 · 물리적 근무지 기준")}</th>
+                <th>${escapeHtml(isEn ? "ROI / Selection Process & Fees" : "선발 방식 (EOI / ROI / Matrix) 및 수수료")}</th>
+                <th>${escapeHtml(isEn ? "Post-Grant Commitment" : "비자 승인 후 거주·근무 약속")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${stateMatrix.map((s) => `
+                <tr>
+                  <td><strong>${escapeHtml(isEn ? s.name_en : s.name_ko)}</strong></td>
+                  <td>${escapeHtml(isEn ? s.residency_en : s.residency_ko)}</td>
+                  <td>${escapeHtml(isEn ? s.process_en : s.process_ko)}</td>
+                  <td>${escapeHtml(isEn ? s.commitment_en : s.commitment_ko)}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>${escapeHtml(isEn ? "ART Review Cohort (1 Apr – 30 Sep 2026 Finalised)" : "행정재심기구(ART) 재심 분야 (2026.04.01 ~ 09.30 완료 기준)")}</th>
+                <th>${escapeHtml(isEn ? "50% Finalised (Median)" : "50% 처리 완료 (중앙값)")}</th>
+                <th>${escapeHtml(isEn ? "95% Finalised" : "95% 처리 완료")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${artRows.map((r) => `
+                <tr>
+                  <td><strong>${escapeHtml(isEn ? r.category_en : r.category_ko)}</strong></td>
+                  <td><strong>${escapeHtml(isEn ? `${r.p50_months} months` : `${r.p50_months}개월`)}</strong></td>
+                  <td>${escapeHtml(isEn ? `${r.p95_months} months` : `${r.p95_months}개월`)}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    const curBox = document.getElementById("gkh-currentness-content");
+    if (curBox) {
+      curBox.innerHTML = `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:10px;">` + rulesList.map((r) => `
+        <div class="alert-box alert-box--warn" style="margin:0;">
+          <div style="font-weight:800;font-size:13px;color:#7A1F2B;margin-bottom:4px;">
+            [${escapeHtml(r.id)} · ${escapeHtml(isEn ? "Legacy Myth / Trap" : "과거 속설·오해")}] ${escapeHtml(isEn ? r.legacy_claim_en : r.legacy_claim_ko)}
+          </div>
+          <div style="font-size:12.8px;line-height:1.58;color:#14282A;">
+            <strong>${escapeHtml(isEn ? "2026-11-12 Statutory Rule: " : "2026-11-12 현행 법령 기준: ")}</strong>${escapeHtml(isEn ? r.current_rule_en : r.current_rule_ko)}
+          </div>
+        </div>
+      `).join("") + `</div>`;
+    }
+
+    const clBox = document.getElementById("gkh-checklists-content");
+    if (clBox) {
+      clBox.innerHTML = `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;">` + checkList.map((cl) => {
+        const items = isEn ? (cl.items_en || []) : (cl.items_ko || []);
+        return `
+          <div class="alert-box alert-box--ok" style="margin:0;">
+            <div style="font-weight:800;font-size:13.8px;color:#0E3A3E;margin-bottom:6px;">
+              [${escapeHtml(cl.stage_id)}] ${escapeHtml(isEn ? cl.title_en : cl.title_ko)}
+            </div>
+            <ul style="margin:0;padding-left:18px;font-size:12.8px;line-height:1.58;color:#14282A;">
+              ${items.map((it) => `<li>${escapeHtml(it)}</li>`).join("")}
+            </ul>
+          </div>
+        `;
+      }).join("") + `</div>`;
+    }
   }
 
   function applyQueryPrefill(rawSearch) {
@@ -2388,6 +2634,21 @@
       if (demoBtn) {
         applySampleProfile();
       }
+      const gkhTabBtn = ev.target && ev.target.closest ? ev.target.closest(".gkh-tab-btn") : null;
+      if (gkhTabBtn) {
+        currentGkhTab = gkhTabBtn.getAttribute("data-gkh-tab") || "faqs";
+        renderGsmKnowledgeHub();
+      }
+      const gkhCatChip = ev.target && ev.target.closest ? ev.target.closest(".js-gkh-cat-chip") : null;
+      if (gkhCatChip) {
+        currentGkhCategory = gkhCatChip.getAttribute("data-cat") || "ALL";
+        renderGsmKnowledgeHub();
+      }
+    });
+
+    document.getElementById("gkh-faq-search")?.addEventListener("input", function () {
+      currentGkhQuery = this.value || "";
+      renderGsmKnowledgeHub();
     });
 
     document.getElementById("btn-gsm-copy")?.addEventListener("click", function () {
@@ -2453,6 +2714,15 @@
             if (window.location.search && window.location.search.includes("anzsco=")) {
               applyQueryPrefill();
             }
+          }
+        })
+        .catch(() => {});
+      fetch("data/gsm_knowledge_hub.json")
+        .then((r) => r.json())
+        .then((gkhData) => {
+          if (gkhData && Array.isArray(gkhData.faq_items)) {
+            cachedGsmKnowledgeHub = gkhData;
+            renderGsmKnowledgeHub();
           }
         })
         .catch(() => {});
