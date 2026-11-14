@@ -107,9 +107,9 @@
       </nav>
 
       <div class="pk-unified-header__actions">
-        <button type="button" id="btn-polling-status" class="pk-poll-pill" title="Primary Source Verification Monitor">
+        <button type="button" id="btn-polling-status" class="pk-poll-pill" title="Primary Source Snapshot Integrity Monitor">
           <span class="pk-poll-dot"></span>
-          <span data-i18n="pollBtnLabel">12/12 연방·8개 주정부 검증됨</span>
+          <span data-i18n="pollBtnLabel">12/12 연방·8개 주정부 출처 스냅샷 무결성 확인됨</span>
         </button>
         <a href="https://parklawyers.com.au/links/?lang=ko" data-ko-href="https://parklawyers.com.au/links/?lang=ko" data-en-href="https://parklawyers.com.au/links/" target="_blank" rel="noopener" class="pk-unified-header__hub-btn cta-enquiry parkco-svc-link" id="top-cta" data-i18n="topCta">공식 문의 허브</a>
         <div class="pk-lang-toggle" role="group" aria-label="Language Switcher">
@@ -712,12 +712,11 @@
           <div id="gsm-solution-guide-callout" style="margin-top:16px;padding:16px 20px;background:#FBF9F5;border:1px solid #E5DFD3;border-left:4px solid #0E3A3E;border-radius:10px;">
             <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
               <div style="max-width:680px;">
-                <h4 style="margin:0 0 4px 0;font-size:15.5px;font-weight:800;color:#14282A;" data-i18n="solCalloutTitle">내 직군의 ANZSCO/OSCA 기술심사기관 확인 및 대안 비자(482·186·DAMA) 동시 비교 안내</h4>
+                <h4 style="margin:0 0 4px 0;font-size:15.5px;font-weight:800;color:#14282A;" data-i18n="solCalloutTitle">내 직군의 ANZSCO/OSCA 기술심사기관 확인 및 호주이민 실전 FAQ 안내</h4>
                 <p style="margin:0;font-size:13px;color:#4A5D60;line-height:1.55;" data-i18n="solCalloutDesc">법무법인 박앤코 종합 비자 솔루션 가이드에서 통합 직업군 리스트(SOL)·기술심사기관 검색·이력서 기반 비자 매칭 및 호주이민 실전 FAQ 백과를 이어서 확인할 수 있습니다.</p>
               </div>
               <div style="display:flex;flex-wrap:wrap;gap:8px;">
                 <a href="https://changa9090.github.io/parkco-visa-solution-guide/?lang=ko#module-sol" data-ko-href="https://changa9090.github.io/parkco-visa-solution-guide/?lang=ko#module-sol" data-en-href="https://changa9090.github.io/parkco-visa-solution-guide/?lang=en#module-sol" class="btn-burgundy parkco-svc-link" style="font-size:12.5px;padding:8px 13px;">🔎 직업군·기술심사기관 통합 검색 (SOL) &rarr;</a>
-                <a href="https://changa9090.github.io/parkco-dependent-navigator/" class="btn-secondary" style="font-size:12.5px;padding:8px 13px;" data-i18n="btnSidCompare">SID 482·186·DAMA 허브 비교 &rarr;</a>
                 <a href="https://faq.immispecialist.com/?lang=ko" data-ko-href="https://faq.immispecialist.com/?lang=ko" data-en-href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener" class="btn-secondary parkco-svc-link" style="font-size:12.5px;padding:8px 13px;">📚 호주이민 실전 FAQ 백과 &rarr;</a>
               </div>
             </div>
@@ -744,10 +743,11 @@
       <!-- Disclosure 3: 12-Source SHA-256 Monitor & Legal Disclaimer -->
       <details class="pk-disclosure" id="disclosure-sources">
         <summary>
-          <span data-i18n="sec4_title">1차 법령 데이터 출처(12개 연방·8개 주정부 포털 SHA-256) 및 법률 면책공고 확인</span>
+          <span data-i18n="sec4_title">1차 법령·8개 주정부 포털 스냅샷 바이트 무결성(SHA-256) 및 법률 면책공고 확인</span>
           <span class="pk-disclosure__hint" data-i18n="discExpandHint">클릭하여 열기</span>
         </summary>
         <div class="pk-disclosure__body" id="poller-monitor">
+          <p style="font-size:13px;color:#4A5D60;margin:0 0 14px 0;line-height:1.55;" data-i18n="sec4_hash_note">아래 SHA-256 해시는 참조된 공식 법령·주정부 웹페이지 원문의 접속 상태 및 스냅샷 바이트 무결성(변조 여부)을 기록한 것이며 개별 점수 산식이나 주정부 잔여 할당량에 대한 실시간 자동 법률 보증을 의미하지 않습니다.</p>
           <div class="table-wrap table-scroll" style="margin-bottom:20px;">
             <table class="data-table">
               <thead>

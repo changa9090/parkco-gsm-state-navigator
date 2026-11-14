@@ -337,7 +337,7 @@
       gkhTabChecklists: "단계별 실무 체크리스트 (GCL01~GCL05)",
       gkhBtnOpenPortal: "공식 FAQ 포털(71문항) 전체 보기 ↗",
       brandTag: "호주 기술이민 (189 · 190 · 491 Schedule 6D) & 8개 주정부 노미네이션 네비게이터",
-      pollBtnLabel: "12/12 연방·8개 주정부 검증됨",
+      pollBtnLabel: "12/12 연방·8개 주정부 출처 스냅샷 무결성 확인됨",
       topCta: "공식 문의 허브",
       urgentBadge: "Schedule 6D 핵심 기준",
       urgentText: "법정 최소 65점(LIN 19/210) · 만 45세 미만 상한 · 경력 합산 최대 20점(Item 6D51) · WA 신청비 $0 · 491→191 소득하한 $0(NOA 3개 연도)",
@@ -412,9 +412,8 @@
       stat191Sub: "최저소득 폐지 · ATO NOA 3개 연도 제출",
       chart1Sub: "WA는 491 고용계약·경력 면제 및 신청비 $0이 적용되며 QLD는 2026–27부터 전 스트림 주 20시간+ 유급근무(190 9개월 / 491 6개월 · 2025–26 NOA 필수) 기준이 적용됩니다.",
       chart2Sub: "나이(30점) + 영어(20점) + 경력합산(최대 20점) + 학력/STEM/호주학업/파트너 + 주정부 가점(+5/+15점) 구조입니다.",
-      solCalloutTitle: "내 직군의 ANZSCO/OSCA 기술심사기관 확인 및 대안 비자(482·186·DAMA) 동시 비교 안내",
+      solCalloutTitle: "내 직군의 ANZSCO/OSCA 기술심사기관 확인 및 호주이민 실전 FAQ 안내",
       solCalloutDesc: "법무법인 박앤코 종합 비자 솔루션 가이드에서 통합 직업군 리스트(SOL)·기술심사기관 검색·이력서 기반 비자 매칭 및 호주이민 실전 FAQ 백과를 이어서 확인할 수 있습니다.",
-      btnSidCompare: "SID 482·186·DAMA 허브 비교 →",
       bioNameLink: "박창민 대표변호사 (Chang Min Park · QLS Accredited Specialist in Immigration Law)",
       bioSubHtml: "법무법인 박앤코 (PNC Legal Pty Ltd t/a Park &amp; Co Lawyers · Underwood QLD) · 공식 이메일 <a href='mailto:enquiry@parkcolawyers.com' style='color:#0E3A3E;font-weight:700;'>enquiry@parkcolawyers.com</a>",
       btnS57Diag: "🚨 s 57 · PIC 4020 통지서 진단 →",
@@ -422,7 +421,8 @@
       disclaimerP1: "본 호주 일반기술이민(Subclasses 189 · 190 · 491 · 191) 및 8개 주정부 노미네이션 통합 네비게이터는 법무법인 박앤코(PNC Legal Pty Ltd t/a Park & Co Lawyers)가 1차 법령(Schedule 6D) 및 각 주정부 공식 가이드라인을 기반으로 제작한 정보 제공 도구입니다. 개별 사안에 대한 법률 자문을 대체하지 않습니다.",
       disclaimerP2Html: "주정부 할당량(Quota)과 우선 초청 직군은 수시로 변동됩니다. SkillSelect EOI에서 입증 불가능한 점수를 과장 청구(Over-claiming)할 경우 초청 시점 점수 미달(<code>cl 189.224 / 190.214 / 491.215</code>)로 비자가 거절될 수 있으므로 EOI 또는 ROI 접수 전 박창민 대표변호사(QLS Accredited Specialist in Immigration Law · 공식 문의 허브: <a class='parkco-svc-link' href='https://parklawyers.com.au/links/?lang=ko' data-ko-href='https://parklawyers.com.au/links/?lang=ko' data-en-href='https://parklawyers.com.au/links/' target='_blank' rel='noopener' style='color:#0E3A3E;font-weight:700;'>parklawyers.com.au/links</a> · 이메일: <a href='mailto:enquiry@parkcolawyers.com' style='color:#0E3A3E;font-weight:700;'>enquiry@parkcolawyers.com</a>)와 상담하시기 바랍니다.",
       footerFirmHtml: "<strong style='color:#FFFFFF;'>법무법인 박앤코 (PNC Legal Pty Ltd t/a Park &amp; Co Lawyers)</strong> · 박창민 대표변호사 (QLS Accredited Specialist in Immigration Law)",
-      sec4_title: "1차 법령 데이터 출처(12개 연방·8개 주정부 포털 SHA-256) 및 법률 면책공고 확인",
+      sec4_title: "1차 법령·8개 주정부 포털 스냅샷 바이트 무결성(SHA-256) 및 법률 면책공고 확인",
+      sec4_hash_note: "아래 SHA-256 해시는 참조된 공식 법령·주정부 웹페이지 원문의 접속 상태 및 스냅샷 바이트 무결성(변조 여부)을 기록한 것이며 개별 점수 산식이나 주정부 잔여 할당량에 대한 실시간 자동 법률 보증을 의미하지 않습니다.",
       discStateTitle: "8개 주/준주(QLD~NT) 190·491 상설 요건 · 수수료 · 주의사항 백과사전 펼쳐보기",
       discChartsTitle: "배경 통계 · 8개 주 비교 차트 · Schedule 6D 배점 구조 펼쳐보기",
       discExpandHint: "클릭하여 열기"
@@ -446,7 +446,7 @@
       gkhTabChecklists: "5 Stage Checklists (GCL01–GCL05)",
       gkhBtnOpenPortal: "Open Full GSM FAQ Portal (71 Q&As) ↗",
       brandTag: "Australia GSM Points (189 · 190 · 491 Schedule 6D) & 8-State Nomination Navigator",
-      pollBtnLabel: "12/12 Federal & 8-State Sources Verified",
+      pollBtnLabel: "12/12 Federal & 8-State Snapshot Integrity Checked",
       topCta: "Official Hub",
       urgentBadge: "Schedule 6D Key Rules",
       urgentText: "65-pt Floor (LIN 19/210) · Under-45 Statutory Cap · Max 20-pt Combined Work Cap (Item 6D51) · WA $0 Fee · 491→191 $0 Min Income (3 ATO NOAs)",
@@ -521,9 +521,8 @@
       stat191Sub: "No min income · 3 yrs ATO NOAs required",
       chart1Sub: "WA waives nomination fees ($0) & 491 job offers; QLD 2026–27 requires ≥20 paid hrs/wk across all streams (9m 190 / 6m 491 + 2025–26 ATO NOA).",
       chart2Sub: "Age (30) + English (20) + Combined Work (max 20) + Qualifications/STEM/AU Study/Partner + State Nomination (+5/+15).",
-      solCalloutTitle: "Check Your ANZSCO/OSCA Assessing Authority & Compare 482 · 186 · DAMA Alternatives",
+      solCalloutTitle: "Check Your ANZSCO/OSCA Assessing Authority & Practical Immigration FAQs",
       solCalloutDesc: "Use the Park & Co Visa Solution Guide to search the unified Skilled Occupation List (SOL), verify assessing authorities, match your resume, and browse our Practical Immigration FAQ Portal.",
-      btnSidCompare: "Compare SID 482 · 186 · DAMA Hub →",
       bioNameLink: "Chang Min Park · Legal Practitioner Director (QLS Accredited Specialist in Immigration Law)",
       bioSubHtml: "PNC Legal Pty Ltd t/a Park &amp; Co Lawyers (Underwood QLD) · Official Email <a href='mailto:enquiry@parkcolawyers.com' style='color:#0E3A3E;font-weight:700;'>enquiry@parkcolawyers.com</a>",
       btnS57Diag: "🚨 s 57 · PIC 4020 Notice Triage →",
@@ -531,7 +530,8 @@
       disclaimerP1: "This Australia General Skilled Migration (Subclasses 189 · 190 · 491 · 191) and 8-State Nomination Navigator is a general legal information tool prepared by PNC Legal Pty Ltd t/a Park & Co Lawyers from primary legislation (Schedule 6D) and official State/Territory guidelines. It does not constitute legal advice for individual matters.",
       disclaimerP2Html: "State nomination allocations and priority occupations change without notice. Over-claiming unsubstantiated points in a SkillSelect EOI can lead to visa refusal for failing the invitation score test (<code>cl 189.224 / 190.214 / 491.215</code>). Before lodging an EOI or ROI, consult Chang Min Park (QLS Accredited Specialist in Immigration Law · Official Hub: <a class='parkco-svc-link' href='https://parklawyers.com.au/links/' data-ko-href='https://parklawyers.com.au/links/?lang=ko' data-en-href='https://parklawyers.com.au/links/' target='_blank' rel='noopener' style='color:#0E3A3E;font-weight:700;'>parklawyers.com.au/links</a> · Email: <a href='mailto:enquiry@parkcolawyers.com' style='color:#0E3A3E;font-weight:700;'>enquiry@parkcolawyers.com</a>).",
       footerFirmHtml: "<strong style='color:#FFFFFF;'>PNC Legal Pty Ltd t/a Park &amp; Co Lawyers</strong> · Chang Min Park, Legal Practitioner Director (QLS Accredited Specialist in Immigration Law)",
-      sec4_title: "Primary Statutory & 8-State Portal Sources (12 Live SHA-256) & Legal Disclaimer",
+      sec4_title: "Primary Statutory & 8-State Portal Snapshot Byte-Integrity (SHA-256) & Legal Disclaimer",
+      sec4_hash_note: "SHA-256 hashes below record HTTP reachability and fetched source snapshot byte-integrity only. They do not constitute automated legal certification of individual eligibility calculations or real-time state quota availability.",
       discStateTitle: "Expand 8-State/Territory (QLD–NT) Standing 190 & 491 Rules, Fees & Key Traps",
       discChartsTitle: "Expand Background Statistics, 8-State Comparison Charts & Schedule 6D Breakdown",
       discExpandHint: "Click to expand"
@@ -1952,8 +1952,8 @@
       modalBody.innerHTML = `
         <p style="font-size:13.5px;color:#47433E;margin-bottom:14px;">
           ${en
-            ? "Live status of 12 Federal (Schedule 6D / LIN 19/210 / SkillSelect) and 8-State/Territory nomination portals verified by <code>poller/gsm_state_poller.py</code>."
-            : "<code>poller/gsm_state_poller.py</code>가 정기 점검하는 12개 연방 법령(Schedule 6D / LIN 19/210 / SkillSelect) 및 호주 8개 주/준주 노미네이션 포털 상태입니다."}
+            ? "Snapshot HTTP reachability and byte-integrity (SHA-256) of 12 Federal (Schedule 6D / LIN 19/210 / SkillSelect) and 8-State/Territory nomination portals checked by <code>poller/gsm_state_poller.py</code> (not automated legal certification of individual eligibility or live quota shifts)."
+            : "<code>poller/gsm_state_poller.py</code>가 점검한 12개 연방 법령(Schedule 6D / LIN 19/210 / SkillSelect) 및 8개 주/준주 포털 원문의 접속 상태와 스냅샷 바이트 무결성(SHA-256) 기록입니다(개별 점수 산식·실시간 할당량에 대한 자동 법률 보증이 아님)."}
         </p>
         <div class="table-wrap table-scroll">
           <table class="data-table">
@@ -1997,8 +1997,8 @@
     }
     if (pollBtn) {
       pollBtn.textContent = en
-        ? `${okCnt}/${totCnt} Portals & ${subCnt} Status Records Verified (${String(asAt).slice(0, 10)})`
-        : `${okCnt}/${totCnt} 포털 · ${subCnt}개 접수 상태 검증됨 (${String(asAt).slice(0, 10)})`;
+        ? `${okCnt}/${totCnt} Portal Snapshots & ${subCnt} Status Records (${String(asAt).slice(0, 10)})`
+        : `${okCnt}/${totCnt} 포털 스냅샷 · ${subCnt}개 접수 상태 기록됨 (${String(asAt).slice(0, 10)})`;
     }
   }
 
@@ -2303,6 +2303,15 @@
   let currentGkhTab = "faqs";
   let currentGkhCategory = "ALL";
   let currentGkhQuery = "";
+
+  function escapeHtml(val) {
+    return String(val == null ? "" : val)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
 
   function renderGsmKnowledgeHub() {
     if (typeof document === "undefined") return;
