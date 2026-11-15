@@ -1,7 +1,7 @@
 {
   "schema_version": "2026-10-28.1",
-  "generated_at": "2026-11-09T07:45:08+10:00",
-  "as_at_date": "2026-11-09",
+  "generated_at": "2026-11-16T07:45:38+10:00",
+  "as_at_date": "2026-11-16",
   "dama_navigator_url": "https://changa9090.github.io/parkco-dama-navigator/",
   "dama_link_ko": "DAMA 일정·직종·완화 기준은 DAMA 네비게이터에서 확인하세요.",
   "dama_link_en": "For DAMA deadlines, occupations, and concessions, see the DAMA Navigator.",
@@ -24,7 +24,7 @@
       "source_url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-nominated-visa-subclass-190",
       "source_title": "NSW Skilled Nominated visa (subclass 190)",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "421ee825ff0629d4e96bcd5daef7ef5c62f929ac4f276046281c80083df6f0f1",
@@ -55,7 +55,7 @@
       "source_url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-work-regional-visa-subclass-491",
       "source_title": "NSW Skilled Work Regional visa (subclass 491)",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "35811af475050094f24ac59dd09f4f059a9274904a254e625abe93fbb14e2878",
@@ -85,7 +85,7 @@
       "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program",
       "source_title": "2026-27 Skilled visa nomination program",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577",
@@ -111,7 +111,7 @@
       "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program",
       "source_title": "2026-27 Skilled visa nomination program",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577",
@@ -141,7 +141,7 @@
       "source_url": "https://www.migration.qld.gov.au/",
       "source_title": "Migration Queensland · Home",
       "retrieved_on": "2026-11-05",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134",
@@ -180,7 +180,7 @@
       "source_url": "https://www.migration.qld.gov.au/",
       "source_title": "Migration Queensland · Home",
       "retrieved_on": "2026-11-05",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134",
@@ -217,11 +217,11 @@
       "secondary_quote": "for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA.",
       "source_url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program",
       "source_title": "Migration WA · State Nominated Migration Program",
-      "retrieved_on": "2026-11-09",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "retrieved_on": "2026-11-16",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
-      "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387",
+      "content_sha256": "59054bdb39a105d76f648bbb704624f66f8fff095aeafdbde28f5b2221e49f76",
       "gaps_ko": [
         "2026–27 개시·마감 문장 없음",
         "배정 자리 수 미기재",
@@ -248,11 +248,11 @@
       "secondary_quote": "for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA.",
       "source_url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program",
       "source_title": "Migration WA · State Nominated Migration Program",
-      "retrieved_on": "2026-11-09",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "retrieved_on": "2026-11-16",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
-      "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387",
+      "content_sha256": "59054bdb39a105d76f648bbb704624f66f8fff095aeafdbde28f5b2221e49f76",
       "gaps_ko": [
         "2026–27 개시·마감 문장 없음",
         "배정 자리 수 미기재",
@@ -281,7 +281,7 @@
       "source_url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update",
       "source_title": "South Australia’s General Skilled Migration Program Update (22 Oct 2026)",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949",
@@ -311,7 +311,7 @@
       "source_url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update",
       "source_title": "South Australia’s General Skilled Migration Program Update (22 Oct 2026)",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949",
@@ -342,7 +342,7 @@
       "source_url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois",
       "source_title": "Migration Tasmania · 2026-27 Program Opening Notice",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685",
@@ -371,7 +371,7 @@
       "source_url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois",
       "source_title": "Migration Tasmania · 2026-27 Program Opening Notice",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685",
@@ -386,27 +386,35 @@
       "subclass": "190",
       "program_year": "2026-27",
       "program_year_source": "page",
-      "badge": "limited",
+      "badge": "needs_review",
       "places": null,
       "places_quote": "",
       "places_claim_state": "absent",
       "mentioned_date": "2026-10-12",
-      "summary_ko": "2026–27 회계연도 배정 미발표(2025–26 배정 190 800석·잔여 0은 전년도 수치). 참고: 2026-10-12 라운드에서 190 초청 발행(박사 54, SBO 18[최소 120점], 거주 Critical 126, 해외 Critical 63 · 재원 연도는 페이지 미설명).",
-      "summary_en": "2026–27 financial year allocation has not yet been announced (800 places / 0 remaining was 2025–26). Separate page fact: 12 Oct 2026 round issued 190 invitations only.",
-      "quote": "The allocation for the 2026-27 financial year has not yet been announced.",
-      "secondary_quote": "Matrix nominating Doctorate Streamlined Pathway 190 nominations: 54 invitations 491 nominations: 0 invitations",
+      "summary_ko": "원문 페이지 본문이 변경되어 기존 확인 인용문이 사라졌습니다(수동 검토 필요 · 배지 자동 추정 없음).",
+      "summary_en": "Source page text changed and previous verified quote is no longer present (manual review required; badge not inferred).",
+      "quote": "",
+      "secondary_quote": "",
       "source_url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round",
       "source_title": "Canberra Matrix Invitation Round",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "claim_state": "current",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "claim_state": "absent",
       "freshness": "live_verified",
-      "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5",
+      "content_sha256": "45a6444f67059f81dea2020b60b640ca9a1fddc8535a5e1dbabb46412974dd2e",
       "gaps_ko": [
         "2026–27 연간 배정 자리 수 미발표",
         "10월 12일 초청분의 배정 연도 미설명"
       ],
-      "history": [],
+      "history": [
+        {
+          "field": "quote",
+          "quote": "The allocation for the 2026-27 financial year has not yet been announced.",
+          "badge": "limited",
+          "retrieved_on": "2026-10-28",
+          "archived_at": "2026-11-16"
+        }
+      ],
       "consecutive_failures": 0
     },
     {
@@ -416,26 +424,34 @@
       "subclass": "491",
       "program_year": "2026-27",
       "program_year_source": "page",
-      "badge": "limited",
+      "badge": "needs_review",
       "places": null,
       "places_quote": "",
       "places_claim_state": "absent",
       "mentioned_date": "2026-10-12",
-      "summary_ko": "2026–27 회계연도 배정 미발표(2025–26 배정 491 800석·잔여 0은 전년도 수치). 참고: 2026-10-12 라운드의 491 초청은 0건.",
-      "summary_en": "2026–27 financial year allocation has not yet been announced (800 places / 0 remaining was 2025–26). Separate page fact: 12 Oct 2026 round issued 0 subclass 491 invitations.",
-      "quote": "The allocation for the 2026-27 financial year has not yet been announced.",
-      "secondary_quote": "Matrix nominating Doctorate Streamlined Pathway 190 nominations: 54 invitations 491 nominations: 0 invitations",
+      "summary_ko": "원문 페이지 본문이 변경되어 기존 확인 인용문이 사라졌습니다(수동 검토 필요 · 배지 자동 추정 없음).",
+      "summary_en": "Source page text changed and previous verified quote is no longer present (manual review required; badge not inferred).",
+      "quote": "",
+      "secondary_quote": "",
       "source_url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round",
       "source_title": "Canberra Matrix Invitation Round",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "claim_state": "current",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "claim_state": "absent",
       "freshness": "live_verified",
-      "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5",
+      "content_sha256": "45a6444f67059f81dea2020b60b640ca9a1fddc8535a5e1dbabb46412974dd2e",
       "gaps_ko": [
         "2026–27 연간 배정 자리 수 미발표"
       ],
-      "history": [],
+      "history": [
+        {
+          "field": "quote",
+          "quote": "The allocation for the 2026-27 financial year has not yet been announced.",
+          "badge": "limited",
+          "retrieved_on": "2026-10-28",
+          "archived_at": "2026-11-16"
+        }
+      ],
       "consecutive_failures": 0
     },
     {
@@ -457,7 +473,7 @@
       "source_url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination",
       "source_title": "NT Government Visa Nomination",
       "retrieved_on": "2026-11-05",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032",
@@ -466,7 +482,7 @@
         "주 정부 수수료 미기재"
       ],
       "history": [],
-      "consecutive_failures": 0
+      "consecutive_failures": 1
     },
     {
       "id": "nt_491",
@@ -488,7 +504,7 @@
       "source_url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination",
       "source_title": "NT Government Visa Nomination",
       "retrieved_on": "2026-11-05",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032",
@@ -497,7 +513,7 @@
         "주 정부 수수료 미기재"
       ],
       "history": [],
-      "consecutive_failures": 0
+      "consecutive_failures": 1
     }
   ],
   "supplementary_records": [
@@ -511,7 +527,7 @@
       "secondary_quote": "The average processing time for skilled visa nomination applications is 20 business days.",
       "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-nominated-visa-subclass-190",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "8f54999777871cbaa956077053fdac96a037cc631eef6a9e267ed55ce5bad47e",
@@ -528,7 +544,7 @@
       "secondary_quote": "",
       "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/491",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "3b8a61b0e3d99542e8536f98d93c87c94f144be8b47a617ef00ee15b6ed690bf",
@@ -545,7 +561,7 @@
       "secondary_quote": "The Registration of Interest fee is charged once per program year.",
       "source_url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/fees",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "4020566eaa6607d50b9f16a8516e7897fd385fd69d36e42820b98ab3f601c68c",
@@ -562,7 +578,7 @@
       "secondary_quote": "Australian Government visa requirements and Migration Queensland nomination requirements are assessed separately, and both need to be satisfied.",
       "source_url": "https://www.migration.qld.gov.au/nomination-process/eligibility-criteria",
       "retrieved_on": "2026-11-05",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "7e0eb468c5b8f31c5bca2cf7e5194b4a15addfdefda226810de076f4684e018a",
@@ -587,7 +603,7 @@
       "secondary_quote": "Have at least three years of skilled work experience in your nominated or closely related occupation (within the last 5 years)",
       "source_url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants/moving-to-south-australia-from-overseas",
       "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
       "content_sha256": "00bbafe7fa14b4a4e922c6f4575409c19081f757f6cb8c15a7714633946bd871",
@@ -600,15 +616,23 @@
       "jurisdiction": "ACT",
       "kind": "status_corroboration",
       "summary_ko": "ACT 홈: 2026–27 노미네이션 배정 자리는 연방 정부 미확정 상태.",
-      "quote": "The ACT’s 2026-27 allocation of nomination places have not yet been confirmed by the Australian Government.",
+      "quote": "",
       "secondary_quote": "",
       "source_url": "https://www.act.gov.au/migration",
       "retrieved_on": "2026-11-09",
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "claim_state": "current",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "claim_state": "absent",
       "freshness": "live_verified",
-      "content_sha256": "bb49d4f97b52da6af67086cbb349b60647b9f2c56995022474c55a2efb1f0d20",
-      "history": [],
+      "content_sha256": "91943e4415e9f2d7930688bc341d116e2592dc393f7e940b953c6646e95a0239",
+      "history": [
+        {
+          "field": "quote",
+          "quote": "The ACT’s 2026-27 allocation of nomination places have not yet been confirmed by the Australian Government.",
+          "badge": null,
+          "retrieved_on": "2026-11-09",
+          "archived_at": "2026-11-16"
+        }
+      ],
       "summary_en": "ACT Migration Home: 2026–27 allocation of nomination places has not yet been confirmed by the Australian Government."
     },
     {
@@ -620,11 +644,11 @@
       "quote": "you must live and work in Canberra for at least two years from visa grant, or if you are moving from overseas, date of arrival in Canberra.",
       "secondary_quote": "",
       "source_url": "https://www.act.gov.au/migration/skilled-migrants/190-nomination-criteria",
-      "retrieved_on": "2026-10-28",
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "retrieved_on": "2026-11-16",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "claim_state": "current",
       "freshness": "live_verified",
-      "content_sha256": "c209efbce92e989cf3602467ef1f276778b2a1725ad92efbcd3381a64b828c18",
+      "content_sha256": "468702f18a14901735f341c444bf8bd54d066c44475c2e417e740a7fb1014bbf",
       "history": [],
       "summary_en": "ACT 190 criteria page: commitment to live and work in Canberra for ≥2 years from visa grant (or arrival date in Canberra if offshore)."
     }
@@ -634,23 +658,23 @@
       "url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2026-27-skilled-visa-nomination-program",
       "content_sha256": "1b2b1888880dcd1c61186b291c6a53f70c3003f90ae81442cdd0390236ced577",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
     "vic_190": {
       "url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-nominated-visa-subclass-190",
       "content_sha256": "8f54999777871cbaa956077053fdac96a037cc631eef6a9e267ed55ce5bad47e",
-      "consecutive_failures": 1,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_http_status": 403,
-      "status": "transient_failure"
+      "consecutive_failures": 0,
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_http_status": 200,
+      "status": "live_verified"
     },
     "vic_491": {
       "url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/491",
       "content_sha256": "3b8a61b0e3d99542e8536f98d93c87c94f144be8b47a617ef00ee15b6ed690bf",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -658,7 +682,7 @@
       "url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/fees",
       "content_sha256": "4020566eaa6607d50b9f16a8516e7897fd385fd69d36e42820b98ab3f601c68c",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -666,7 +690,7 @@
       "url": "https://www.migration.qld.gov.au/",
       "content_sha256": "ada4d3896824a189c76376e5083cf98cfecd7997c9ee877b37abb5a3c8c99134",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -674,7 +698,7 @@
       "url": "https://www.migration.qld.gov.au/nomination-process/eligibility-criteria",
       "content_sha256": "7e0eb468c5b8f31c5bca2cf7e5194b4a15addfdefda226810de076f4684e018a",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -682,7 +706,7 @@
       "url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-nominated-visa-subclass-190",
       "content_sha256": "421ee825ff0629d4e96bcd5daef7ef5c62f929ac4f276046281c80083df6f0f1",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -690,15 +714,15 @@
       "url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-work-regional-visa-subclass-491",
       "content_sha256": "35811af475050094f24ac59dd09f4f059a9274904a254e625abe93fbb14e2878",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
     "wa_snmp": {
       "url": "https://migration.wa.gov.au/our-services-support/state-nominated-migration-program",
-      "content_sha256": "05e5f2d202e4a2ce9b5270142e4f249328a0fc84d2aba14d327181c2bf521387",
+      "content_sha256": "59054bdb39a105d76f648bbb704624f66f8fff095aeafdbde28f5b2221e49f76",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -706,7 +730,7 @@
       "url": "https://migration.wa.gov.au/",
       "content_sha256": "859a4fe630f6a316d67c7f7a3dfae253441f103feeae16f5c48306acd7040127",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -714,7 +738,7 @@
       "url": "https://migration.sa.gov.au/news/south-australias-general-skilled-migration-program-update",
       "content_sha256": "bb489b7696ac9cc5b7da58dbcb7e9b5713e668c5987fe7d01bf5d95b3bd45949",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -722,7 +746,7 @@
       "url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants/moving-to-south-australia-from-overseas",
       "content_sha256": "00bbafe7fa14b4a4e922c6f4575409c19081f757f6cb8c15a7714633946bd871",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -730,7 +754,7 @@
       "url": "https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants",
       "content_sha256": "3bc3996ae08691b130e94c66c25d4cdf1831ed9a5d2f55607a50464de7240364",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
@@ -738,49 +762,49 @@
       "url": "https://www.migration.tas.gov.au/news/2024-25_program_open_to_rois",
       "content_sha256": "34a6d6c66583d4501f270d14878bc2e6fb17fc7bac4b921a0ddb360ef42a4685",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
     "tas_home": {
       "url": "https://www.migration.tas.gov.au/",
-      "content_sha256": "074665a97b76ba56107bf6f081d5b610fa9b72a046dabd928f1ca4b5dae6480d",
+      "content_sha256": "471755e2fe6d705fda50ef6cf0d493a55623b519dc66d9ed5470ca058fdcb5d3",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
     "act_home": {
       "url": "https://www.act.gov.au/migration",
-      "content_sha256": "bb49d4f97b52da6af67086cbb349b60647b9f2c56995022474c55a2efb1f0d20",
+      "content_sha256": "91943e4415e9f2d7930688bc341d116e2592dc393f7e940b953c6646e95a0239",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
     "act_round": {
       "url": "https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round",
-      "content_sha256": "73be8e326b817f0661c8d6cd7857d9b609965575f7ffdf6f3fbec21f7ccfb9a5",
+      "content_sha256": "45a6444f67059f81dea2020b60b640ca9a1fddc8535a5e1dbabb46412974dd2e",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
     "act_190": {
       "url": "https://www.act.gov.au/migration/skilled-migrants/190-nomination-criteria",
-      "content_sha256": "c209efbce92e989cf3602467ef1f276778b2a1725ad92efbcd3381a64b828c18",
+      "content_sha256": "468702f18a14901735f341c444bf8bd54d066c44475c2e417e740a7fb1014bbf",
       "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_http_status": 200,
       "status": "live_verified"
     },
     "nt_nom": {
       "url": "https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination",
       "content_sha256": "51acc325f0fabaf88bfd11296f206c6db500a246b978d9ccd84235c4d7695032",
-      "consecutive_failures": 0,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_http_status": 200,
-      "status": "live_verified"
+      "consecutive_failures": 1,
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_http_status": 403,
+      "status": "transient_failure"
     }
   }
 }

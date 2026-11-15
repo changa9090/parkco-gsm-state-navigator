@@ -2,32 +2,32 @@
   "navigator": "parkco-gsm-state-navigator",
   "title_ko": "호주 일반기술이민 (189·190·491 Schedule 6D) 점수 계산기 & 8개 주정부 노미네이션 통합 네비게이터",
   "title_en": "Australia GSM Points (189·190·491 Schedule 6D) & 8-State/Territory Nomination Navigator",
-  "last_polled_iso": "2026-11-09T07:45:08+10:00",
-  "as_at_date": "2026-11-09",
+  "last_polled_iso": "2026-11-16T07:45:38+10:00",
+  "as_at_date": "2026-11-16",
   "total_sources": 12,
   "verified_ok_count": 12,
   "live_verified_count": 11,
   "cached_last_good_count": 1,
   "program_status_summary": {
-    "as_at_date": "2026-11-09",
+    "as_at_date": "2026-11-16",
     "total_subclass_records": 16,
-    "current_count": 16,
+    "current_count": 14,
     "live_verified_count": 16,
     "cached_last_good_count": 0,
-    "absent_count": 0,
+    "absent_count": 2,
     "badge_counts": {
       "open": 3,
-      "limited": 7,
+      "limited": 5,
       "closed": 3,
       "unsaid": 3,
-      "needs_review": 0
+      "needs_review": 2
     },
     "status_sources_count": 19
   },
   "headline_metrics": {
     "pass_mark": "65 Points (LIN 19/210)",
     "work_exp_cap": "Max 20 Pts (6D51)",
-    "skillselect_occupations": "160 Occupations (15 October 2026)",
+    "skillselect_occupations": "158 Occupations (15 October 2026)",
     "state_nomination_quota": "FY25–26 Fed Ref: 20,350 Places (190: 12,850 / 491: 7,500) · Live FY26–27 State Status",
     "vac_189_190_491": "$6,135 / $6,140 (18+ $3,070, <18 $1,535)",
     "vac_191_pr": "$630 ($0 Min Income)",
@@ -79,15 +79,15 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
-      "sha256_prefix": "a964fbdacae4f71a",
-      "content_length": 3580174,
-      "live_method": "frl-legis-store-c289-F2026C01017",
-      "compilation": "289",
-      "register_id": "F2026C01017",
-      "effective_start": "2026-10-02",
-      "clause_count": 2599
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
+      "sha256_prefix": "ae1a559eefb18f88",
+      "content_length": 3579753,
+      "live_method": "frl-legis-store-c290-F2026C01179",
+      "compilation": "290",
+      "register_id": "F2026C01179",
+      "effective_start": "2026-11-01",
+      "clause_count": 2598
     },
     {
       "id": "dha_189_190_491_vac",
@@ -102,8 +102,8 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
       "sha256_prefix": "0ab169e8525c9030",
       "content_length": 247792,
       "live_method": "dha-json-api-post"
@@ -121,10 +121,10 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
       "sha256_prefix": "89c65d3c3519b88b",
-      "content_length": 1296914,
+      "content_length": 1301353,
       "live_method": "https-direct-live"
     },
     {
@@ -140,10 +140,10 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
-      "sha256_prefix": "357e1f0dc7bcc09f",
-      "content_length": 1356742,
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
+      "sha256_prefix": "335c0c1acd6e51b2",
+      "content_length": 1361104,
       "live_method": "https-direct-live"
     },
     {
@@ -159,8 +159,8 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
       "sha256_prefix": "1a3e942983b97416",
       "content_length": 36213,
       "live_method": "https-direct-live"
@@ -178,10 +178,10 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
       "sha256_prefix": "ebe865a062ac4d57",
-      "content_length": 161657,
+      "content_length": 161789,
       "live_method": "https-direct-live"
     },
     {
@@ -197,10 +197,10 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
       "sha256_prefix": "0767e054fbb38f66",
-      "content_length": 107945,
+      "content_length": 107961,
       "live_method": "https-direct-live"
     },
     {
@@ -216,10 +216,10 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
-      "sha256_prefix": "c5e9e174c5285cff",
-      "content_length": 330082,
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
+      "sha256_prefix": "ae7adf9a8f710eda",
+      "content_length": 344372,
       "live_method": "https-direct-live"
     },
     {
@@ -235,7 +235,7 @@
       "status": "cached_last_good",
       "freshness": "cached_snapshot",
       "http_status": 503,
-      "last_checked": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
       "last_verified_ok": "2026-10-22T12:30:54+10:00",
       "sha256_prefix": "97f213445293cdc6",
       "content_length": 219763,
@@ -254,8 +254,8 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
       "sha256_prefix": "9b99e19295d157ef",
       "content_length": 25392,
       "live_method": "https-direct-live"
@@ -273,10 +273,10 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
-      "sha256_prefix": "a5c5e2a8b1b273a9",
-      "content_length": 40345,
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
+      "sha256_prefix": "9a2dfbff4d6957b1",
+      "content_length": 40711,
       "live_method": "https-direct-live"
     },
     {
@@ -292,11 +292,11 @@
       "status": "verified_ok",
       "freshness": "live_verified",
       "http_status": 200,
-      "last_checked": "2026-11-09T07:45:08+10:00",
-      "last_verified_ok": "2026-11-09T07:45:08+10:00",
-      "sha256_prefix": "e93049a4a07271d9",
-      "content_length": 36238,
-      "live_method": "insane-search-waf-bypass"
+      "last_checked": "2026-11-16T07:45:38+10:00",
+      "last_verified_ok": "2026-11-16T07:45:38+10:00",
+      "sha256_prefix": "4f669088ace1b3b4",
+      "content_length": 157174,
+      "live_method": "https-direct-live"
     }
   ]
 }

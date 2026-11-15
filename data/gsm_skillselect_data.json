@@ -1,12 +1,18 @@
 {
   "status": "verified_ok",
   "http_status": 200,
-  "bytes": 1356742,
-  "sha256": "357e1f0dc7bcc09fdcbbb7829ca27fc804f34f7644421a79f2f7a7857cb19e07",
-  "sha256_prefix": "357e1f0dc7bcc09f",
+  "bytes": 1361104,
+  "sha256": "335c0c1acd6e51b218b9d92fd4b99233381d39f9bdba8e4d4ae7c9e34f50147d",
+  "sha256_prefix": "335c0c1acd6e51b2",
   "latest_round_date": "15 October 2026",
-  "round_summary": [],
-  "occupation_count": 160,
+  "round_summary": [
+    {
+      "subclass": "Skilled Independent visa (subclass 189)",
+      "total_invited": "20,000",
+      "tie_break_date": "N/A"
+    }
+  ],
+  "occupation_count": 158,
   "occupation_cutoffs": [
     {
       "occupation": "Actuary",
@@ -367,16 +373,6 @@
       "occupation": "Materials Engineer",
       "min_score_189": 85,
       "min_score_491_fs": "16/05/2026"
-    },
-    {
-      "occupation": "Medical Diagnostic Radiographer",
-      "min_score_189": 70,
-      "min_score_491_fs": "20/11/2025"
-    },
-    {
-      "occupation": "Medical Laboratory Scientist",
-      "min_score_189": 80,
-      "min_score_491_fs": "31/08/2026"
     },
     {
       "occupation": "Medical Diagnostic Radiographer",
