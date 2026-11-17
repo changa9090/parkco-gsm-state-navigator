@@ -251,7 +251,7 @@
             <div class="form-group">
               <label for="pt-edu" data-i18n="lblPtEdu">5. 최종 학력/자격 (Part 6D.7)</label>
               <select id="pt-edu" class="form-control">
-                <option value="20">박사 학위 (Doctorate / PhD · 20점)</option>
+                <option value="20">박사 학위 (Doctorate / PhD · 20점 · Item 6D71)</option>
                 <option value="15" selected>학사(Bachelor) 또는 석사(Masters) 학위 (15점)</option>
                 <option value="10">호주 Diploma / Trade 학위 또는 기술심사기관 인정 자격 (10점)</option>
                 <option value="0">인정 학력 없음 (0점)</option>
@@ -271,11 +271,11 @@
           <div class="form-group" style="margin-bottom:0;">
             <label data-i18n="lblPtBonus">7. 추가 가점 항목 (해당 항목 모두 체크 · Part 6D.6 / 6D.7A / 6D.8 / 6D.9 / 6D.10)</label>
             <div class="bonus-check-grid">
-              <label class="checkbox-label" id="lbl-wrap-au-study"><input type="checkbox" id="pt-au-study" /> <span data-i18n-html="chkAuStudy">호주 학업 요건 충족 (2년/92주 이상 CRICOS · <strong>+5점</strong>)</span></label>
-              <label class="checkbox-label" id="lbl-wrap-reg-study"><input type="checkbox" id="pt-reg-study" /> <span data-i18n-html="chkRegStudy">호주 지정 지방(Regional) 캠퍼스 학업·거주 (<strong>+5점</strong>)</span></label>
-              <label class="checkbox-label" id="lbl-wrap-stem"><input type="checkbox" id="pt-stem" /> <span data-i18n-html="chkStem">호주 STEM/ICT 연구석사(Research) 또는 박사 2년+ (<strong>+10점</strong>)</span></label>
-              <label class="checkbox-label" id="lbl-wrap-py"><input type="checkbox" id="pt-py" /> <span data-i18n-html="chkPy">호주 Professional Year (회계·IT·엔지니어링 1년 수료 · <strong>+5점</strong>)</span></label>
-              <label class="checkbox-label" id="lbl-wrap-ccl"><input type="checkbox" id="pt-ccl" /> <span data-i18n-html="chkCcl">NAATI CCL 커뮤니티 언어 인증 취득 (<strong>+5점</strong>)</span></label>
+              <label class="checkbox-label" id="lbl-wrap-au-study"><input type="checkbox" id="pt-au-study" /> <span data-i18n-html="chkAuStudy">호주 학업 요건 충족 (2년/92주 이상 CRICOS · Item 6D81 · <strong>+5점</strong>)</span></label>
+              <label class="checkbox-label" id="lbl-wrap-reg-study"><input type="checkbox" id="pt-reg-study" /> <span data-i18n-html="chkRegStudy">호주 지정 지방(Regional) 캠퍼스 학업·거주 (Item 6D101 · <strong>+5점</strong>)</span></label>
+              <label class="checkbox-label" id="lbl-wrap-stem"><input type="checkbox" id="pt-stem" /> <span data-i18n-html="chkStem">호주 STEM/ICT 연구석사(Research) 또는 박사 2년+ (Item 6D7A1 · LIN 26/057 · <strong>+10점</strong>)</span></label>
+              <label class="checkbox-label" id="lbl-wrap-py"><input type="checkbox" id="pt-py" /> <span data-i18n-html="chkPy">호주 Professional Year (회계·IT·엔지니어링 1년 수료 · Item 6D61 · <strong>+5점</strong>)</span></label>
+              <label class="checkbox-label" id="lbl-wrap-ccl"><input type="checkbox" id="pt-ccl" /> <span data-i18n-html="chkCcl">NAATI CCL 커뮤니티 언어 인증 취득 (Item 6D91 · <strong>+5점</strong>)</span></label>
             </div>
             <div id="pt-au-study-guard-hint" class="sch6d-guard-note sch6d-guard-note--info" hidden></div>
             <div id="pt-stem-guard-warning" class="sch6d-guard-note sch6d-guard-note--warn" hidden></div>
@@ -394,6 +394,12 @@
       <div class="calc-grid">
         <div class="card">
           <h3 style="margin-top:0;font-size:17px;font-weight:800;">내 거주지 · 근무 개월 · 주당 시간 · 졸업생 프로필 입력</h3>
+          <div class="form-group" style="margin-bottom:12px;">
+            <label for="sc-occ-code" data-i18n="lblScOcc">0. (선택) ANZSCO 직종 코드 6자리 · 8개 주 직종 리스트(QSOL · WASMOL · SA · ACT · NSW) 대조</label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input type="text" id="sc-occ-code" class="form-control" maxlength="10" data-i18n-placeholder="phScOcc" placeholder="예: 351311 (Chef) 또는 233211 (Civil Engineer) · 솔루션 가이드 연동 시 자동 입력" />
+            </div>
+          </div>
           <div class="form-grid-2">
             <div class="form-group">
               <label for="sc-current-loc">1. 현재 거주 중인 주/준주 (또는 해외)</label>
@@ -473,7 +479,7 @@
         <div>
           <span class="overline-serif light-mode">TOOL 03 · SUBCLASS 191 PR TRANSITION ($0 MIN INCOME) &amp; TOTAL FEE CALCULATOR</span>
           <h2 data-i18n="sec3_title">491/494 → Subclass 191 영주권 전환 진단($0 소득하한) &amp; 주정부+연방 비자비 계산기</h2>
-          <p data-i18n="sec3_desc">Subclass 491 또는 494 비자 소지자가 3년 후 Subclass 191 영주권(<code>cl 191.212 / 191.214</code>)으로 전환할 때 적용되는 최저소득 폐지($0 기준 · NOA 3개 연도 제출) 규정과 주정부 노미네이션 수수료 및 FY2026–27 연방 비자 신청비(VAC) 총합을 산출합니다.</p>
+          <p data-i18n="sec3_desc">Subclass 491 또는 494 비자 소지자가 3년 후 Subclass 191 영주권(<code>Sch 1 item 1139(3)(c) · cl 191.221 / 191.222</code>)으로 전환할 때 적용되는 최저소득 폐지($0 기준 · NOA 3개 연도 제출) 규정과 주정부 노미네이션 수수료 및 FY2026–27 연방 비자 신청비(VAC) 총합을 산출합니다.</p>
         </div>
       </div>
 
@@ -518,7 +524,7 @@
               <label for="cost-children">4. 동반 미성년 자녀 수 (만 18세 미만)</label>
               <select id="cost-children" class="form-control">
                 <option value="0">0명</option>
-                <option value="1" selected>1명 (+$1,535 / 191은 +$160)</option>
+                <option value="1" selected>1명 (+$1,535 [190/491] · 189는 +$1,540 / 191은 +$160)</option>
                 <option value="2">2명</option>
                 <option value="3">3명</option>
               </select>
@@ -581,7 +587,7 @@
         <div>
           <span class="overline-serif light-mode">TOOL 04 · 5-TAB GENERAL SKILLED MIGRATION &amp; STATE NOMINATION KNOWLEDGE HUB (2026-11-12 VERIFIED)</span>
           <h2 data-i18n="gkhTitle">일반기술이민 · 주정부 노미네이션(189 · 190 · 491 · 191) 60문항 지식허브 · 핵심 판례 7선 · 8개 주 매트릭스 · 통념 대조표</h2>
-          <p data-i18n="gkhDesc">2026-11-12 기준 1차 연방 법령(Migration Act 1958 s 93 · Migration Regulations 1994 Schedule 6D · LIN 25/016 · LIN 26/057 · LIN 20/272 · reg 2.12), 연방법원 및 2025–2026 행정재심기구(ART) 판례 7선(Thapa · Grewal · Yew · Thiede-Palmer · Toor · Ali · Trivedi), 8개 주·준주 노미네이션 매트릭스를 통합한 심층 지식 베이스입니다.</p>
+          <p data-i18n="gkhDesc">2026-11-12 기준 1차 연방 법령(Migration Act 1958 s 93 · Migration Regulations 1994 Schedule 6D · LIN 25/016 · LIN 26/057 · Sch 1 item 1139(3)(c) · cl 191.221/191.222 · reg 2.12(1)(t)), 연방법원 및 2025–2026 행정재심기구(ART) 판례 7선(Thapa · Grewal · Yew · Thiede-Palmer · Toor · Ali · Trivedi), 8개 주·준주 노미네이션 매트릭스를 통합한 심층 지식 베이스입니다.</p>
         </div>
       </div>
 
@@ -601,7 +607,7 @@
           <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-bottom:10px;">
             <div id="gkh-faq-cat-bar" style="display:flex;flex-wrap:wrap;gap:6px;flex:1;"></div>
             <div style="min-width:250px;max-width:400px;width:100%;">
-              <input type="search" id="gkh-faq-search" class="form-control" placeholder="60문항 검색 (예: 189, 190, 491, 191, EOI, ROI, 초청, 영어, LIN 25/016, 배우자, Grewal, Yew, 8579, NOA, s 48)..." />
+              <input type="search" id="gkh-faq-search" class="form-control" data-i18n-placeholder="phGkhFaqSearch" placeholder="60문항 검색 (예: 189, 190, 491, 191, EOI, ROI, 초청, 영어, LIN 25/016, 배우자, Grewal, Yew, 8579, NOA, s 48)..." />
             </div>
           </div>
           <div id="gkh-faq-count" style="font-size:12.5px;color:#47433E;margin-bottom:10px;"></div>

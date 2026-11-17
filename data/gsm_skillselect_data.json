@@ -1,9 +1,9 @@
 {
   "status": "verified_ok",
   "http_status": 200,
-  "bytes": 1361104,
-  "sha256": "335c0c1acd6e51b218b9d92fd4b99233381d39f9bdba8e4d4ae7c9e34f50147d",
-  "sha256_prefix": "335c0c1acd6e51b2",
+  "bytes": 1361967,
+  "sha256": "1bfc261ea5dcedb624e24612a8c054350c74a1ab7e76f98c9f7091f73d3efccf",
+  "sha256_prefix": "1bfc261ea5dcedb6",
   "latest_round_date": "15 October 2026",
   "round_summary": [
     {
@@ -237,7 +237,7 @@
     {
       "occupation": "Environmental Manager",
       "min_score_189": 65,
-      "min_score_491_fs": "13/10/206"
+      "min_score_491_fs": "13/10/2026"
     },
     {
       "occupation": "Environmental Research Scientist",
@@ -277,7 +277,7 @@
     {
       "occupation": "Forester",
       "min_score_189": 80,
-      "min_score_491_fs": "01/07/206"
+      "min_score_491_fs": "01/07/2026"
     },
     {
       "occupation": "Gasfitter",
